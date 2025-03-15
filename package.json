@@ -1,0 +1,20 @@
+{
+  "name": "sites",
+  "type": "module",
+  "packageManager": "yarn@4.7.0",
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "eslint-config": "workspace:^",
+    "prettier": "^3.5.3",
+    "prettier-plugin-svelte": "^3.3.3",
+    "prettier-plugin-tailwindcss": "^0.6.11",
+    "svelte": "^5.23.0",
+    "typescript": "^5.8.2"
+  },
+  "scripts": {
+    "lint:format": "prettier --check \"$INIT_CWD/**/*\"",
+    "lint:write": "prettier --write \"$INIT_CWD/**/*\""
+  }
+}
