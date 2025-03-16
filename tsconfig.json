@@ -1,0 +1,4 @@
+{
+  "references": [{ "path": "./packages/commacomma" }],
+  "exclude": ["node_modules"]
+}

@@ -1612,6 +1612,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"cc@workspace:packages/commacomma":
+  version: 0.0.0-use.local
+  resolution: "cc@workspace:packages/commacomma"
+  dependencies:
+    eslint-config: "workspace:^"
+    svelte-config: "workspace:^"
+    typescript: "npm:^5.8.2"
+  languageName: unknown
+  linkType: soft
+
 "chalk@npm:^4.0.0":
   version: 4.1.2
   resolution: "chalk@npm:4.1.2"
@@ -3876,7 +3886,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svelte-config@workspace:packages/svelte-config":
+"svelte-config@workspace:^, svelte-config@workspace:packages/svelte-config":
   version: 0.0.0-use.local
   resolution: "svelte-config@workspace:packages/svelte-config"
   dependencies:
