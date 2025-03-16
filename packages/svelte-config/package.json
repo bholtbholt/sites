@@ -4,6 +4,7 @@
   "type": "module",
   "exports": "./svelte.config.js",
   "scripts": {
+    "svelte:clean": "yarn workspaces foreach -A exec rm -rf .svelte-kit .wrangler",
     "svelte:dev": "cd $INIT_CWD && vite dev --open --config $PROJECT_CWD/packages/svelte-config/vite.config.js",
     "svelte:build": "cd $INIT_CWD && vite build --config $PROJECT_CWD/packages/svelte-config/vite.config.js",
     "svelte:preview": "cd $INIT_CWD && vite preview --open --config $PROJECT_CWD/packages/svelte-config/vite.config.js",
