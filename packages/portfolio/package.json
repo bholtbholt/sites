@@ -1,0 +1,16 @@
+{
+	"name": "p",
+	"description": "Static site for Portfolio",
+	"version": "0.0.1",
+	"type": "module",
+	"scripts": {
+		"dev": "yarn svelte:dev",
+		"build": "yarn svelte:build",
+		"preview": "yarn svelte:preview"
+	},
+	"devDependencies": {
+		"eslint-config": "workspace:^",
+		"svelte-config": "workspace:^",
+		"typescript": "^5.8.2"
+	}
+}
