@@ -1,4 +1,4 @@
 {
-  "references": [{ "path": "./packages/commacomma" }],
+  "references": [{ "path": "./packages/commacomma" }, { "path": "./packages/badbadpower" }],
   "exclude": ["node_modules"]
 }
