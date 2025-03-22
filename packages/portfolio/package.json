@@ -9,7 +9,7 @@
 		"preview": "yarn svelte:preview"
 	},
 	"devDependencies": {
-		"@types/headroom.js": "^0",
+		"@types/headroom.js": "^0.12.4",
 		"eslint-config": "workspace:^",
 		"svelte-config": "workspace:^",
 		"typescript": "^5.8.2"
