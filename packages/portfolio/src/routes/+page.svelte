@@ -12,6 +12,6 @@
   </article>
 </div>
 
-{#each data.works as work}
+{#each data.works as work (work.slug)}
   <Work {...work} />
 {/each}

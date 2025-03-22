@@ -21,7 +21,7 @@
     backdrop-blur-sm md:px-24 lg:px-36 xl:px-64
     dark:bg-slate-900/60 dark:shadow-slate-900"
 >
-  {#each links as [href, text]}
+  {#each links as [href, text] (href)}
     <a
       {href}
       class="{page.url.pathname === href ? active : inactive}
