@@ -1,22 +1,22 @@
 {
-  "name": "sites",
-  "type": "module",
-  "packageManager": "yarn@4.7.0",
-  "workspaces": [
-    "packages/*",
-    "support/*"
-  ],
-  "devDependencies": {
-    "eslint-config": "workspace:^",
-    "prettier": "^3.5.3",
-    "prettier-plugin-svelte": "^3.3.3",
-    "prettier-plugin-tailwindcss": "^0.6.11",
-    "svelte": "^5.25.2",
-    "typescript": "^5.8.2"
-  },
-  "scripts": {
-    "get-host": "ip=\"http://$(ipconfig getifaddr en0):3000\" && printf $ip | pbcopy && echo $ip",
-    "lint:format": "prettier --check \"$INIT_CWD/**/*\"",
-    "lint:write": "prettier --write \"$INIT_CWD/**/*\""
-  }
+	"name": "sites",
+	"type": "module",
+	"packageManager": "yarn@4.7.0",
+	"workspaces": [
+		"packages/*",
+		"support/*"
+	],
+	"devDependencies": {
+		"eslint-config": "workspace:^",
+		"prettier": "^3.5.3",
+		"prettier-plugin-svelte": "^3.3.3",
+		"prettier-plugin-tailwindcss": "^0.6.11",
+		"svelte": "^5.25.2",
+		"typescript": "^5.8.2"
+	},
+	"scripts": {
+		"get-host": "ip=\"http://$(ipconfig getifaddr en0):3000\" && printf $ip | pbcopy && echo $ip",
+		"lint:format": "prettier --check \"$INIT_CWD/**/*\"",
+		"lint:write": "prettier --write \"$INIT_CWD/**/*\""
+	}
 }

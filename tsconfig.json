@@ -1,8 +1,8 @@
 {
-  "references": [
-    { "path": "./packages/commacomma" },
-    { "path": "./packages/badbadpower" },
-    { "path": "./packages/portfolio" }
-  ],
-  "exclude": ["node_modules"]
+	"references": [
+		{ "path": "./packages/commacomma" },
+		{ "path": "./packages/badbadpower" },
+		{ "path": "./packages/portfolio" }
+	],
+	"exclude": ["node_modules"]
 }
