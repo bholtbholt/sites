@@ -14,8 +14,8 @@
 <div
   transition:fly={{ x: 100, duration: 600 }}
   class="{type === 'error' ? errorColors : successColors}
-    fixed top-0 right-0
-    m-6 w-96 rounded-md px-6 py-4 shadow-lg backdrop-blur-sm dark:text-white"
+    fixed top-0 right-0 m-6
+    w-96 max-w-[88vw] rounded-md px-6 py-4 shadow-lg backdrop-blur-sm dark:text-white"
 >
   <h3 class="mb-2 text-lg font-bold">{title}</h3>
   {@render children()}

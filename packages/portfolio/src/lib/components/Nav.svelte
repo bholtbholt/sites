@@ -16,7 +16,7 @@
   id="navigation"
   class="
     headroom fixed top-0 right-0 left-0
-    -ml-6 flex bg-white/60 px-12 font-sans text-xl
+    -ml-6 flex bg-white/60 px-6 font-sans text-xl
     shadow-[0_-0.6rem_0.2rem_0.8rem_transparent] shadow-white
     backdrop-blur-sm md:px-24 lg:px-36 xl:px-64
     dark:bg-slate-900/60 dark:shadow-slate-900"

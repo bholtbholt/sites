@@ -77,11 +77,11 @@
     <input type="checkbox" name="botcheck" id="" style="display: none;" />
 
     <div class="gap-6 md:flex">
-      <InputText name="name" label="Name" margin="mb-12" />
-      <InputText name="email" label="Email" margin="mb-12" />
+      <InputText name="name" label="Name" margin="mb-6 md:mb-12" />
+      <InputText name="email" label="Email" margin="mb-6 md:mb-12" />
     </div>
 
-    <InputTextarea name="message" label="Message" margin="mb-12" />
+    <InputTextarea name="message" label="Message" margin="mb-6 md:mb-12" />
 
     <Button {disabled}>Send Message</Button>
   </form>
