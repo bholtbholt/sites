@@ -2058,9 +2058,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config@workspace:^, eslint-config@workspace:packages/eslint-config":
+"eslint-config@workspace:^, eslint-config@workspace:support/eslint-config":
   version: 0.0.0-use.local
-  resolution: "eslint-config@workspace:packages/eslint-config"
+  resolution: "eslint-config@workspace:support/eslint-config"
   dependencies:
     "@eslint/compat": "npm:^1.2.7"
     "@eslint/js": "npm:^9.22.0"
@@ -3922,9 +3922,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svelte-config@workspace:^, svelte-config@workspace:packages/svelte-config":
+"svelte-config@workspace:^, svelte-config@workspace:support/svelte-config":
   version: 0.0.0-use.local
-  resolution: "svelte-config@workspace:packages/svelte-config"
+  resolution: "svelte-config@workspace:support/svelte-config"
   dependencies:
     "@sveltejs/adapter-cloudflare": "npm:^5.1.0"
     "@sveltejs/kit": "npm:^2.19.2"
