@@ -1297,6 +1297,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/headroom.js@npm:^0":
+  version: 0.12.4
+  resolution: "@types/headroom.js@npm:0.12.4"
+  checksum: 10c0/5340392a51c7ae1d81521ced1721cebca7d1f2a49955246dafae6cc4767e63b8b8bad4e5cfa03615ddda8d7eeeae92256a10b6dc1fe413d382052f89d043b822
+  languageName: node
+  linkType: hard
+
 "@types/json-schema@npm:^7.0.15":
   version: 7.0.15
   resolution: "@types/json-schema@npm:7.0.15"
@@ -2468,6 +2475,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"headroom.js@npm:^0.12.0":
+  version: 0.12.0
+  resolution: "headroom.js@npm:0.12.0"
+  checksum: 10c0/1a9976145f3278598cfa866ba5cf21bafe77fbacc90acce9504ffe2da5d50e9f0e1f18f1a4a702ccae725194de312562879a8b440635c12eda6bf27c0f172dc5
+  languageName: node
+  linkType: hard
+
 "http-cache-semantics@npm:^4.1.1":
   version: 4.1.1
   resolution: "http-cache-semantics@npm:4.1.1"
@@ -3191,6 +3205,18 @@ __metadata:
   checksum: 10c0/46091610da2b38ce47bcd1d8b4835a6fa4e832848a6682cf1652bc93915770f4617afc844c10a77d1b3e56d2472bb2d5622353fa3ead01a7f42b04fc8e744a5c
   languageName: node
   linkType: hard
+
+"p@workspace:packages/portfolio":
+  version: 0.0.0-use.local
+  resolution: "p@workspace:packages/portfolio"
+  dependencies:
+    "@types/headroom.js": "npm:^0"
+    eslint-config: "workspace:^"
+    headroom.js: "npm:^0.12.0"
+    svelte-config: "workspace:^"
+    typescript: "npm:^5.8.2"
+  languageName: unknown
+  linkType: soft
 
 "package-json-from-dist@npm:^1.0.0":
   version: 1.0.1
