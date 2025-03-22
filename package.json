@@ -14,6 +14,7 @@
     "typescript": "^5.8.2"
   },
   "scripts": {
+    "get-host": "ip=\"http://$(ipconfig getifaddr en0):3000\" && printf $ip | pbcopy && echo $ip",
     "lint:format": "prettier --check \"$INIT_CWD/**/*\"",
     "lint:write": "prettier --write \"$INIT_CWD/**/*\""
   }
