@@ -1,40 +1,31 @@
 <script lang="ts">
-  import type { PageProps } from './$types';
-  import { socials, contactForm, site } from '$lib/index';
-
-  let { data }: PageProps = $props();
+  import { site, InputText, InputTextarea, Button } from '$lib/index';
 </script>
 
-<article>
-  <div>
-    <h1>Say hello 👋</h1>
-    <p>
-      Get at me on
-      <a href={socials.github} target="_blank" rel="noreferrer">GitHub</a>,
-      <a href={socials.linkedin} target="_blank" rel="noreferrer">LinkedIn</a>, or send me an
-      message here.
-    </p>
+<article
+  id="contact"
+  class="
+    prose dark:prose-invert prose-slate md:prose-lg lg:prose-xl
+    mt-20 mb-32 md:mt-28 lg:mt-32
+  "
+>
+  <h1 class="mb-0! text-emerald-800 dark:text-cyan-400">Say hello</h1>
+  <p>
+    Send me a message here or on
+    <a href="https://linkedin.com/in/bholtbholt" target="_blank" rel="noreferrer">LinkedIn</a>.
+  </p>
 
-    <form action={contactForm.action} method="POST">
-      <input type="hidden" name="_subject" value="[{site.title}]: New message!" />
-      <input type="text" name="_honey" style="display: none" />
+  <form action="https://formsubmit.co/c168c951e89fffaf972dbecd9fa5e4c1" method="POST">
+    <input type="hidden" name="_subject" value="[{site.title}]: New message!" />
+    <input type="text" name="_honey" style="display: none" />
 
-      <div>
-        <div>
-          <label for="name">Your name:</label>
-          <input id="name" type="text" name="name" required />
-        </div>
+    <div class="gap-6 md:flex">
+      <InputText name="name" label="Name" margin="mb-12" />
+      <InputText name="email" label="Email" margin="mb-12" />
+    </div>
 
-        <div>
-          <label for="email">Your email:</label>
-          <input id="email" type="email" name="email" required />
-        </div>
-      </div>
+    <InputTextarea name="message" label="Message" margin="mb-12" />
 
-      <label for="message">Your message:</label>
-      <textarea id="message" name="message" required></textarea>
-
-      <button type="submit">Send Message</button>
-    </form>
-  </div>
+    <Button>Send Message</Button>
+  </form>
 </article>

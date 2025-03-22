@@ -2,18 +2,25 @@ import type { PageLoad } from './$types';
 import type { SvelteComponent } from 'svelte';
 import type { Work, WorkMetaData, MaybeField } from '$lib/types';
 
+type MarkdownFiles = Record<
+  string,
+  {
+    metadata: MaybeField<WorkMetaData, 'title' | 'byline'>;
+    default: typeof SvelteComponent;
+  }
+>;
+
 export const load: PageLoad = async () => {
   const works = await getWork();
   return { works };
 };
 
-type MarkdownFiles = Record<
-  string,
-  {
-    metadata: MaybeField<WorkMetaData, 'title'>;
-    default: typeof SvelteComponent;
-  }
->;
+function slugToTitle(slug: string) {
+  return slug
+    .split('-')
+    .map((word) => word[0].toUpperCase() + word.slice(1))
+    .join(' ');
+}
 
 async function getWork() {
   let works: Work[] = [];
@@ -28,7 +35,8 @@ async function getWork() {
     const slug = filename.slice(11);
     const work = {
       ...file.metadata,
-      title: file.metadata.title ?? slug,
+      title: file.metadata.title ?? slugToTitle(slug),
+      byline: file.metadata.byline ?? 'published on',
       date,
       slug,
       content: file.default,

@@ -9,8 +9,12 @@
 		"preview": "yarn svelte:preview"
 	},
 	"devDependencies": {
+		"@types/headroom.js": "^0",
 		"eslint-config": "workspace:^",
 		"svelte-config": "workspace:^",
 		"typescript": "^5.8.2"
+	},
+	"dependencies": {
+		"headroom.js": "^0.12.0"
 	}
 }

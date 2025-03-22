@@ -1,16 +1,17 @@
 <script lang="ts">
   import type { PageProps } from './$types';
-  import { Intro, Work } from '$lib/index';
+  import { site, Work } from '$lib/index';
 
   let { data }: PageProps = $props();
 </script>
 
-<Intro />
+<div class="my-24 flex min-h-[50vh] items-center lg:min-h-[66vh]">
+  <article id="intro" class="prose dark:prose-invert prose-slate prose-lg md:prose-xl lg:prose-2xl">
+    <h1 class="mb-0! text-emerald-800 dark:text-cyan-400">Brian Holt</h1>
+    <p>{site.description}</p>
+  </article>
+</div>
 
-<section>
-  <ul class="works">
-    {#each data.works as work}
-      <Work {...work} />
-    {/each}
-  </ul>
-</section>
+{#each data.works as work}
+  <Work {...work} />
+{/each}
