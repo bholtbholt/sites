@@ -14,7 +14,10 @@
   }: Work = $props();
 </script>
 
-<article id={slug} class="prose dark:prose-invert prose-slate md:prose-lg lg:prose-xl mb-32">
+<article
+  id={slug}
+  class="prose dark:prose-invert prose-slate prose-sm md:prose-lg lg:prose-xl mb-32"
+>
   <h1 class="mb-4! -ml-px text-emerald-800 dark:text-cyan-400">{title}</h1>
 
   <address class="text-base text-slate-400">

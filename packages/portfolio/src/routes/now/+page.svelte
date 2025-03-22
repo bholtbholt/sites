@@ -1,7 +1,7 @@
 <article
   id="now"
   class="
-    prose dark:prose-invert prose-slate md:prose-lg lg:prose-xl
+    prose dark:prose-invert prose-slate prose-sm md:prose-lg lg:prose-xl
     mt-20 mb-32 md:mt-28 lg:mt-32
   "
 >

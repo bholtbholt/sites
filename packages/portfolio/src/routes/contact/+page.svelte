@@ -62,7 +62,7 @@
 
 <article
   id="contact"
-  class="prose dark:prose-invert prose-slate md:prose-lg lg:prose-xl mt-20 mb-32 md:mt-28 lg:mt-32"
+  class="prose dark:prose-invert prose-slate prose-sm md:prose-lg lg:prose-xl mt-20 mb-32 md:mt-28 lg:mt-32"
 >
   <h1 class="mb-0! text-emerald-800 dark:text-cyan-400">Say hello</h1>
   <p>
