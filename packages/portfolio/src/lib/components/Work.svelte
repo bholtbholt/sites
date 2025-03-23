@@ -32,5 +32,7 @@
 
 	<Content />
 
-	<a href={publisher_url} target="_blank" rel="noreferrer">{jump_line}…</a>
+	{#if publisher_url && jump_line}
+		<a href={publisher_url} target="_blank" rel="noreferrer">{jump_line}…</a>
+	{/if}
 </article>

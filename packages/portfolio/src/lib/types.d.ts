@@ -15,4 +15,10 @@ export type Work = WorkMetaData & {
 	content: typeof SvelteComponent;
 };
 
-export type MaybeField<T, K extends keyof T> = Omit<T, K> & Partial<Pick<T, K>>;
+export type MarkdownFiles = Record<
+	string,
+	{
+		metadata?: Partial<WorkMetaData>;
+		default: typeof SvelteComponent;
+	}
+>;

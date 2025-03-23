@@ -1,14 +1,5 @@
 import type { PageLoad } from './$types';
-import type { SvelteComponent } from 'svelte';
-import type { Work, WorkMetaData, MaybeField } from '$lib/types';
-
-type MarkdownFiles = Record<
-	string,
-	{
-		metadata: MaybeField<WorkMetaData, 'title' | 'byline'>;
-		default: typeof SvelteComponent;
-	}
->;
+import type { Work, MarkdownFiles } from '$lib/types';
 
 export const load: PageLoad = async () => {
 	const works = await getWork();
@@ -33,13 +24,17 @@ async function getWork() {
 		const filename = path.replace('/src/work/', '').replace('.md', '');
 		const date = filename.slice(0, 10);
 		const slug = filename.slice(11);
-		const work = {
-			...file.metadata,
-			title: file.metadata.title ?? slugToTitle(slug),
-			byline: file.metadata.byline ?? 'published on',
-			date,
-			slug,
+		const work: Work = {
+			byline: file.metadata?.byline ?? 'published on',
+			category: file.metadata?.category ?? 'article',
 			content: file.default,
+			date,
+			jump_line: file.metadata?.jump_line ?? '',
+			published: file.metadata?.published ?? true,
+			publisher: file.metadata?.publisher ?? 'brianholt.ca',
+			publisher_url: file.metadata?.publisher_url ?? '',
+			slug,
+			title: file.metadata?.title ?? slugToTitle(slug),
 		};
 
 		if (work.published !== false) works.push(work);

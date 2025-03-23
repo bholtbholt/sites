@@ -1,5 +1,6 @@
 // See https://svelte.dev/docs/kit/types#app.d.ts
 // for information about these interfaces
+import type { MarkdownFiles } from '$lib/types';
 declare global {
 	namespace App {
 		// interface Error {}
@@ -16,6 +17,11 @@ declare global {
 			caches: CacheStorage & { default: Cache };
 		}
 	}
+}
+
+declare module '*.md' {
+	const markdownFiles: MarkdownFiles;
+	export default markdownFiles;
 }
 
 export {};
