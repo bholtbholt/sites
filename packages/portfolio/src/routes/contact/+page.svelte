@@ -31,6 +31,7 @@
 			});
 			const result: NotificationData = await res.json();
 
+			if (result.success) form.reset();
 			notification = {
 				...result,
 				type: result.success ? 'success' : 'error',
