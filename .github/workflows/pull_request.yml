@@ -15,7 +15,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-      - uses: ./.github/actions/setup-yarn
+      - name: Setup yarn
+        uses: ./.github/actions/setup-yarn
 
   lint:
     needs: [install-node-modules]
@@ -23,7 +24,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-      - uses: ./.github/actions/setup-yarn
+      - name: Setup yarn
+        uses: ./.github/actions/setup-yarn
 
       - name: JavaScript linting
         run: yarn lint:js
@@ -44,7 +46,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-      - uses: ./.github/actions/setup-yarn
+      - name: Setup yarn
+        uses: ./.github/actions/setup-yarn
 
       - name: Typecheck
         run: yarn workspace ${{ matrix.name }} lint:tsc
