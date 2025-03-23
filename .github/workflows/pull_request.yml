@@ -1,0 +1,56 @@
+name: Pull Request
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  install-node-modules:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup yarn
+        uses: ./.github/actions/setup-yarn
+
+  lint:
+    needs: [install-node-modules]
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup yarn
+        uses: ./.github/actions/setup-yarn
+
+      - name: JavaScript linting
+        run: yarn lint:js
+
+      - name: Prettier linting
+        run: yarn lint:format
+
+  build:
+    needs: [install-node-modules]
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        name:
+          - bbp
+          - cc
+          - p
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup yarn
+        uses: ./.github/actions/setup-yarn
+
+      - name: Typecheck
+        run: yarn workspace ${{ matrix.name }} lint:tsc
+
+      - name: Build app
+        run: yarn workspace ${{ matrix.name }} build

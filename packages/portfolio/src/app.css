@@ -1,39 +1,39 @@
 @font-face {
-  font-family: 'Libre Baskerville';
-  src: url('/fonts/LibreBaskerville-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'Libre Baskerville';
+	src: url('/fonts/LibreBaskerville-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-  font-family: 'Libre Baskerville';
-  src: url('/fonts/LibreBaskerville-Bold.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
+	font-family: 'Libre Baskerville';
+	src: url('/fonts/LibreBaskerville-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
 }
 
 @font-face {
-  font-family: 'Libre Baskerville';
-  src: url('/fonts/LibreBaskerville-Italic.ttf') format('truetype');
-  font-weight: normal;
-  font-style: italic;
+	font-family: 'Libre Baskerville';
+	src: url('/fonts/LibreBaskerville-Italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
 }
 
 @import 'tailwindcss';
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
 @theme {
-  --font-baskerville: 'Libre Baskerville', serif;
-  --default-font-family: var(--font-baskerville);
+	--font-baskerville: 'Libre Baskerville', serif;
+	--default-font-family: var(--font-baskerville);
 }
 
 .headroom {
-  will-change: transform;
-  transition: transform 200ms linear;
+	will-change: transform;
+	transition: transform 200ms linear;
 }
 .headroom--pinned {
-  transform: translateY(0%);
+	transform: translateY(0%);
 }
 .headroom--unpinned {
-  transform: translateY(-100%);
+	transform: translateY(-100%);
 }
