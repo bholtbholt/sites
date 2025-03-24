@@ -21,9 +21,9 @@
 	<h1 class="mb-4! -ml-px text-emerald-800 dark:text-cyan-400">{title}</h1>
 
 	<address class="text-base text-slate-400">
-		<strong class="capitalize">{category}</strong>
+		<strong class="text-slate-400 capitalize">{category}</strong>
 		{byline}
-		<a href={publisher_url} target="_blank">{publisher}</a>
+		<a href={publisher_url} target="_blank" class="text-slate-400">{publisher}</a>
 		&emsp;
 		<time datetime={date}>
 			{new Date(date).toLocaleDateString('en', { year: 'numeric', month: 'long' })}
