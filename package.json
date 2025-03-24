@@ -17,6 +17,7 @@
 	"scripts": {
 		"get-host": "ip=\"http://$(ipconfig getifaddr en0):3000\" && printf $ip | pbcopy && echo $ip",
 		"lint:all": "yarn lint:format && yarn lint:js && yarn workspaces foreach -A --include \"./packages/*\" -p run lint:tsc",
-		"lint:format": "prettier --check \"$INIT_CWD/**/*\""
+		"lint:format": "prettier --check \"$INIT_CWD/**/*\"",
+		"upgrade:yarn": "yarn set version stable && yarn install"
 	}
 }
