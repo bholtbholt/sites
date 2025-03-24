@@ -1,0 +1,9 @@
+---
+byline?: published on
+category: article | game | class | project | talk
+jump_line: Read the ${category} on ${publisher}
+published?: boolean
+publisher: string
+publisher_url: string
+title?: string
+---

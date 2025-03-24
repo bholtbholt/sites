@@ -6,6 +6,7 @@
 	"scripts": {
 		"dev": "yarn svelte:dev",
 		"build": "yarn svelte:build",
+		"new": "cp $INIT_CWD/src/work/template $INIT_CWD/src/work/$(date +%F)-${0}.md && echo \"Created $INIT_CWD/src/work/$(date +%F)-${0}.md\"",
 		"preview": "yarn svelte:preview"
 	},
 	"devDependencies": {
