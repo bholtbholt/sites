@@ -1,6 +1,6 @@
 ---
 category: project
-jump_line: Get your start-up's colour on Github
+jump_line: Get your start-up's colour
 publisher: Github
 publisher_url: https://bholtbholt.github.io/startup-color/
 ---

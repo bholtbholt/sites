@@ -27,6 +27,12 @@
 	--default-font-family: var(--font-baskerville);
 }
 
+/* Remove backticks from <code> blocks in prose */
+:where(code):not(:where([class~='not-prose'], [class~='not-prose'] *))::before,
+:where(code):not(:where([class~='not-prose'], [class~='not-prose'] *))::after {
+	content: '';
+}
+
 .headroom {
 	will-change: transform;
 	transition: transform 200ms linear;

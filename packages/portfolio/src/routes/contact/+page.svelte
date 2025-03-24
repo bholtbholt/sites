@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { site, InputText, InputTextarea, Button, Toast } from '$lib/index';
+	import { InputText, InputTextarea, Button, Toast } from '$lib/index';
 	type NotificationData = {
 		message: string;
 		body: string;
@@ -31,6 +31,7 @@
 			});
 			const result: NotificationData = await res.json();
 
+			if (result.success) form.reset();
 			notification = {
 				...result,
 				type: result.success ? 'success' : 'error',
@@ -65,14 +66,18 @@
 	class="prose dark:prose-invert prose-slate prose-sm md:prose-lg lg:prose-xl mt-20 mb-32 md:mt-28 lg:mt-32"
 >
 	<h1 class="mb-0! text-emerald-800 dark:text-cyan-400">Say hello</h1>
-	<p>
+	<p class="mb-6! md:mb-12!">
 		Send me a message here or on
-		<a href="https://linkedin.com/in/bholtbholt" target="_blank" rel="noreferrer">LinkedIn</a>.
+		<a href="https://linkedin.com/in/bholtbholt" target="_blank" rel="noreferrer">LinkedIn</a>. You
+		could also email me at <code>hello@brianholt.ca</code> or creep my
+		<a href="https://github.com/bholtbholt" target="_blank" rel="noreferrer"
+			>public Github profile</a
+		>. I dunno, you do you.
 	</p>
 
 	<form onsubmit={handleSubmit} action="https://api.web3forms.com/submit" method="POST">
 		<input type="hidden" name="access_key" value="a572658c-e3c7-41c9-af1b-ca31e4e7a101" />
-		<input type="hidden" name="subject" value="[{site.title}]: New message!" />
+		<input type="hidden" name="subject" value="[brianholt.ca]: New message!" />
 		<input type="hidden" name="from_name" value="brianholt.ca" />
 		<input type="checkbox" name="botcheck" id="" style="display: none;" />
 
