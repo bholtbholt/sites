@@ -19,7 +19,7 @@
 		"@tailwindcss/typography": "^0.5.16",
 		"@tailwindcss/vite": "^4.0.15",
 		"mdsvex": "^0.12.3",
-		"svelte": "^5.25.2",
+		"svelte": "^5.25.3",
 		"svelte-check": "^4.1.5",
 		"tailwindcss": "^4.0.15",
 		"typescript": "^5.8.2",

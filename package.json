@@ -11,7 +11,7 @@
 		"prettier": "^3.5.3",
 		"prettier-plugin-svelte": "^3.3.3",
 		"prettier-plugin-tailwindcss": "^0.6.11",
-		"svelte": "^5.25.2",
+		"svelte": "^5.25.3",
 		"typescript": "^5.8.2"
 	},
 	"scripts": {
