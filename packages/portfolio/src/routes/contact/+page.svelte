@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { site, InputText, InputTextarea, Button, Toast } from '$lib/index';
+	import { InputText, InputTextarea, Button, Toast } from '$lib/index';
 	type NotificationData = {
 		message: string;
 		body: string;
@@ -77,7 +77,7 @@
 
 	<form onsubmit={handleSubmit} action="https://api.web3forms.com/submit" method="POST">
 		<input type="hidden" name="access_key" value="a572658c-e3c7-41c9-af1b-ca31e4e7a101" />
-		<input type="hidden" name="subject" value="[{site.title}]: New message!" />
+		<input type="hidden" name="subject" value="[brianholt.ca]: New message!" />
 		<input type="hidden" name="from_name" value="brianholt.ca" />
 		<input type="checkbox" name="botcheck" id="" style="display: none;" />
 

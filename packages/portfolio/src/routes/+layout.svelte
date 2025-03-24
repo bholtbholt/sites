@@ -1,12 +1,12 @@
 <script lang="ts">
 	import '../app.css';
-	import { Nav, site } from '$lib/index';
+	import { Nav, siteIntro } from '$lib/index';
 	let { children } = $props();
 </script>
 
 <svelte:head>
-	<title>{site.title}</title>
-	<meta name="description" content={site.description} />
+	<title>Portfolio | brianholt.ca</title>
+	<meta name="description" content={siteIntro} />
 </svelte:head>
 
 <Nav />
