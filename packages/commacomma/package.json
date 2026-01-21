@@ -11,6 +11,6 @@
 	"devDependencies": {
 		"eslint-config": "workspace:^",
 		"svelte-config": "workspace:^",
-		"typescript": "^5.8.2"
+		"typescript": "^5.9.3"
 	}
 }
