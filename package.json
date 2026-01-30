@@ -1,18 +1,18 @@
 {
 	"name": "sites",
 	"type": "module",
-	"packageManager": "yarn@4.7.0",
+	"packageManager": "yarn@4.12.0",
 	"workspaces": [
 		"packages/*",
 		"support/*"
 	],
 	"devDependencies": {
 		"eslint-config": "workspace:^",
-		"prettier": "^3.5.3",
-		"prettier-plugin-svelte": "^3.3.3",
-		"prettier-plugin-tailwindcss": "^0.6.11",
-		"svelte": "^5.25.3",
-		"typescript": "^5.8.2"
+		"prettier": "^3.8.1",
+		"prettier-plugin-svelte": "^3.4.1",
+		"prettier-plugin-tailwindcss": "^0.7.2",
+		"svelte": "^5.49.1",
+		"typescript": "^5.9.3"
 	},
 	"scripts": {
 		"get-host": "ip=\"http://$(ipconfig getifaddr en0):3000\" && printf $ip | pbcopy && echo $ip",
