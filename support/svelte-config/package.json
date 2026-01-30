@@ -5,11 +5,12 @@
 	"exports": "./svelte.config.js",
 	"scripts": {
 		"build:clean": "yarn workspaces foreach -A --include \"./packages/*\" exec rm -rf .svelte-kit .wrangler",
+		"cf:open": "cd $INIT_CWD && wrangler pages dev .svelte-kit/cloudflare",
+		"lint:tsc": "cd $INIT_CWD && svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"svelte:dev": "cd $INIT_CWD && vite dev --open --config $PROJECT_CWD/support/svelte-config/vite.config.js",
 		"svelte:build": "cd $INIT_CWD && vite build --config $PROJECT_CWD/support/svelte-config/vite.config.js",
 		"svelte:preview": "cd $INIT_CWD && vite preview --open --config $PROJECT_CWD/support/svelte-config/vite.config.js",
-		"svelte:prepare": "cd $INIT_CWD && svelte-kit sync || echo ''",
-		"lint:tsc": "cd $INIT_CWD && svelte-kit sync && svelte-check --tsconfig ./tsconfig.json"
+		"svelte:prepare": "cd $INIT_CWD && svelte-kit sync || echo ''"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-cloudflare": "^7.2.6",
