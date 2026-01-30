@@ -13,7 +13,7 @@
 		"@types/headroom.js": "^0.12.4",
 		"eslint-config": "workspace:^",
 		"svelte-config": "workspace:^",
-		"typescript": "^5.8.2"
+		"typescript": "^5.9.3"
 	},
 	"dependencies": {
 		"headroom.js": "^0.12.0"
