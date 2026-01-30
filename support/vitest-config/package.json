@@ -1,0 +1,12 @@
+{
+	"name": "vitest-config",
+	"private": true,
+	"type": "module",
+	"exports": "./vitest.config.js",
+	"scripts": {
+		"unit:test": "cd $INIT_CWD && vitest run --config $PROJECT_CWD/support/vitest-config/vitest.config.js"
+	},
+	"devDependencies": {
+		"vitest": "^4.0.18"
+	}
+}

@@ -7,7 +7,7 @@
 		"lint:js": "ROOT=$PROJECT_CWD CWD=$INIT_CWD eslint --max-warnings 0 \"$INIT_CWD/**/*\""
 	},
 	"devDependencies": {
-		"@eslint/compat": "^2.0.1",
+		"@eslint/compat": "^2.0.2",
 		"@eslint/js": "^9.39.2",
 		"eslint": "^9.39.2",
 		"eslint-config-prettier": "^10.1.8",
