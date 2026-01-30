@@ -1,11 +1,12 @@
 <script lang="ts">
 	import { headroom } from './headroomAction';
 	import { page } from '$app/state';
+	import { resolve } from '$app/paths';
 	const links = [
 		['/', 'Work'],
 		['/now', 'Now'],
 		['/contact', 'Contact'],
-	];
+	] as const;
 	const active = 'text-slate-800 dark:text-slate-300 font-bold';
 	const inactive =
 		'text-slate-400 hover:text-emerald-700 focus:text-emerald-700 dark:hover:text-cyan-500 dark:focus:text-cyan-500';
@@ -23,7 +24,7 @@
 >
 	{#each links as [href, text] (href)}
 		<a
-			{href}
+			href={resolve(href)}
 			class="{page.url.pathname === href ? active : inactive}
         inline-block px-6 py-4
         transition-colors duration-200 ease-out"

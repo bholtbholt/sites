@@ -23,7 +23,7 @@
 	<address class="text-base text-slate-400">
 		<strong class="text-slate-400 capitalize">{category}</strong>
 		{byline}
-		<a href={publisher_url} target="_blank" class="text-slate-400">{publisher}</a>
+		<a href={publisher_url} target="_blank" rel="external" class="text-slate-400">{publisher}</a>
 		&emsp;
 		<time datetime={date}>
 			{new Date(date).toLocaleDateString('en', { year: 'numeric', month: 'long' })}
@@ -33,6 +33,6 @@
 	<Content />
 
 	{#if publisher_url && jump_line}
-		<a href={publisher_url} target="_blank" rel="noreferrer">{jump_line}…</a>
+		<a href={publisher_url} target="_blank" rel="external">{jump_line}…</a>
 	{/if}
 </article>
