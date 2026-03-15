@@ -2018,13 +2018,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"devalue@npm:^5.6.2":
-  version: 5.6.2
-  resolution: "devalue@npm:5.6.2"
-  checksum: 10c0/654f257ec525a2d3f35c941bfbb361148bc65ced060710969fbaa1c45abf1c9d7c4fcb77310bf8d2fb73c34cf60bad10710e7bf5b15643bbc082518ea04cb00b
-  languageName: node
-  linkType: hard
-
 "devalue@npm:^5.6.3":
   version: 5.6.3
   resolution: "devalue@npm:5.6.3"
@@ -2298,7 +2291,7 @@ __metadata:
     eslint: "npm:^9.39.2"
     eslint-config-prettier: "npm:^10.1.8"
     eslint-plugin-svelte: "npm:^3.14.0"
-    globals: "npm:^17.2.0"
+    globals: "npm:^17.4.0"
     typescript: "npm:^5.9.3"
     typescript-eslint: "npm:^8.54.0"
   languageName: unknown
@@ -2653,10 +2646,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"globals@npm:^17.2.0":
-  version: 17.2.0
-  resolution: "globals@npm:17.2.0"
-  checksum: 10c0/fd25a98b08c1d31082337cbbb5ff1b90b9980e1db69a8621fb942bdb2cdca8aa54d61466742e8bf4910578ea5fa903b8bf83bffd1b2d45551cc614830dba910b
+"globals@npm:^17.4.0":
+  version: 17.4.0
+  resolution: "globals@npm:17.4.0"
+  checksum: 10c0/2be9e8c2b9035836f13d420b22f0247a328db82967d3bebfc01126d888ed609305f06c05895914e969653af5c6ba35fd7a0920f3e6c869afa60666c810630feb
   languageName: node
   linkType: hard
 
