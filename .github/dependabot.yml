@@ -13,3 +13,7 @@ updates:
       all-dependencies:
         patterns:
           - '*' # Wildcard to match all dependencies
+      security-fixes:
+        applies-to: security-updates
+        patterns:
+          - '*'
