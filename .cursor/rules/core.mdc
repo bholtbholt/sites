@@ -1,0 +1,72 @@
+---
+description: Core project conventions - package manager, monorepo structure
+alwaysApply: true
+---
+
+# Core Conventions
+
+## Node Version
+
+Run `nvm use` once at the start of a terminal session. The shell is stateful — subsequent commands inherit the Node version.
+
+## Package Manager
+
+Use `yarn` exclusively. Never use `npm` or `npx`.
+
+## Monorepo Structure
+
+- `packages/` - Published, versioned packages
+- `support/` - Unpublished shared utilities
+
+## Workspace Commands
+
+**Always** run commands through `yarn workspace`. Never `cd` into a workspace directory and run commands directly.
+
+Workspace names come from the `name` field in each workspace's `package.json`:
+
+```bash
+# ❌ Don't
+cd packages/cc && yarn test
+cd packages/cc && yarn tsc --noEmit
+cd packages/bbp && yarn lint
+
+# ✅ Do
+yarn workspace cc test
+yarn workspace cc lint:tsc
+yarn workspace bbp lint:precheck
+```
+
+## Global Scripts
+
+Scripts like `lint:tsc`, `lint:js`, `lint:format`, and `lint:precheck` are **global scripts** defined in support packages (`support/svelte-config`, `support/eslint-config`) and the root `package.json`. They will **not** appear in a packages's own `package.json` scripts — this is intentional.
+
+Run them via `yarn workspace <workspace> <command>` and trust that Yarn resolves them through the workspace dependency chain.
+
+```bash
+yarn workspace cc lint:tsc       # TypeScript check
+yarn workspace cc lint:js        # ESLint
+yarn workspace cc lint:format    # Prettier check
+yarn workspace cc lint:precheck  # All of the above + auto-format
+```
+
+Run `yarn scripts` to discover all available global scripts.
+
+## Verifying Changes
+
+Before confirming a task is complete:
+
+1. Run tests for changed files: `yarn workspace <workspace> test --findRelatedTests <changed-files>`
+2. Run the full precheck: `yarn workspace <workspace> lint:precheck`
+3. If anything fails, fix the issue before declaring done.
+
+## Code Comments
+
+Do not add comments that narrate what code does. Only add comments for:
+
+- Non-obvious edge cases or workarounds
+- Bug context that would be lost without explanation
+- JSDoc when explicitly requested by the user
+
+## External Documentation
+
+When implementing patterns with third-party libraries (Svelte, testing-library, Cypress, etc.), use the context7 MCP tool to fetch current documentation rather than relying on training data.
