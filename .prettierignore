@@ -6,6 +6,7 @@ yarn.lock
 .gitignore
 .nvmrc
 .prettierignore
+*.mdc
 *.png
 *.ico
 *.ttf
