@@ -6,6 +6,12 @@ yarn.lock
 .gitignore
 .nvmrc
 .prettierignore
+*.mdc
 *.png
 *.ico
 *.ttf
+*.mp3
+*.wav
+*.aiff
+*.m4a
+*.mp4
