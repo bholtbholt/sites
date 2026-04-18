@@ -8,11 +8,11 @@
 	],
 	"devDependencies": {
 		"eslint-config": "workspace:^",
-		"prettier": "^3.8.1",
+		"prettier": "^3.8.3",
 		"prettier-plugin-svelte": "^3.5.1",
 		"prettier-plugin-tailwindcss": "^0.7.2",
-		"svelte": "^5.55.1",
-		"typescript": "^6.0.2"
+		"svelte": "^5.55.4",
+		"typescript": "^6.0.3"
 	},
 	"scripts": {
 		"get-host": "ip=\"http://$(ipconfig getifaddr en0):3000\" && printf $ip | pbcopy && echo $ip",
