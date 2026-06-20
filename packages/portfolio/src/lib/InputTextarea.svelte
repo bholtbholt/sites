@@ -19,5 +19,4 @@
     focus:outline-4 focus:-outline-offset-1 focus:outline-slate-400
     dark:bg-slate-900 dark:outline-slate-600 focus:dark:outline-slate-500
   "
-	required
-></textarea>
+	required></textarea>
