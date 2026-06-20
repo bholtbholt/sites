@@ -1,3 +1,16 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
+
+@theme {
+	--font-sans: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+	--default-font-family: var(--font-sans);
+}
+
+html {
+	color-scheme: light dark;
+}
+
+body {
+	@apply min-h-screen bg-orange-50 text-stone-800 antialiased dark:bg-stone-900 dark:text-stone-100;
+}
