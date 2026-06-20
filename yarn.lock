@@ -1855,6 +1855,16 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"bf@workspace:packages/bestfriend":
+  version: 0.0.0-use.local
+  resolution: "bf@workspace:packages/bestfriend"
+  dependencies:
+    eslint-config: "workspace:^"
+    svelte-config: "workspace:^"
+    typescript: "npm:^6.0.3"
+  languageName: unknown
+  linkType: soft
+
 "blake3-wasm@npm:2.1.5":
   version: 2.1.5
   resolution: "blake3-wasm@npm:2.1.5"
