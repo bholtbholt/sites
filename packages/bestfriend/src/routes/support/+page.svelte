@@ -19,7 +19,7 @@
 		Email
 		<a
 			class="font-medium text-orange-500 underline decoration-orange-300 underline-offset-2 transition hover:text-orange-500 dark:text-orange-400 dark:decoration-orange-500/50"
-			href="mailto:{site.email}">{site.email}</a
+			href="mailto:{site.bugs}">{site.bugs}</a
 		>
 	</p>
 
