@@ -12,7 +12,7 @@
 	class="prose prose-stone dark:prose-invert prose-sm max-w-none prose-headings:text-teal-700 dark:prose-headings:text-teal-400"
 >
 	<h1>Privacy Policy</h1>
-	<p class="text-stone-500 not-prose dark:text-stone-400">Last updated: {site.privacyUpdated}</p>
+	<p class="text-stone-500 not-prose dark:text-stone-400">Last updated: July 2026</p>
 
 	<p>
 		{site.name} is built by
