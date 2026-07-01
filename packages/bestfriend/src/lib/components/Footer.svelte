@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { resolve } from '$app/paths';
-	import { navLinks, site } from '$lib/site';
+	import { navLinks } from '$lib/site';
 	const footerLink = 'text-teal-700 transition hover:text-orange-500 dark:text-teal-400 dark:hover:text-orange-400';
 </script>
 
