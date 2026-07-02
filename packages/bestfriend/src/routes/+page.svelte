@@ -14,8 +14,21 @@
 	</h1>
 
 	<p class="text-lg sm:text-3xl leading-relaxed text-stone-600 dark:text-stone-300">
-		{tagline} Follow the development Substack for releases, updates, and tips!
+		{tagline}
+		<a
+			class="block my-2"
+			href="https://apps.apple.com/app/best-friend/id6782250723"
+			rel="external noopener noreferrer"
+			target="_blank"
+		>
+			<img src="/AppStore.svg" alt="Apple App Store logo" class="inline"/>
+		</a>
 	</p>
 
-	<iframe src="https://epbf.substack.com/embed?transparent=1" width="480" height="150" style="border: 0; background: transparent" frameborder="0" scrolling="no"></iframe>
+
+	<p class="text-stone-600 dark:text-stone-300 mb-0">
+		Follow the development Substack for releases, updates, and tips!
+	</p>
+
+	<iframe src="https://epbf.substack.com/embed?transparent=1" width="360" height="150" style="border: 0; background: transparent" frameborder="0" scrolling="no"></iframe>
 </div>
