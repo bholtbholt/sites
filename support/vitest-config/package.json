@@ -7,8 +7,8 @@
 		"unit:test": "cd $INIT_CWD && vitest run --config $PROJECT_CWD/support/vitest-config/vitest.config.js"
 	},
 	"devDependencies": {
-		"@sveltejs/vite-plugin-svelte": "^7.1.2",
-		"svelte": "^5.56.4",
-		"vitest": "^4.1.9"
+		"@sveltejs/vite-plugin-svelte": "^7.2.0",
+		"svelte": "^5.56.8",
+		"vitest": "^4.1.10"
 	}
 }
