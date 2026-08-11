@@ -12,5 +12,10 @@ html {
 }
 
 body {
-	@apply min-h-screen bg-orange-50 text-stone-800 antialiased dark:bg-stone-900 dark:text-stone-100;
+	@apply min-h-screen bg-slate-100 text-slate-800 antialiased dark:bg-slate-800 dark:text-slate-100;
+}
+
+/* Screenshots are tall portrait phone captures — never let one push the page wide. */
+img {
+	@apply max-w-full;
 }

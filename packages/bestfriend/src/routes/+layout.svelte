@@ -1,6 +1,6 @@
 <script lang="ts">
 	import '../app.css';
-	import { Footer, site } from '$lib/index';
+	import { Footer } from '$lib/index';
 	import type { Snippet } from 'svelte';
 
 	let {
@@ -10,11 +10,8 @@
 	} = $props();
 </script>
 
-<svelte:head>
-	<link rel="canonical" href={site.domain} />
-</svelte:head>
-
-<div class="mx-auto flex min-h-screen flex-col p-4">
+<!-- No padding here: bands run full-bleed and each section owns its own px/max-w. -->
+<div class="flex min-h-screen w-full flex-col">
 	<main class="flex-1">
 		{@render children()}
 	</main>
