@@ -8,6 +8,10 @@ yarn.lock
 .prettierignore
 *.mdc
 *.png
+*.jpg
+*.jpeg
+*.webp
+*.avif
 *.ico
 *.ttf
 *.mp3
@@ -16,3 +20,4 @@ yarn.lock
 *.m4a
 *.mp4
 *.svg
+robots.txt

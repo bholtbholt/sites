@@ -1119,6 +1119,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@rollup/pluginutils@npm:^5.0.5":
+  version: 5.4.0
+  resolution: "@rollup/pluginutils@npm:5.4.0"
+  dependencies:
+    "@types/estree": "npm:^1.0.0"
+    estree-walker: "npm:^2.0.2"
+    picomatch: "npm:^4.0.2"
+  peerDependencies:
+    rollup: ^1.20.0||^2.0.0||^3.0.0||^4.0.0
+  peerDependenciesMeta:
+    rollup:
+      optional: true
+  checksum: 10c0/ccc2cbd3a05df642df60ab05ffb81b2e564bd945e2a118bb8a474ea75b941033c8f44273133d4865643cca1492d0c80b14de1281f74779a64285a80fc3a194d8
+  languageName: node
+  linkType: hard
+
 "@sindresorhus/is@npm:^7.0.2":
   version: 7.2.0
   resolution: "@sindresorhus/is@npm:7.2.0"
@@ -1159,6 +1175,23 @@ __metadata:
     "@sveltejs/kit": ^2.0.0
     wrangler: ^4.0.0
   checksum: 10c0/a8d0139918ebee326566b2405ea8d3ffdd6fa48f0eceded35277bc01a34f2c75402ed264e60b080b1b015f6fece7d141a1fb104cd7f3cecb256d40206c0b22f6
+  languageName: node
+  linkType: hard
+
+"@sveltejs/enhanced-img@npm:^0.11.0":
+  version: 0.11.0
+  resolution: "@sveltejs/enhanced-img@npm:0.11.0"
+  dependencies:
+    magic-string: "npm:^0.30.5"
+    sharp: "npm:^0.34.1"
+    svelte-parse-markup: "npm:^0.1.5"
+    vite-imagetools: "npm:^9.0.3"
+    zimmerframe: "npm:^1.1.2"
+  peerDependencies:
+    "@sveltejs/vite-plugin-svelte": ^6.0.0 || ^7.0.0
+    svelte: ^5.0.0
+    vite: ^6.3.0 || >=7.0.0
+  checksum: 10c0/e9546ce5c3e9c8f0e09641ec03ff60a210cfd18e6113ca0578443662e2c23e32f2d623a00cd49a4d6efa47a3987e52dfd592be1182e7a3712eecf7afe782c96f
   languageName: node
   linkType: hard
 
@@ -2436,6 +2469,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"estree-walker@npm:^2.0.2":
+  version: 2.0.2
+  resolution: "estree-walker@npm:2.0.2"
+  checksum: 10c0/53a6c54e2019b8c914dc395890153ffdc2322781acf4bd7d1a32d7aedc1710807bdcd866ac133903d5629ec601fbb50abe8c2e5553c7f5a0afdd9b6af6c945af
+  languageName: node
+  linkType: hard
+
 "estree-walker@npm:^3.0.3":
   version: 3.0.3
   resolution: "estree-walker@npm:3.0.3"
@@ -2685,6 +2725,13 @@ __metadata:
   version: 7.0.5
   resolution: "ignore@npm:7.0.5"
   checksum: 10c0/ae00db89fe873064a093b8999fe4cc284b13ef2a178636211842cceb650b9c3e390d3339191acb145d81ed5379d2074840cf0c33a20bdbd6f32821f79eb4ad5d
+  languageName: node
+  linkType: hard
+
+"imagetools-core@npm:^9.1.0":
+  version: 9.1.0
+  resolution: "imagetools-core@npm:9.1.0"
+  checksum: 10c0/6f0778c1233f4592241a40ebe71dc51a5bc74ca95e1ee84192fa260bbedc2e3afb25f87cb12ce138111ba1344186d1b4e0d0ed08801148ab40146c71b77b5f30
   languageName: node
   linkType: hard
 
@@ -3351,6 +3398,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"picomatch@npm:^4.0.2":
+  version: 4.0.5
+  resolution: "picomatch@npm:4.0.5"
+  checksum: 10c0/947bc6b6e1ff1e6c5aaf95b107a0839d12802f4f7b867663f67d47accba939ca1cb582cf99dfc30438efa1c4648ac5990967e783e8929c36b03e8440704ef1bd
+  languageName: node
+  linkType: hard
+
 "picomatch@npm:^4.0.3, picomatch@npm:^4.0.4":
   version: 4.0.4
   resolution: "picomatch@npm:4.0.4"
@@ -3745,7 +3799,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sharp@npm:0.34.5":
+"sharp@npm:0.34.5, sharp@npm:^0.34.1":
   version: 0.34.5
   resolution: "sharp@npm:0.34.5"
   dependencies:
@@ -4019,6 +4073,7 @@ __metadata:
   resolution: "svelte-config@workspace:support/svelte-config"
   dependencies:
     "@sveltejs/adapter-cloudflare": "npm:^7.2.9"
+    "@sveltejs/enhanced-img": "npm:^0.11.0"
     "@sveltejs/kit": "npm:^2.66.0"
     "@sveltejs/vite-plugin-svelte": "npm:^7.1.2"
     "@tailwindcss/forms": "npm:^0.5.11"
@@ -4051,6 +4106,15 @@ __metadata:
     svelte:
       optional: true
   checksum: 10c0/c3fed4ddf8e73ca8186a2a4a026c5d8682ab5bb485618d088fd1fdcbf0f5369d842df2aa3697faedb33547a178ce15c425e3ab5fbe1f3e3dc99c49096e427800
+  languageName: node
+  linkType: hard
+
+"svelte-parse-markup@npm:^0.1.5":
+  version: 0.1.5
+  resolution: "svelte-parse-markup@npm:0.1.5"
+  peerDependencies:
+    svelte: ^3.0.0 || ^4.0.0 || ^5.0.0-next.1
+  checksum: 10c0/7f4a614df3f7dff0ee82e1a5766a7f1bc5a12b846c800d893edb7d73cd9d4ba2ff5ddd58f248fbd01c0c98355d63a45ce9c503df8ae0a1110dc1422a128af251
   languageName: node
   linkType: hard
 
@@ -4307,6 +4371,17 @@ __metadata:
     "@types/unist": "npm:^2.0.0"
     unist-util-stringify-position: "npm:^2.0.0"
   checksum: 10c0/ce50d90e0e5dc8f995f39602dd2404f1756388a54209c983d259b17c15e6f262a53546977a638065bc487d0657799fa96f4c1ba6b2915d9724a4968e9c7ff1c8
+  languageName: node
+  linkType: hard
+
+"vite-imagetools@npm:^9.0.3":
+  version: 9.0.3
+  resolution: "vite-imagetools@npm:9.0.3"
+  dependencies:
+    "@rollup/pluginutils": "npm:^5.0.5"
+    imagetools-core: "npm:^9.1.0"
+    sharp: "npm:^0.34.1"
+  checksum: 10c0/33a59c42381c32466fd4f80534040de1e6d2b57cff291e675641c2988d36c5e9972caf4173709ac506a8b63f2f48f79414c9070c8ecbfc1bc88a5f28e7d8dd2c
   languageName: node
   linkType: hard
 
