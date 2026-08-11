@@ -1,13 +1,13 @@
 <script lang="ts">
 	import { resolve } from '$app/paths';
-	import { site } from '$lib/index';
+	import { Seo, site } from '$lib/index';
 </script>
 
-<svelte:head>
-	<title>Privacy Policy — {site.name}</title>
-	<meta name="description" content="Privacy policy for Best Friend." />
-	<link rel="canonical" href="{site.domain}/privacy" />
-</svelte:head>
+<Seo
+	title="Privacy Policy — {site.name}"
+	description="{site.name} collects no personal data — everything stays on your device, and this site has no analytics, cookies, or tracking."
+	path="/privacy"
+/>
 
 <div class="mx-auto max-w-3xl px-5 py-16 sm:py-24">
 	<a

@@ -1,6 +1,5 @@
 <script lang="ts">
 	import AppStoreBadge from './AppStoreBadge.svelte';
-	import { site } from '$lib/site';
 </script>
 
 <section
@@ -8,7 +7,7 @@
 >
 	<div class="mx-auto max-w-2xl text-center">
 		<h2 class="text-3xl font-bold tracking-tight text-balance sm:text-4xl">
-			Your EP needs a Best Friend.<br/>Download now.
+			Your EP needs a Best Friend.<br />Download now.
 		</h2>
 		<div class="mt-8 flex flex-col items-center gap-4">
 			<AppStoreBadge />

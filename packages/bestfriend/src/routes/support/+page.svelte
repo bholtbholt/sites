@@ -1,16 +1,16 @@
 <script lang="ts">
 	import { resolve } from '$app/paths';
-	import { site } from '$lib/index';
+	import { Seo, site } from '$lib/index';
 
 	const link =
 		'font-medium text-blue-700 underline underline-offset-4 transition hover:text-orange-500 dark:text-blue-400 dark:hover:text-orange-400';
 </script>
 
-<svelte:head>
-	<title>Support — {site.name}</title>
-	<meta name="description" content="Get help with Best Friend." />
-	<link rel="canonical" href="{site.domain}/support" />
-</svelte:head>
+<Seo
+	title="Support — {site.name}"
+	description="Get help with {site.name}, the companion app for Teenage Engineering EP-133, EP-40 and EP-1320 samplers. Report a bug or send feedback."
+	path="/support"
+/>
 
 <div class="mx-auto max-w-3xl space-y-6 px-5 py-16 sm:py-24">
 	<a class="text-sm {link}" href={resolve('/')}>&larr; {site.name}</a>

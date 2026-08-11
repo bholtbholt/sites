@@ -2,13 +2,17 @@
 	import {
 		CallToAction,
 		Compatibility,
+		Faq,
+		faq,
 		FeatureBand,
 		FeatureGrid,
 		Hero,
+		homeSchema,
 		PhoneFan,
 		PhoneFrame,
 		Platforms,
-		site,
+		Seo,
+		seo,
 		StickyBar,
 		VideoFacade,
 	} from '$lib/index';
@@ -19,17 +23,11 @@
 	import stems from '$lib/assets/stems.png?enhanced';
 	import edit from '$lib/assets/edit.png?enhanced';
 
-	const tagline = 'The companion app for Teenage Engineering EP-Series samplers.';
-
 	// StickyBar goes solid once this element scrolls out of view.
 	let sentinel = $state<HTMLElement | null>(null);
 </script>
 
-<svelte:head>
-	<title>{site.name}</title>
-	<meta name="description" content={tagline} />
-	<link rel="canonical" href={site.domain} />
-</svelte:head>
+<Seo title={seo.title} description={seo.description} schema={homeSchema()} />
 
 <StickyBar {sentinel} />
 
@@ -50,9 +48,7 @@
 		Trim, envelope, volume, pitch, pan, play mode, time-stretch, MIDI channel — visible and editable
 		without diving through a menu. And of course, the waveform itself.
 	</p>
-	<p>
-		Themes for the EP-133, EP-40, EP-1320, or the system in both light and dark mode.
-	</p>
+	<p>Themes for the EP-133, EP-40, EP-1320, or the system in both light and dark mode.</p>
 </FeatureBand>
 
 <FeatureBand eyebrow="Sample Library" title="Move samples by the handful." mirrored tinted>
@@ -92,7 +88,8 @@
 	{/snippet}
 
 	<p>
-		Reduce the file size with crop, repitch, stereo to mono flattening, and changing the sample rate. While you're there, normalize to get more volume out of the sample.
+		Reduce the file size with crop, repitch, stereo to mono flattening, and changing the sample
+		rate. While you're there, normalize to get more volume out of the sample.
 	</p>
 	<p>
 		Then stack studio-grade effects on top: three-band EQ, 1176-style compression, distortion and
@@ -116,8 +113,8 @@
 	{/snippet}
 
 	<p>
-		Split any sample into isolated drums, bass, vocals, guitar, and instruments. Remix the levels or mute a
-		track entirely.
+		Split any sample into isolated drums, bass, vocals, guitar, and instruments. Remix the levels or
+		mute a track entirely, then send it to a pad on your EP-Series sampler.
 	</p>
 </FeatureBand>
 
@@ -139,7 +136,10 @@
 		Every pad in the group, waveform and name, laid out the way the hardware is. Move through A, B,
 		C, and D without losing your place.
 	</p>
-	<p>And apply togglable performance effects like individual pad mutes, pitch changes, or reverse playback.</p>
+	<p>
+		And apply togglable performance effects like individual pad mutes, pitch changes, or reverse
+		playback.
+	</p>
 </FeatureBand>
 
 <FeatureBand eyebrow="Multi-samples" title="Each note, as it should sound." mirrored tinted>
@@ -158,8 +158,8 @@
 	{/snippet}
 
 	<p>
-		Build and edit multi-samples on your EP-40 or EP-1320. Set the length, crop and
-		loop of each layer, preview it, then save it as a single waveform.
+		Build and edit multi-samples on your EP-40 or EP-1320. Set the length, crop and loop of each
+		layer, preview it, then save it as a single waveform.
 	</p>
 </FeatureBand>
 
@@ -179,7 +179,8 @@
 	{/snippet}
 
 	<p>
-		Arrange a bank on your hardware, then take a Bank Snapshot to instantly recall later - even across devices. Backup your project and system directly from Best Friend.
+		Arrange a bank on your EP-133, EP-40, or EP-1320, then take a Bank Snapshot to instantly recall
+		later - even across devices. Backup your project and system directly from Best Friend.
 	</p>
 </FeatureBand>
 
@@ -188,5 +189,7 @@
 <Platforms />
 
 <Compatibility />
+
+<Faq items={faq} tinted />
 
 <CallToAction />

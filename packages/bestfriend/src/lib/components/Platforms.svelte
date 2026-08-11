@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { platforms } from '$lib/site';
+	import { platforms, site } from '$lib/site';
 </script>
 
 <section
@@ -26,6 +26,18 @@
 					{platform}
 				</li>
 			{/each}
+
+			<!-- Dashed ring marks this one as not-yet-shipping, so it reads differently to the
+			     platforms you can actually buy today. -->
+			<li
+				class="rounded-full border border-dashed border-slate-400 px-5 py-2 font-semibold text-slate-500 dark:border-slate-600 dark:text-slate-400"
+			>
+				Android
+			</li>
 		</ul>
+
+		<p class="mt-6 text-slate-500 dark:text-slate-400">
+			Android in development, expected {site.androidEta}.
+		</p>
 	</div>
 </section>

@@ -10,8 +10,8 @@
 		</h1>
 
 		<p class="mx-auto mt-6 max-w-4xl text-xl leading-relaxed text-balance sm:text-2xl">
-			The unrivalled companion app for Teenage Engineering EP-Series samplers. Add and edit samples,
-			make backups, and so much more.
+			The unrivalled companion app for Teenage Engineering EP-Series samplers — the EP-133 K.O. II,
+			EP-40 Riddim, and EP-1320 Medieval. Add and edit samples, make backups, and so much more.
 		</p>
 
 		<div class="mt-8 flex flex-col items-center gap-3">

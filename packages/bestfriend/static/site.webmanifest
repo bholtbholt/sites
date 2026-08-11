@@ -1,6 +1,11 @@
 {
 	"name": "Best Friend",
 	"short_name": "EPBF",
+	"description": "Companion app for Teenage Engineering EP-133, EP-40 and EP-1320 samplers. Edit samples, split stems, manage pads, back up projects. iPhone, iPad and Mac.",
+	"categories": ["music", "productivity", "utilities"],
+	"lang": "en",
+	"start_url": "/",
+	"scope": "/",
 	"icons": [
 		{
 			"src": "/web-app-manifest-192x192.png",

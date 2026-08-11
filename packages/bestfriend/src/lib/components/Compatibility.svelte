@@ -1,5 +1,7 @@
 <script lang="ts">
-	import { site, devices } from '$lib/site';
+	import { resolve } from '$app/paths';
+	import { site } from '$lib/site';
+	import { devices } from '$lib/devices';
 </script>
 
 <section class="px-5 py-16 sm:py-24">
@@ -13,24 +15,30 @@
 
 		<ul class="mt-8 flex flex-wrap gap-3">
 			{#each devices as device (device.name)}
-				<li
-					class="rounded-xl bg-white px-4 py-3 shadow-sm ring-1 ring-slate-900/5 dark:bg-slate-900 dark:ring-white/10"
-				>
-					<span class="font-semibold">{device.name}</span>
-					{#if device.sub}
+				<li>
+					<a
+						class="block rounded-xl bg-white px-4 py-3 shadow-sm ring-1 ring-slate-900/5 transition hover:ring-blue-700/30 dark:bg-slate-900 dark:ring-white/10 dark:hover:ring-blue-400/30"
+						href={resolve('/[device=device]', { device: device.slug })}
+					>
+						<span class="font-semibold">{device.name}</span>
 						<span class="text-slate-500 dark:text-slate-400"> {device.sub}</span>
-					{/if}
+					</a>
 				</li>
 			{/each}
 		</ul>
 
 		<div class="mt-8 space-y-4 text-lg leading-relaxed text-slate-600 dark:text-slate-300">
 			<p>
-				{site.name} is an extended display and management tool that requires a connection to the hardware. Use a USB-C to USB-C data cable.
+				{site.name} is an extended display and management tool that requires a connection to the Teenage
+				Engineering hardware. Use a USB-C to USB-C data cable.
 			</p>
 			<p>
-				On a Lightning iPhone or iPad, use an MFi-certified Lightning to USB adapter with a USB-IF certified
-				USB-A to USB-C cable.
+				On a Lightning iPhone or iPad, use an MFi-certified Lightning to USB adapter with a USB-IF
+				certified USB-A to USB-C cable.
+			</p>
+			<p>
+				Requires iOS {site.minOs}, iPadOS {site.minOs}, or macOS {site.minOs} or later. On a Mac you'll
+				need Apple silicon.
 			</p>
 			{#if site.cableGuideUrl}
 				<p>
