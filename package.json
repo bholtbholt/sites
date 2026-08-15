@@ -12,7 +12,7 @@
 		"prettier-plugin-svelte": "^4.1.1",
 		"prettier-plugin-tailwindcss": "^0.8.1",
 		"svelte": "^5.56.8",
-		"typescript": "^6.0.3"
+		"typescript": "^7.0.2"
 	},
 	"scripts": {
 		"get-host": "ip=\"http://$(ipconfig getifaddr en0):3000\" && printf $ip | pbcopy && echo $ip",

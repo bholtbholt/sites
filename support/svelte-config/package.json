@@ -22,10 +22,10 @@
 		"@tailwindcss/vite": "^4.3.3",
 		"mdsvex": "^0.12.8",
 		"svelte": "^5.56.8",
-		"svelte-check": "^4.7.1",
+		"svelte-check": "^4.7.5",
 		"tailwindcss": "^4.3.3",
-		"typescript": "^6.0.3",
-		"vite": "^8.0.16",
+		"typescript": "^7.0.2",
+		"vite": "^8.2.1",
 		"wrangler": "^4.103.0"
 	}
 }
