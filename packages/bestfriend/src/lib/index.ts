@@ -13,6 +13,7 @@ export { default as Footer } from './components/Footer.svelte';
 export { default as Hero } from './components/Hero.svelte';
 export { default as PhoneFan } from './components/PhoneFan.svelte';
 export { default as PhoneFrame } from './components/PhoneFrame.svelte';
+export { default as PhoneShot } from './components/PhoneShot.svelte';
 export { default as Platforms } from './components/Platforms.svelte';
 export { default as Seo } from './components/Seo.svelte';
 export { default as StickyBar } from './components/StickyBar.svelte';

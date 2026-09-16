@@ -15,7 +15,8 @@
 			One app for any of your Apple devices.
 		</h2>
 		<p class="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-slate-600 dark:text-slate-300">
-			Buy it once and run it on iPhone, iPad, and Mac.
+			Buy it once and run it on iPhone, iPad, and Mac. iCloud keeps your Library in sync across
+			every one of them.
 		</p>
 
 		<ul class="mt-8 flex flex-wrap justify-center gap-3">

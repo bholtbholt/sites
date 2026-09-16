@@ -7,7 +7,7 @@ export const seo = {
 	// in a SERP, but the visible head is the part that matters.
 	title: `${site.name} — Companion App for Teenage Engineering EP-133, EP-40 & EP-1320`,
 	description:
-		'The unrivalled companion app for Teenage Engineering EP-133, EP-40 and EP-1320 samplers. Edit samples, split stems, manage pads, back up projects. iPhone, iPad and Mac.',
+		'The unrivalled companion app for Teenage Engineering EP-133, EP-40 and EP-1320 samplers. See your Scenes, bounce real stems, edit samples, back up projects. iPhone, iPad, Mac.',
 	image: `${site.domain}/og-image.png`,
 	imageAlt: `${site.name} running on iPhone next to a Teenage Engineering EP-Series sampler pad editor`,
 } as const;
@@ -50,8 +50,8 @@ const application = {
 	image: seo.image,
 	screenshot: [
 		url('/screenshot-pads.png'),
-		url('/screenshot-bank.png'),
-		url('/screenshot-edit.png'),
+		url('/screenshot-scenes.png'),
+		url('/screenshot-bounce.png'),
 	],
 	featureList: featureGroups.flatMap((group) => group.items),
 	author: { '@id': url('/#developer') },

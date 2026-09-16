@@ -13,7 +13,7 @@ export function GET() {
 
 > ${seo.description}
 
-${site.name} (App Store listing: "${site.storeName}") is the unrivalled companion app for Teenage Engineering EP-Series hardware samplers, built by ${site.developer}. It connects to the sampler over a USB-C data cable and gives you a full-screen editor for pads and samples, stem splitting, multi-sample building, and backups. It is a one-time purchase of $${site.price} ${site.priceCurrency} covering ${platforms.join(', ')}. It is not affiliated with, endorsed by, or sponsored by Teenage Engineering.
+${site.name} (App Store listing: "${site.storeName}") is the unrivalled companion app for Teenage Engineering EP-Series hardware samplers, built by ${site.developer}. It connects to the sampler over a USB-C data cable and gives you a full-screen editor for pads and samples, a Scene and Song timeline with note and fader automation lanes, multi-track audio stem bouncing straight off the hardware, a MIDI controller keyboard with chords and an arpeggiator, stem splitting, multi-sample building, and an iCloud-synced Library of backups, Bank Snapshots, and bounces. It is a one-time purchase of $${site.price} ${site.priceCurrency} covering ${platforms.join(', ')}. It is not affiliated with, endorsed by, or sponsored by Teenage Engineering.
 
 ## Supported hardware
 

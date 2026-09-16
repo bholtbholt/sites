@@ -23,7 +23,10 @@ const cableAnswer = (full: string) =>
 	`Use a USB-C to USB-C data cable to connect your ${full} to an iPhone, iPad, or Mac. Charge-only cables will not work. On a Lightning iPhone or iPad, use an MFi-certified Lightning to USB adapter together with a USB-IF certified USB-A to USB-C cable.`;
 
 const backupAnswer = (full: string) =>
-	`Yes. Best Friend can take a Bank Snapshot of a single bank, back up the project you are working on, or back up the entire system on your ${full}. Every backup is named and dated, and any of them can be loaded back in one tap.`;
+	`Yes. Best Friend can take a Bank Snapshot of a single bank, back up the project you are working on, or back up the entire system on your ${full}. Every backup is named and dated, and any of them can be loaded back in one tap. You can preview a backup's audio before restoring it, pull a single project back out of a full system backup, and iCloud keeps everything in sync across your iPhone, iPad, and Mac.`;
+
+const bounceAnswer = (full: string) =>
+	`Yes. Best Friend bounces multi-track audio stems of a Scene or an entire Song directly off your ${full}. Every one of the 48 pads is isolated using the real samples and pad data rather than AI separation, with fader automation included. Export all 48 individually, as group mixdowns, or as a stereo mixdown, plus the MIDI data, then open them in your DAW.`;
 
 const osAnswer = (full: string) =>
 	`Best Friend requires iOS ${site.minOs}, iPadOS ${site.minOs}, or macOS ${site.minOs} or later, and a Mac needs Apple silicon (M1 or later). Your ${full} itself needs no update — the app talks to it over USB.`;
@@ -40,6 +43,18 @@ export const devices: readonly Device[] = [
 			'The EP-133 K.O. II gives you twelve pads and a 3-char display. Best Friend gives you the rest of the screen: every pad setting laid out at once, a full sample editor, and backups you can actually recall.',
 		highlights: [
 			{
+				title: 'Bounce real EP-133 stems',
+				body: 'Export multi-track audio stems of a Scene or Song straight off the EP-133. All 48 pads come out isolated from the real samples and pad data — not AI separation — with fader automation included. Take them as individual stems, group mixdowns, or a stereo mixdown, along with the MIDI, and open the lot in your DAW.',
+			},
+			{
+				title: 'See a whole EP-133 Scene',
+				body: 'Every sequenced note across every bank in a Scene or Song on one timeline, with the fader automation lanes underneath and the playhead following as it plays. The 3-char display can only hint at what you programmed; this shows you.',
+			},
+			{
+				title: 'Play the EP-133 from a keyboard',
+				body: 'A velocity-sensitive keyboard with major, minor, suspended, and diminished triads at the press of a button, 6th, 7th, and 9th extensions, custom chords saved to any button, up to three split zones, and an arpeggiator synced to the EP-133 clock.',
+			},
+			{
 				title: 'Every EP-133 pad setting on one screen',
 				body: 'Trim, attack and release, volume, pitch, pan, play mode, time-stretch, and MIDI channel — visible and editable together, with the waveform above them, all with hardware control. No menu diving on the hardware necessary.',
 			},
@@ -48,8 +63,8 @@ export const devices: readonly Device[] = [
 				body: 'Every pad in the group as a grid of waveforms and names, laid out the way the hardware is. Move through A, B, C, and D without losing your place.',
 			},
 			{
-				title: 'Bank Snapshots',
-				body: 'Arrange a bank on the EP-133, snapshot it, and recall it later — even on a different device. Project and system backups cover everything else.',
+				title: 'A Library for everything you save',
+				body: 'Bank Snapshots, project and system backups, and your bounces arranged together. Arrange a bank on the EP-133, snapshot it, and recall it later — even on a different EP. Preview a backup before restoring it, pull a project out of a system backup, and let iCloud sync all of it across your Apple devices.',
 			},
 			{
 				title: 'Performance effects per pad',
@@ -74,6 +89,10 @@ export const devices: readonly Device[] = [
 				a: cableAnswer('EP-133 K.O. II'),
 			},
 			{ q: 'Can I back up my EP-133 K.O. II?', a: backupAnswer('EP-133 K.O. II') },
+			{
+				q: 'Can I export audio stems from my EP-133 K.O. II?',
+				a: bounceAnswer('EP-133 K.O. II'),
+			},
 			{
 				q: 'Can I get samples onto the EP-133 in bulk?',
 				a: 'Yes. Import samples from Files or pull audio straight out of a video, then select as many as you like and move, share, or delete them in one pass. You can also drag and drop to reorder samples or reassign pads across the project.',
@@ -104,12 +123,24 @@ export const devices: readonly Device[] = [
 				body: 'Layer samples into one playable instrument on the EP-40. Set the length, crop and loop each layer, preview it, then save the whole thing as a single waveform. Come back later and edit one layer without rebuilding the rest.',
 			},
 			{
+				title: 'Bounce real EP-40 stems',
+				body: 'Export multi-track audio stems of a Scene or Song straight off the EP-40. All 48 pads come out isolated from the real samples and pad data — not AI separation — with fader automation included. Take individual stems, group mixdowns, a stereo mixdown, and the MIDI, then mix it in your DAW.',
+			},
+			{
+				title: 'See a whole EP-40 Scene',
+				body: 'Every sequenced note across every bank in a Scene or Song on one timeline, with the fader automation lanes for each bank underneath and the playhead following along as it plays.',
+			},
+			{
+				title: 'Play the EP-40 from a keyboard',
+				body: 'A velocity-sensitive keyboard with one-button major, minor, suspended, and diminished triads, 6th, 7th, and 9th extensions, custom chords on any button, up to three split zones, and an arpeggiator synced to the EP-40 clock.',
+			},
+			{
 				title: 'Every EP-40 pad setting on one screen',
 				body: 'Trim, attack and release, volume, pitch, pan, play mode, time-stretch, and MIDI channel together with the waveform, plus hardware control over the trim window.',
 			},
 			{
-				title: 'Bank Snapshots and backups',
-				body: 'Snapshot a single EP-40 bank to recall later, back up the project you are working on, or back up the entire system — all named, dated, and one tap from being restored.',
+				title: 'A Library for everything you save',
+				body: 'Snapshot a single EP-40 bank to recall later, back up the project you are working on, or back up the entire system — all named, dated, and one tap from being restored, alongside your bounces. Preview a backup before restoring it, extract a project from a system backup, and iCloud syncs the whole Library across your Apple devices.',
 			},
 			{
 				title: 'A real sample editor',
@@ -138,6 +169,7 @@ export const devices: readonly Device[] = [
 				a: cableAnswer('EP-40 Riddim'),
 			},
 			{ q: 'Can I back up my EP-40 Riddim?', a: backupAnswer('EP-40 Riddim') },
+			{ q: 'Can I export audio stems from my EP-40 Riddim?', a: bounceAnswer('EP-40 Riddim') },
 			{ q: 'What do I need to run Best Friend?', a: osAnswer('EP-40 Riddim') },
 		],
 	},
@@ -156,6 +188,18 @@ export const devices: readonly Device[] = [
 				body: 'Layer samples into one playable instrument on the EP-1320. Set the length, crop and loop each layer, preview it, then save the whole thing as a single waveform — and edit a single layer later without starting over.',
 			},
 			{
+				title: 'Bounce real EP-1320 stems',
+				body: 'Export multi-track audio stems of a Scene or Song straight off the EP-1320. All 48 pads come out isolated from the real samples and pad data — not AI separation — with fader automation included. Individual stems, group mixdowns, a stereo mixdown, and the MIDI, all ready for your DAW.',
+			},
+			{
+				title: 'See a whole EP-1320 Scene',
+				body: 'Every sequenced note across every bank in a Scene or Song on one timeline, with the fader automation lanes underneath and the playhead following as it plays.',
+			},
+			{
+				title: 'Play the EP-1320 from a keyboard',
+				body: 'A velocity-sensitive keyboard with one-button major, minor, suspended, and diminished triads, 6th, 7th, and 9th extensions, your own chords saved to any button, up to three split zones, and an arpeggiator synced to the EP-1320 clock.',
+			},
+			{
 				title: 'Every EP-1320 pad setting on one screen',
 				body: 'Trim, attack and release, volume, pitch, pan, play mode, time-stretch, and MIDI channel, with the waveform above them and hardware control over the trim window.',
 			},
@@ -164,8 +208,8 @@ export const devices: readonly Device[] = [
 				body: 'Every pad in the group as a grid of waveforms and names. Toggle mute, pitch up, pitch down, and reverse on individual pads without leaving the view.',
 			},
 			{
-				title: 'Bank Snapshots and backups',
-				body: 'Snapshot a single EP-1320 bank to recall later, back up the current project, or back up the entire system. Everything is named, dated, and restorable in one tap.',
+				title: 'A Library for everything you save',
+				body: 'Snapshot a single EP-1320 bank to recall later, back up the current project, or back up the entire system. Everything is named, dated, and restorable in one tap, filed alongside your bounces. Preview a backup before restoring it, extract a project from a system backup, and iCloud keeps it all in sync across your Apple devices.',
 			},
 			{
 				title: 'A real sample editor',
@@ -190,6 +234,10 @@ export const devices: readonly Device[] = [
 				a: cableAnswer('EP-1320 Medieval'),
 			},
 			{ q: 'Can I back up my EP-1320 Medieval?', a: backupAnswer('EP-1320 Medieval') },
+			{
+				q: 'Can I export audio stems from my EP-1320 Medieval?',
+				a: bounceAnswer('EP-1320 Medieval'),
+			},
 			{
 				q: 'Can I add my own samples to the EP-1320?',
 				a: 'Yes. Import samples from Files or pull audio straight out of a video, edit them in Best Friend, then send them to any pad. Existing samples can be edited and replaced in place.',
@@ -238,6 +286,26 @@ export const faq: readonly FaqItem[] = [
 	{
 		q: 'Can I back up my EP-133, EP-40, or EP-1320?',
 		a: 'Yes. Best Friend takes Bank Snapshots of a single bank, project backups of the set you are working on, and system backups of everything on the device. All of them are named and dated, and any of them is one tap from being loaded back.',
+	},
+	{
+		q: 'Can I export individual stems from my EP?',
+		a: 'Yes. Best Friend bounces multi-track audio stems of a Scene or an entire Song directly off the hardware. Every one of the 48 pads comes out as its own isolated track, with fader automation included. You can also export group mixdowns, a stereo mixdown, and the MIDI data from a Scene or Song, then bring everything into your DAW.',
+	},
+	{
+		q: 'Does Best Friend use AI to separate stems?',
+		a: 'Not for bouncing. When you export stems from a Scene or Song, Best Friend reads the real samples and pad data off your EP, so every pad is genuinely isolated rather than guessed at by a separation model. Stem splitting is a separate feature: that one does use source separation, but only to pull drums, bass, vocals, guitar, and instruments out of a single sample you bring in.',
+	},
+	{
+		q: 'Can I see my Scenes and Songs in Best Friend?',
+		a: 'Yes. Best Friend shows every sequenced note across every bank in a Scene or Song on one timeline, along with the fader automation lanes for each bank. The playhead follows automatically as it plays.',
+	},
+	{
+		q: 'Can I use Best Friend as a MIDI controller?',
+		a: 'Yes. Best Friend includes a velocity-sensitive keyboard that plays your EP. Build major, minor, suspended, or diminished triads with a button and add a 6th, 7th, 9th, or the lower octave, save your own chords to any Chord or Extension button, split the keys into up to three zones for alternate positions, and run an arpeggiator with 4 modes, 6 rates, and 3 octaves synced to the hardware clock.',
+	},
+	{
+		q: 'Does Best Friend sync across my devices?',
+		a: 'Yes. iCloud automatically backs up and syncs your Bank Snapshots, project and system backups, and bounces across your iPhone, iPad, and Mac. Anything you save on one Apple device is there on the others.',
 	},
 	{
 		q: 'Can Best Friend split a song into stems?',

@@ -11,7 +11,7 @@ export const site = {
 	developerUrl: 'https://brianholt.ca',
 	appId: '6782250723',
 	appStoreUrl: 'https://apps.apple.com/app/best-friend/id6782250723',
-	price: '8.99',
+	price: '9.99',
 	priceCurrency: 'USD',
 	// Minimum OS across all three platforms. Apple ships them in lockstep, so one number covers it.
 	minOs: '26',

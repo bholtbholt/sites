@@ -1,15 +1,16 @@
 <script lang="ts">
 	import PhoneFrame from './PhoneFrame.svelte';
-	import padEp133 from '$lib/assets/pad-ep133.png?enhanced';
+	import padSystem from '$lib/assets/pad-system.png?enhanced';
+	import padEp133Dark from '$lib/assets/pad-ep133-dark.png?enhanced';
 	import padEp40 from '$lib/assets/pad-ep40.png?enhanced';
-	import padEp1320 from '$lib/assets/pad-ep1320.png?enhanced';
-	import padDark from '$lib/assets/pad-dark.png?enhanced';
+	import padEp1320Dark from '$lib/assets/pad-ep1320-dark.png?enhanced';
 
+	// Alternating light and dark so the fan shows off all four themes at a glance.
 	const shots = [
-		{ src: padEp133, alt: 'Best Friend pad settings EP-133 light theme' },
-		{ src: padEp40, alt: 'Best Friend pad settings EP-40 dark theme' },
-		{ src: padEp1320, alt: 'Best Friend pad settings EP-1320 light theme' },
-		{ src: padDark, alt: 'Best Friend pad settings in the dark Apple theme' },
+		{ src: padSystem, alt: 'Best Friend pad settings in the light Apple theme' },
+		{ src: padEp133Dark, alt: 'Best Friend pad settings in the EP-133 dark theme' },
+		{ src: padEp40, alt: 'Best Friend pad settings in the EP-40 light theme' },
+		{ src: padEp1320Dark, alt: 'Best Friend pad settings in the EP-1320 dark theme' },
 	];
 
 	// Fan out from the centre: the outer phones lean hardest, and each one
