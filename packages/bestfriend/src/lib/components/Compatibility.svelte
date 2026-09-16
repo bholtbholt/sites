@@ -37,8 +37,8 @@
 				certified USB-A to USB-C cable.
 			</p>
 			<p>
-				Requires iOS {site.minOs}, iPadOS {site.minOs}, or macOS {site.minOs} or later. On a Mac you'll
-				need Apple silicon.
+				Requires iOS {site.minOs}, iPadOS {site.minOs}, or macOS {site.minOs} or later, or Android {site.minAndroid}
+				or later. On a Mac you'll need Apple Silicon.
 			</p>
 			{#if site.cableGuideUrl}
 				<p>

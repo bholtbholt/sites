@@ -26,6 +26,11 @@
 	<!-- Safari's Smart App Banner. Not SEO, but this is the one place every page shares. -->
 	<meta name="apple-itunes-app" content="app-id={site.appId}" />
 
+	<!-- App Links, so Android surfaces that pick them up point at the Play listing. -->
+	<meta property="al:android:package" content={site.androidPackage} />
+	<meta property="al:android:app_name" content={site.name} />
+	<meta property="al:android:url" content={site.playStoreUrl} />
+
 	<meta property="og:type" content="website" />
 	<meta property="og:site_name" content={site.name} />
 	<meta property="og:title" content={title} />

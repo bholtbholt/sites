@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { resolve } from '$app/paths';
 	import {
-		AppStoreBadge,
 		CallToAction,
 		Compatibility,
 		deviceSchema,
@@ -13,6 +12,7 @@
 		Seo,
 		site,
 		StickyBar,
+		StoreBadges,
 	} from '$lib/index';
 	import padEp133 from '$lib/assets/pad-ep133.png?enhanced';
 	import padEp40 from '$lib/assets/pad-ep40.png?enhanced';
@@ -90,9 +90,9 @@
 				</p>
 
 				<div class="mt-8 flex flex-col items-start gap-3">
-					<AppStoreBadge />
+					<StoreBadges class="items-start" />
 					<p class="text-sm text-slate-500 dark:text-slate-400">
-						{platforms.join(' · ')} — one purchase
+						{platforms.join(' · ')}
 					</p>
 				</div>
 			</div>

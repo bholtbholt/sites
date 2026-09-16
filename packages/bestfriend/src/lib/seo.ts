@@ -7,9 +7,9 @@ export const seo = {
 	// in a SERP, but the visible head is the part that matters.
 	title: `${site.name} — Companion App for Teenage Engineering EP-133, EP-40 & EP-1320`,
 	description:
-		'The unrivalled companion app for Teenage Engineering EP-133, EP-40 and EP-1320 samplers. See your Scenes, bounce real stems, edit samples, back up projects. iPhone, iPad, Mac.',
+		'The unrivalled companion app for Teenage Engineering EP-133, EP-40 and EP-1320 samplers. See your Scenes, bounce real stems, edit samples, back up projects. iPhone, iPad, Mac, and Android.',
 	image: `${site.domain}/og-image.png`,
-	imageAlt: `${site.name} running on iPhone next to a Teenage Engineering EP-Series sampler pad editor`,
+	imageAlt: `${site.name} running on a phone next to a Teenage Engineering EP-Series sampler pad editor`,
 } as const;
 
 const url = (path = '') => `${site.domain}${path}`;
@@ -44,8 +44,8 @@ const application = {
 	url: url('/'),
 	applicationCategory: 'MultimediaApplication',
 	applicationSubCategory: 'Music',
-	operatingSystem: `iOS ${site.minOs}, iPadOS ${site.minOs}, macOS ${site.minOs}`,
-	softwareRequirements: `iOS ${site.minOs}, iPadOS ${site.minOs}, or macOS ${site.minOs} or later. Mac requires Apple silicon (M1 or later). Requires a Teenage Engineering EP-133 K.O. II, EP-40 Riddim, or EP-1320 Medieval connected by USB-C data cable.`,
+	operatingSystem: `iOS ${site.minOs}, iPadOS ${site.minOs}, macOS ${site.minOs}, Android ${site.minAndroid}`,
+	softwareRequirements: `iOS ${site.minOs}, iPadOS ${site.minOs}, or macOS ${site.minOs} or later, or Android ${site.minAndroid} or later. Mac requires Apple silicon (M1 or later); Android requires USB OTG support. Requires a Teenage Engineering EP-133 K.O. II, EP-40 Riddim, or EP-1320 Medieval connected by USB-C data cable.`,
 	availableOnDevice: platforms.join(', '),
 	image: seo.image,
 	screenshot: [
@@ -56,18 +56,19 @@ const application = {
 	featureList: featureGroups.flatMap((group) => group.items),
 	author: { '@id': url('/#developer') },
 	publisher: { '@id': url('/#developer') },
-	downloadUrl: site.appStoreUrl,
-	installUrl: site.appStoreUrl,
-	// No aggregateRating: the App Store has too few ratings for one to mean anything yet.
+	downloadUrl: [site.appStoreUrl, site.playStoreUrl],
+	installUrl: [site.appStoreUrl, site.playStoreUrl],
+	// No aggregateRating: the stores have too few ratings for one to mean anything yet.
 	offers: {
 		'@type': 'Offer',
 		price: site.price,
 		priceCurrency: site.priceCurrency,
 		availability: 'https://schema.org/InStock',
-		url: site.appStoreUrl,
-		category: 'One-time purchase, universal across iPhone, iPad, and Mac',
+		url: [site.appStoreUrl, site.playStoreUrl],
+		category:
+			'One-time purchase per store, universal across iPhone, iPad, and Mac, and across your Android devices',
 	},
-	sameAs: [site.appStoreUrl, site.instagramUrl, site.substackUrl],
+	sameAs: [site.appStoreUrl, site.playStoreUrl, site.instagramUrl, site.substackUrl],
 };
 
 const faqPage = (id: string, questions: readonly FaqItem[]) => ({

@@ -11,15 +11,17 @@ export const site = {
 	developerUrl: 'https://brianholt.ca',
 	appId: '6782250723',
 	appStoreUrl: 'https://apps.apple.com/app/best-friend/id6782250723',
+	androidPackage: 'com.studio133.bestfriend',
+	playStoreUrl: 'https://play.google.com/store/apps/details?id=com.studio133.bestfriend',
 	price: '9.99',
 	priceCurrency: 'USD',
-	// Minimum OS across all three platforms. Apple ships them in lockstep, so one number covers it.
+	// Minimum OS across the Apple platforms. Apple ships them in lockstep, so one number
+	// covers iOS, iPadOS, and macOS. Android versions its own way, hence the separate number.
 	minOs: '26',
-	// Android port. Kept out of the SoftwareApplication schema until it actually ships —
-	// that block describes what can be downloaded today.
-	androidEta: 'September 2026',
+	minAndroid: '12',
 	substackUrl: 'https://epbf.substack.com',
 	instagramUrl: 'https://www.instagram.com/badbadpower',
+	youtubeUrl: 'https://www.youtube.com/@badbadpower',
 	betaFormUrl: 'https://forms.gle/jvMsX5sYRAZZVqPu7',
 	youtubeId: 'X7Qb79Qyd0E',
 	youtubeTitle:
@@ -33,4 +35,4 @@ export const navLinks = [
 	{ href: '/privacy', label: 'Privacy' },
 ] as const;
 
-export const platforms = ['iPhone', 'iPad', 'Mac'] as const;
+export const platforms = ['iPhone', 'iPad', 'Mac', 'Android'] as const;

@@ -3,7 +3,6 @@ export { devices, deviceBySlug, faq, type Device, type FaqItem } from './devices
 export { featureGroups, type FeatureGroup } from './features';
 export { seo, homeSchema, deviceSchema, deviceTitle, ldJsonTag } from './seo';
 
-export { default as AppStoreBadge } from './components/AppStoreBadge.svelte';
 export { default as CallToAction } from './components/CallToAction.svelte';
 export { default as Compatibility } from './components/Compatibility.svelte';
 export { default as Faq } from './components/Faq.svelte';
@@ -17,4 +16,5 @@ export { default as PhoneShot } from './components/PhoneShot.svelte';
 export { default as Platforms } from './components/Platforms.svelte';
 export { default as Seo } from './components/Seo.svelte';
 export { default as StickyBar } from './components/StickyBar.svelte';
+export { default as StoreBadges } from './components/StoreBadges.svelte';
 export { default as VideoFacade } from './components/VideoFacade.svelte';

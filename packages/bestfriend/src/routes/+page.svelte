@@ -143,7 +143,7 @@
 	</p>
 	<p>
 		Then stack studio-grade effects on top: three-band EQ, 1176-style compression, distortion and
-		saturation, Small Stone phaser, Juno chorus, tremolo, delay, and reverb.
+		saturation, Octaver, Small Stone phaser, Juno chorus, tremolo, delay, and reverb.
 	</p>
 	<p>
 		On the EP-40 and EP-1320, layer several samples into one multi-sample — crop and loop each
@@ -161,7 +161,7 @@
 
 	<p>
 		Split any sample you bring in into isolated drums, bass, vocals, guitar, and instruments. Remix
-		the levels or mute a track entirely, then send it to a pad on your EP-Series sampler.
+		the levels or mute a track entirely, then send it to a pad.
 	</p>
 </FeatureBand>
 
@@ -193,8 +193,8 @@
 		restore it, or pull a single Project back out of a full System backup.
 	</p>
 	<p>
-		iCloud keeps all of it in sync across your iPhone, iPad, and Mac, automatically, without you
-		thinking about it.
+		On Apple devices iCloud keeps all of it in sync across your iPhone, iPad, and Mac,
+		automatically, without you thinking about it.
 	</p>
 </FeatureBand>
 
