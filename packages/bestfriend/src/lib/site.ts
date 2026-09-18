@@ -28,6 +28,17 @@ export const site = {
 		'Introducing Best Friend: The Teenage Engineering EP-133, EP-40, and EP-1320 Companion App',
 	youtubeUploadDate: '2026-08-02',
 	cableGuideUrl: 'https://www.instagram.com/reel/DawLuoiuV6X',
+	// The storefronts worth asking for ratings at build time. Apple has no global endpoint,
+	// only per-country ones, so this is the top five rather than all ~175.
+	reviewStorefronts: ['us', 'gb', 'de', 'ca', 'jp'],
+	// Ratings from every storefront we don't query. The five above summed to 40 on 2026-09-17,
+	// against 60 worldwide in App Store Connect, so the rest of the world accounts for 20.
+	// This is a fixed number against a moving one: recheck Connect when the total looks off,
+	// and re-derive it rather than letting it drift.
+	ratingPadding: 20,
+	// Used when the build-time lookup fails, so a flaky Apple never breaks a deploy. Already
+	// worldwide, straight from App Store Connect, so `ratingPadding` does not apply to it.
+	fallbackRating: { value: 4.9, count: 60 },
 } as const;
 
 export const navLinks = [

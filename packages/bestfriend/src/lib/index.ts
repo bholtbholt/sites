@@ -1,6 +1,8 @@
 export { site, navLinks, platforms } from './site';
 export { devices, deviceBySlug, faq, type Device, type FaqItem } from './devices';
 export { featureGroups, type FeatureGroup } from './features';
+export { reviews, type Review } from './reviews';
+export { appRating, type Rating } from './rating';
 export { companionApps, companionAppsSlug, type CompanionApp } from './companionApps';
 export {
 	seo,
@@ -34,6 +36,7 @@ export { default as PhoneFan } from './components/PhoneFan.svelte';
 export { default as PhoneFrame } from './components/PhoneFrame.svelte';
 export { default as PhoneShot } from './components/PhoneShot.svelte';
 export { default as Platforms } from './components/Platforms.svelte';
+export { default as Reviews } from './components/Reviews.svelte';
 export { default as Seo } from './components/Seo.svelte';
 export { default as StickyBar } from './components/StickyBar.svelte';
 export { default as StoreBadges } from './components/StoreBadges.svelte';

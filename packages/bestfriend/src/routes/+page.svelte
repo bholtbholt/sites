@@ -11,6 +11,7 @@
 		PhoneFan,
 		PhoneShot,
 		Platforms,
+		Reviews,
 		Seo,
 		seo,
 		StickyBar,
@@ -25,11 +26,13 @@
 	import stems from '$lib/assets/stems.png?enhanced';
 	import edit from '$lib/assets/edit.png?enhanced';
 
+	let { data } = $props();
+
 	// StickyBar goes solid once this element scrolls out of view.
 	let sentinel = $state<HTMLElement | null>(null);
 </script>
 
-<Seo title={seo.title} description={seo.description} schema={homeSchema()} />
+<Seo title={seo.title} description={seo.description} schema={homeSchema(data.rating)} />
 
 <StickyBar {sentinel} />
 
@@ -199,6 +202,8 @@
 </FeatureBand>
 
 <FeatureGrid />
+
+<Reviews rating={data.rating} />
 
 <Platforms />
 

@@ -3,6 +3,8 @@ import { featureGroups } from './features';
 import { devices, faq, type Device, type FaqItem } from './devices';
 import { docsForDevice, type Doc } from './docs';
 import { companionApps, companionAppsSlug } from './companionApps';
+import { reviews } from './reviews';
+import type { Rating } from './rating';
 
 export const seo = {
 	// Leads with the brand, then the query people actually type. Long enough to truncate
@@ -87,7 +89,6 @@ const application = {
 	publisher: { '@id': url('/#developer') },
 	downloadUrl: [site.appStoreUrl, site.playStoreUrl],
 	installUrl: [site.appStoreUrl, site.playStoreUrl],
-	// No aggregateRating: the stores have too few ratings for one to mean anything yet.
 	offers: {
 		'@type': 'Offer',
 		price: site.price,
@@ -101,6 +102,44 @@ const application = {
 	isAccessoryOrSparePartFor: hardwareRefs,
 	about: hardwareRefs,
 };
+
+/**
+ * One node per review shown on the page. Google requires the marked-up reviews to be the
+ * same ones a visitor can read, so this maps the same `reviews` array the Reviews component
+ * renders — no extras, no omissions.
+ */
+const reviewNodes = reviews.map((review) => ({
+	'@type': 'Review',
+	itemReviewed: { '@id': url('/#app') },
+	reviewRating: {
+		'@type': 'Rating',
+		ratingValue: review.rating,
+		bestRating: 5,
+		worstRating: 1,
+	},
+	author: { '@type': 'Person', name: review.author },
+	datePublished: review.date,
+	name: review.title,
+	reviewBody: review.body,
+	inLanguage: review.lang ?? 'en',
+}));
+
+/**
+ * The app node with the ratings attached. The figures come from the build-time storefront
+ * lookup, the same ones the page renders — a rating in the markup that the page does not
+ * show is a structured-data violation, which is why they share a source.
+ */
+const ratedApplication = (rating: Rating) => ({
+	...application,
+	aggregateRating: {
+		'@type': 'AggregateRating',
+		ratingValue: rating.value,
+		ratingCount: rating.count,
+		bestRating: 5,
+		worstRating: 1,
+	},
+	review: reviewNodes,
+});
 
 const faqPage = (id: string, questions: readonly FaqItem[]) => ({
 	'@type': 'FAQPage',
@@ -131,12 +170,12 @@ const video = () =>
 			]
 		: [];
 
-export const homeSchema = () => ({
+export const homeSchema = (rating: Rating) => ({
 	'@context': 'https://schema.org',
 	'@graph': [
 		person,
 		website,
-		application,
+		ratedApplication(rating),
 		...hardware,
 		faqPage(url('/#faq'), faq),
 		...video(),
