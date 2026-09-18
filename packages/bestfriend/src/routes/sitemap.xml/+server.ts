@@ -1,4 +1,5 @@
 import { devices } from '$lib/devices';
+import { docs } from '$lib/docs';
 import { site } from '$lib/site';
 
 export const prerender = true;
@@ -10,6 +11,8 @@ const lastmod = new Date().toISOString().slice(0, 10);
 const paths = [
 	{ path: '', priority: '1.0' },
 	...devices.map((device) => ({ path: `/${device.slug}`, priority: '0.8' })),
+	{ path: '/docs', priority: '0.7' },
+	...docs.map((doc) => ({ path: `/docs/${doc.slug}`, priority: '0.6' })),
 	{ path: '/support', priority: '0.5' },
 	{ path: '/privacy', priority: '0.3' },
 ];

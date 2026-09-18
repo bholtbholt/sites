@@ -8,6 +8,9 @@ export type Device = {
 	sub: string;
 	/** 'EP-133 K.O. II' — the form people actually search for. */
 	full: string;
+	/** Teenage Engineering's own product page. Used as `sameAs` on the hardware schema
+	 *  node, which is how an answer engine ties our Product node to the real device. */
+	productUrl: string;
 	/** Shown on the device page under the h1, and as the meta description. */
 	description: string;
 	intro: string;
@@ -37,6 +40,7 @@ export const devices: readonly Device[] = [
 		name: 'EP-133',
 		sub: 'K.O. II',
 		full: 'EP-133 K.O. II',
+		productUrl: 'https://teenage.engineering/products/ep-133',
 		description:
 			'Best Friend is the unrivalled companion app for the Teenage Engineering EP-133 K.O. II. Edit every pad setting, see a whole bank at once, split stems, and take Bank Snapshots from iPhone, iPad, Mac, or Android.',
 		intro:
@@ -109,6 +113,7 @@ export const devices: readonly Device[] = [
 		name: 'EP-40',
 		sub: 'Riddim',
 		full: 'EP-40 Riddim',
+		productUrl: 'https://teenage.engineering/products/ep-40',
 		description:
 			'Best Friend is the unrivalled companion app for the Teenage Engineering EP-40 Riddim. Build multi-samples, reach the Supertone settings, edit pads, and back up your projects from iPhone, iPad, Mac, or Android.',
 		intro:
@@ -178,6 +183,7 @@ export const devices: readonly Device[] = [
 		name: 'EP-1320',
 		sub: 'Medieval',
 		full: 'EP-1320 Medieval',
+		productUrl: 'https://teenage.engineering/products/ep-1320',
 		description:
 			'Best Friend is the unrivalled companion app for the Teenage Engineering EP-1320 Medieval. Build multi-samples, edit every pad setting, split stems, and back up your projects from iPhone, iPad, Mac, or Android.',
 		intro:

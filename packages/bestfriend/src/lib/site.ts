@@ -31,6 +31,7 @@ export const site = {
 } as const;
 
 export const navLinks = [
+	{ href: '/docs', label: 'Guides' },
 	{ href: '/support', label: 'Support' },
 	{ href: '/privacy', label: 'Privacy' },
 ] as const;

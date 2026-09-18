@@ -3,6 +3,7 @@
 	import {
 		CallToAction,
 		Compatibility,
+		deviceDocs,
 		deviceSchema,
 		devices,
 		deviceTitle,
@@ -53,6 +54,7 @@
 
 	const device = $derived(data.device);
 	const others = $derived(devices.filter((other) => other.slug !== device.slug));
+	const guides = $derived(deviceDocs(device));
 
 	let sentinel = $state<HTMLElement | null>(null);
 </script>
@@ -163,6 +165,39 @@
 		</ul>
 	</div>
 </section>
+
+{#if guides.length > 0}
+	<section class="px-5 py-16 sm:py-24">
+		<div class="mx-auto max-w-5xl">
+			<h2 class="text-3xl font-bold tracking-tight text-balance sm:text-4xl">
+				How to use {site.name} with the {device.name}
+			</h2>
+			<ul class="mt-8 grid gap-4 sm:grid-cols-2">
+				{#each guides as guide (guide.slug)}
+					<li>
+						<a
+							class="block h-full rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-900/5 transition hover:ring-blue-700/30 dark:bg-slate-900 dark:ring-white/10 dark:hover:ring-blue-400/30"
+							href={resolve('/docs/[slug]', { slug: guide.slug })}
+						>
+							<span class="text-lg font-semibold text-blue-700 dark:text-blue-400"
+								>{guide.title}</span
+							>
+							<span class="mt-2 block leading-relaxed text-slate-600 dark:text-slate-300"
+								>{guide.summary}</span
+							>
+						</a>
+					</li>
+				{/each}
+			</ul>
+			<p class="mt-8">
+				<a
+					class="font-medium text-blue-700 underline underline-offset-4 transition hover:text-orange-500 dark:text-blue-400 dark:hover:text-orange-400"
+					href={resolve('/docs')}>All guides &rarr;</a
+				>
+			</p>
+		</div>
+	</section>
+{/if}
 
 <Faq items={device.faq} title="{device.full} questions" />
 

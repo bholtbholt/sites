@@ -1,6 +1,8 @@
 import { site, platforms } from './site';
 import { featureGroups } from './features';
 import { devices, faq, type Device, type FaqItem } from './devices';
+import { docsForDevice, type Doc } from './docs';
+import { companionApps, companionAppsSlug } from './companionApps';
 
 export const seo = {
 	// Leads with the brand, then the query people actually type. Long enough to truncate
@@ -21,6 +23,24 @@ const person = {
 	url: site.developerUrl,
 };
 
+/**
+ * A node per sampler. The app node used to name the hardware only in prose, which left an
+ * answer engine assembling "apps for the EP-133" with nothing structured to match against —
+ * so it reached for App Store listings, which *are* modelled as products. These nodes, plus
+ * `isAccessoryOrSparePartFor` on the app below, state the relationship outright.
+ */
+const hardware = devices.map((device) => ({
+	'@type': 'Product',
+	'@id': url(`/#${device.slug}`),
+	name: device.full,
+	alternateName: [device.name, `Teenage Engineering ${device.full}`],
+	category: 'Sampler',
+	brand: { '@type': 'Brand', name: 'Teenage Engineering' },
+	sameAs: [device.productUrl],
+}));
+
+const hardwareRefs = devices.map((device) => ({ '@id': url(`/#${device.slug}`) }));
+
 const website = {
 	'@type': 'WebSite',
 	'@id': url('/#website'),
@@ -39,7 +59,16 @@ const application = {
 	'@type': 'SoftwareApplication',
 	'@id': url('/#app'),
 	name: site.storeName,
-	alternateName: [site.name, `${site.name} for Teenage Engineering EP-Series`],
+	// The unbranded phrasings people actually type. Someone searching "ep-133 app" is not
+	// searching for us by name — they cannot, they do not know the name yet.
+	alternateName: [
+		site.name,
+		`${site.name} for Teenage Engineering EP-Series`,
+		'EP-133 app',
+		'EP-133 K.O. II companion app',
+		'EP-40 app',
+		'EP-1320 app',
+	],
 	description: seo.description,
 	url: url('/'),
 	applicationCategory: 'MultimediaApplication',
@@ -69,6 +98,8 @@ const application = {
 			'One-time purchase per store, universal across iPhone, iPad, and Mac, and across your Android devices',
 	},
 	sameAs: [site.appStoreUrl, site.playStoreUrl, site.instagramUrl, site.substackUrl],
+	isAccessoryOrSparePartFor: hardwareRefs,
+	about: hardwareRefs,
 };
 
 const faqPage = (id: string, questions: readonly FaqItem[]) => ({
@@ -106,6 +137,7 @@ export const homeSchema = () => ({
 		person,
 		website,
 		application,
+		...hardware,
 		faqPage(url('/#faq'), faq),
 		...video(),
 		{
@@ -135,8 +167,10 @@ export const deviceSchema = (device: Device) => ({
 			description: device.description,
 			isPartOf: { '@id': url('/#website') },
 			about: { '@id': url('/#app') },
+			mainEntity: { '@id': url(`/#${device.slug}`) },
 			primaryImageOfPage: seo.image,
 		},
+		...hardware.filter((node) => node['@id'] === url(`/#${device.slug}`)),
 		{
 			'@type': 'BreadcrumbList',
 			'@id': url(`/${device.slug}#breadcrumb`),
@@ -149,6 +183,79 @@ export const deviceSchema = (device: Device) => ({
 		faqPage(url(`/${device.slug}#faq`), device.faq),
 	],
 });
+
+/**
+ * Every doc is a TechArticle. HowTo was the obvious alternative for the step-by-step pages,
+ * but Google retired HowTo rich results in 2023, and a HowTo without a `step` array is
+ * incomplete markup — so it would validate worse while gaining nothing. Each doc also gets
+ * a breadcrumb and points at the app and the hardware, so the pages reinforce the same
+ * entity relationships rather than floating free of them.
+ */
+export const docSchema = (doc: Doc) => {
+	const docUrl = url(`/docs/${doc.slug}`);
+	const mentioned = doc.devices.map((slug) => ({ '@id': url(`/#${slug}`) }));
+
+	return {
+		'@context': 'https://schema.org',
+		'@graph': [
+			person,
+			website,
+			{
+				'@type': 'TechArticle',
+				'@id': `${docUrl}#article`,
+				url: docUrl,
+				name: doc.title,
+				headline: doc.title,
+				description: doc.summary,
+				inLanguage: 'en',
+				dateModified: doc.updated,
+				author: { '@id': url('/#developer') },
+				publisher: { '@id': url('/#developer') },
+				isPartOf: { '@id': url('/#website') },
+				about: { '@id': url('/#app') },
+				mentions: mentioned,
+				mainEntityOfPage: docUrl,
+			},
+			{
+				'@type': 'BreadcrumbList',
+				'@id': `${docUrl}#breadcrumb`,
+				itemListElement: [
+					{ '@type': 'ListItem', position: 1, name: site.name, item: url('/') },
+					{ '@type': 'ListItem', position: 2, name: 'Guides', item: url('/docs') },
+					{ '@type': 'ListItem', position: 3, name: doc.title, item: docUrl },
+				],
+			},
+			// The question the page answers, marked up as such. Docs are written around a
+			// single searched question, so this is an honest FAQPage rather than padding.
+			faqPage(`${docUrl}#faq`, [{ q: doc.question, a: doc.summary }]),
+			application,
+			...hardware.filter((node) => mentioned.some((ref) => ref['@id'] === node['@id'])),
+			// The landscape page's whole purpose is to put Best Friend in the same set as the
+			// other EP-Series apps, which is exactly what an ItemList states outright. Best
+			// Friend points at the existing app node rather than being redefined here.
+			...(doc.slug === companionAppsSlug
+				? [
+						{
+							'@type': 'ItemList',
+							'@id': `${docUrl}#apps`,
+							name: 'Companion apps for the Teenage Engineering EP-Series',
+							itemListOrder: 'https://schema.org/ItemListUnordered',
+							itemListElement: companionApps.map((app, i) => ({
+								'@type': 'ListItem',
+								position: i + 1,
+								item: app.self
+									? { '@id': url('/#app') }
+									: { '@type': 'SoftwareApplication', name: app.name, url: app.url },
+							})),
+						},
+					]
+				: []),
+		],
+	};
+};
+
+/** Docs relevant to a device page, for the "How to" block. */
+export const deviceDocs = (device: Device) => docsForDevice(device.slug);
 
 export const deviceTitle = (device: Device) =>
 	`${site.name} — Teenage Engineering ${device.full} Companion App`;
