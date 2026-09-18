@@ -9,7 +9,9 @@
 		"preview": "yarn svelte:preview"
 	},
 	"devDependencies": {
+		"@sveltejs/vite-plugin-svelte": "^7.1.2",
 		"eslint-config": "workspace:^",
+		"mdsvex": "^0.12.8",
 		"svelte-config": "workspace:^",
 		"typescript": "^6.0.3"
 	}

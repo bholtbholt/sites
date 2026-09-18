@@ -1,5 +1,5 @@
 <script lang="ts">
-	import AppStoreBadge from './AppStoreBadge.svelte';
+	import StoreBadges from './StoreBadges.svelte';
 	import { site, platforms } from '$lib/site';
 </script>
 
@@ -11,13 +11,14 @@
 
 		<p class="mx-auto mt-6 max-w-4xl text-xl leading-relaxed text-balance sm:text-2xl">
 			The unrivalled companion app for Teenage Engineering EP-Series samplers — the EP-133 K.O. II,
-			EP-40 Riddim, and EP-1320 Medieval. Add and edit samples, make backups, and so much more.
+			EP-40 Riddim, and EP-1320 Medieval. See your whole Scene, play it from a keyboard, edit and
+			process your samples, then bounce real per-pad audio stems straight into your DAW.
 		</p>
 
 		<div class="mt-8 flex flex-col items-center gap-3">
-			<AppStoreBadge />
+			<StoreBadges />
 			<p class="text-sm text-slate-500 dark:text-slate-400">
-				{platforms.join(' · ')} — one purchase
+				{platforms.join(' · ')}
 			</p>
 		</div>
 	</div>

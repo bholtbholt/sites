@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { resolve } from '$app/paths';
 	import { featureGroups } from '$lib/features';
 </script>
 
@@ -31,5 +32,14 @@
 				</div>
 			{/each}
 		</div>
+
+		<p class="mt-10">
+			<a
+				class="font-medium text-blue-700 underline underline-offset-4 transition hover:text-orange-500 dark:text-blue-400 dark:hover:text-orange-400"
+				href={resolve('/docs')}
+			>
+				Read the guides &rarr;
+			</a>
+		</p>
 	</div>
 </section>

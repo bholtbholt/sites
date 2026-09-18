@@ -8,6 +8,9 @@ export type Device = {
 	sub: string;
 	/** 'EP-133 K.O. II' — the form people actually search for. */
 	full: string;
+	/** Teenage Engineering's own product page. Used as `sameAs` on the hardware schema
+	 *  node, which is how an answer engine ties our Product node to the real device. */
+	productUrl: string;
 	/** Shown on the device page under the h1, and as the meta description. */
 	description: string;
 	intro: string;
@@ -20,13 +23,16 @@ export type Device = {
 // stand alone as an answer to "what cable do I need for my EP-40", and a crawler that
 // only ever sees one of these pages should still get the whole answer.
 const cableAnswer = (full: string) =>
-	`Use a USB-C to USB-C data cable to connect your ${full} to an iPhone, iPad, or Mac. Charge-only cables will not work. On a Lightning iPhone or iPad, use an MFi-certified Lightning to USB adapter together with a USB-IF certified USB-A to USB-C cable.`;
+	`Use a USB-C to USB-C data cable to connect your ${full} to your phone, tablet, or Mac. Charge-only cables will not work. On a Lightning iPhone or iPad, use an MFi-certified Lightning to USB adapter together with a USB-IF certified USB-A to USB-C cable. On Android, your device needs USB OTG support.`;
 
 const backupAnswer = (full: string) =>
-	`Yes. Best Friend can take a Bank Snapshot of a single bank, back up the project you are working on, or back up the entire system on your ${full}. Every backup is named and dated, and any of them can be loaded back in one tap.`;
+	`Yes. Best Friend can take a Bank Snapshot of a single bank, back up the project you are working on, or back up the entire system on your ${full}. Every backup is named and dated, and any of them can be loaded back in one tap. You can preview a backup's audio before restoring it, pull a single project back out of a full system backup, and on Apple devices iCloud keeps everything in sync across your iPhone, iPad, and Mac.`;
+
+const bounceAnswer = (full: string) =>
+	`Yes. Best Friend bounces multi-track audio stems of a Scene or an entire Song directly off your ${full}. Every one of the 48 pads is isolated using the real samples and pad data rather than AI separation, with fader automation included. Export all 48 individually, as group mixdowns, or as a stereo mixdown, plus the MIDI data, then open them in your DAW.`;
 
 const osAnswer = (full: string) =>
-	`Best Friend requires iOS ${site.minOs}, iPadOS ${site.minOs}, or macOS ${site.minOs} or later, and a Mac needs Apple silicon (M1 or later). Your ${full} itself needs no update — the app talks to it over USB.`;
+	`Best Friend requires iOS ${site.minOs}, iPadOS ${site.minOs}, or macOS ${site.minOs} or later, or Android ${site.minAndroid} or later. A Mac needs Apple silicon (M1 or later). Your ${full} itself needs no update — the app talks to it over USB.`;
 
 export const devices: readonly Device[] = [
 	{
@@ -34,11 +40,24 @@ export const devices: readonly Device[] = [
 		name: 'EP-133',
 		sub: 'K.O. II',
 		full: 'EP-133 K.O. II',
+		productUrl: 'https://teenage.engineering/products/ep-133',
 		description:
-			'Best Friend is the unrivalled companion app for the Teenage Engineering EP-133 K.O. II. Edit every pad setting, see a whole bank at once, split stems, and take Bank Snapshots from iPhone, iPad, or Mac.',
+			'Best Friend is the unrivalled companion app for the Teenage Engineering EP-133 K.O. II. Edit every pad setting, see a whole bank at once, split stems, and take Bank Snapshots from iPhone, iPad, Mac, or Android.',
 		intro:
 			'The EP-133 K.O. II gives you twelve pads and a 3-char display. Best Friend gives you the rest of the screen: every pad setting laid out at once, a full sample editor, and backups you can actually recall.',
 		highlights: [
+			{
+				title: 'Bounce real EP-133 stems',
+				body: 'Export multi-track audio stems of a Scene or Song straight off the EP-133. All 48 pads come out isolated from the real samples and pad data — not AI separation — with fader automation included. Take them as individual stems, group mixdowns, or a stereo mixdown, along with the MIDI, and open the lot in your DAW.',
+			},
+			{
+				title: 'See a whole EP-133 Scene',
+				body: 'Every sequenced note across every bank in a Scene or Song on one timeline, with the fader automation lanes underneath and the playhead following as it plays. The 3-char display can only hint at what you programmed; this shows you.',
+			},
+			{
+				title: 'Play the EP-133 from a keyboard',
+				body: 'A velocity-sensitive keyboard with major, minor, suspended, and diminished triads at the press of a button, 6th, 7th, and 9th extensions, custom chords saved to any button, up to three split zones, and an arpeggiator synced to the EP-133 clock.',
+			},
 			{
 				title: 'Every EP-133 pad setting on one screen',
 				body: 'Trim, attack and release, volume, pitch, pan, play mode, time-stretch, and MIDI channel — visible and editable together, with the waveform above them, all with hardware control. No menu diving on the hardware necessary.',
@@ -48,8 +67,8 @@ export const devices: readonly Device[] = [
 				body: 'Every pad in the group as a grid of waveforms and names, laid out the way the hardware is. Move through A, B, C, and D without losing your place.',
 			},
 			{
-				title: 'Bank Snapshots',
-				body: 'Arrange a bank on the EP-133, snapshot it, and recall it later — even on a different device. Project and system backups cover everything else.',
+				title: 'A Library for everything you save',
+				body: 'Bank Snapshots, project and system backups, and your bounces arranged together. Arrange a bank on the EP-133, snapshot it, and recall it later — even on a different EP. Preview a backup before restoring it, pull a project out of a system backup, and let iCloud sync all of it across your Apple devices.',
 			},
 			{
 				title: 'Performance effects per pad',
@@ -70,10 +89,14 @@ export const devices: readonly Device[] = [
 				a: 'Yes. The EP-133 K.O. II is fully supported, including the pad editor, whole-bank view, performance effects, sample library, stem splitting, and Bank Snapshots. Best Friend also ships an EP-133 theme in both light and dark mode.',
 			},
 			{
-				q: 'What cable do I need to connect an EP-133 to an iPhone?',
+				q: 'What cable do I need to connect an EP-133 to an iPhone or Android phone?',
 				a: cableAnswer('EP-133 K.O. II'),
 			},
 			{ q: 'Can I back up my EP-133 K.O. II?', a: backupAnswer('EP-133 K.O. II') },
+			{
+				q: 'Can I export audio stems from my EP-133 K.O. II?',
+				a: bounceAnswer('EP-133 K.O. II'),
+			},
 			{
 				q: 'Can I get samples onto the EP-133 in bulk?',
 				a: 'Yes. Import samples from Files or pull audio straight out of a video, then select as many as you like and move, share, or delete them in one pass. You can also drag and drop to reorder samples or reassign pads across the project.',
@@ -90,8 +113,9 @@ export const devices: readonly Device[] = [
 		name: 'EP-40',
 		sub: 'Riddim',
 		full: 'EP-40 Riddim',
+		productUrl: 'https://teenage.engineering/products/ep-40',
 		description:
-			'Best Friend is the unrivalled companion app for the Teenage Engineering EP-40 Riddim. Build multi-samples, reach the Supertone settings, edit pads, and back up your projects from iPhone, iPad, or Mac.',
+			'Best Friend is the unrivalled companion app for the Teenage Engineering EP-40 Riddim. Build multi-samples, reach the Supertone settings, edit pads, and back up your projects from iPhone, iPad, Mac, or Android.',
 		intro:
 			'The EP-40 Riddim has depth the hardware cannot show you all at once — Supertone, multi-samples, per-pad detail. Best Friend puts it all on screen and gives you a real editor to feed it.',
 		highlights: [
@@ -104,12 +128,24 @@ export const devices: readonly Device[] = [
 				body: 'Layer samples into one playable instrument on the EP-40. Set the length, crop and loop each layer, preview it, then save the whole thing as a single waveform. Come back later and edit one layer without rebuilding the rest.',
 			},
 			{
+				title: 'Bounce real EP-40 stems',
+				body: 'Export multi-track audio stems of a Scene or Song straight off the EP-40. All 48 pads come out isolated from the real samples and pad data — not AI separation — with fader automation included. Take individual stems, group mixdowns, a stereo mixdown, and the MIDI, then mix it in your DAW.',
+			},
+			{
+				title: 'See a whole EP-40 Scene',
+				body: 'Every sequenced note across every bank in a Scene or Song on one timeline, with the fader automation lanes for each bank underneath and the playhead following along as it plays.',
+			},
+			{
+				title: 'Play the EP-40 from a keyboard',
+				body: 'A velocity-sensitive keyboard with one-button major, minor, suspended, and diminished triads, 6th, 7th, and 9th extensions, custom chords on any button, up to three split zones, and an arpeggiator synced to the EP-40 clock.',
+			},
+			{
 				title: 'Every EP-40 pad setting on one screen',
 				body: 'Trim, attack and release, volume, pitch, pan, play mode, time-stretch, and MIDI channel together with the waveform, plus hardware control over the trim window.',
 			},
 			{
-				title: 'Bank Snapshots and backups',
-				body: 'Snapshot a single EP-40 bank to recall later, back up the project you are working on, or back up the entire system — all named, dated, and one tap from being restored.',
+				title: 'A Library for everything you save',
+				body: 'Snapshot a single EP-40 bank to recall later, back up the project you are working on, or back up the entire system — all named, dated, and one tap from being restored, alongside your bounces. Preview a backup before restoring it, extract a project from a system backup, and iCloud syncs the whole Library across your Apple devices.',
 			},
 			{
 				title: 'A real sample editor',
@@ -134,10 +170,11 @@ export const devices: readonly Device[] = [
 				a: 'Yes. Supertone settings are available on EP-40 pads alongside the other pad parameters.',
 			},
 			{
-				q: 'What cable do I need to connect an EP-40 to an iPhone?',
+				q: 'What cable do I need to connect an EP-40 to an iPhone or Android phone?',
 				a: cableAnswer('EP-40 Riddim'),
 			},
 			{ q: 'Can I back up my EP-40 Riddim?', a: backupAnswer('EP-40 Riddim') },
+			{ q: 'Can I export audio stems from my EP-40 Riddim?', a: bounceAnswer('EP-40 Riddim') },
 			{ q: 'What do I need to run Best Friend?', a: osAnswer('EP-40 Riddim') },
 		],
 	},
@@ -146,14 +183,27 @@ export const devices: readonly Device[] = [
 		name: 'EP-1320',
 		sub: 'Medieval',
 		full: 'EP-1320 Medieval',
+		productUrl: 'https://teenage.engineering/products/ep-1320',
 		description:
-			'Best Friend is the unrivalled companion app for the Teenage Engineering EP-1320 Medieval. Build multi-samples, edit every pad setting, split stems, and back up your projects from iPhone, iPad, or Mac.',
+			'Best Friend is the unrivalled companion app for the Teenage Engineering EP-1320 Medieval. Build multi-samples, edit every pad setting, split stems, and back up your projects from iPhone, iPad, Mac, or Android.',
 		intro:
 			'The EP-1320 Medieval ships with a library worth rearranging. Best Friend lets you build your own multi-samples for it, edit any sample properly before it lands on a pad, and snapshot a bank you want back later.',
 		highlights: [
 			{
 				title: 'Build and edit multi-samples',
 				body: 'Layer samples into one playable instrument on the EP-1320. Set the length, crop and loop each layer, preview it, then save the whole thing as a single waveform — and edit a single layer later without starting over.',
+			},
+			{
+				title: 'Bounce real EP-1320 stems',
+				body: 'Export multi-track audio stems of a Scene or Song straight off the EP-1320. All 48 pads come out isolated from the real samples and pad data — not AI separation — with fader automation included. Individual stems, group mixdowns, a stereo mixdown, and the MIDI, all ready for your DAW.',
+			},
+			{
+				title: 'See a whole EP-1320 Scene',
+				body: 'Every sequenced note across every bank in a Scene or Song on one timeline, with the fader automation lanes underneath and the playhead following as it plays.',
+			},
+			{
+				title: 'Play the EP-1320 from a keyboard',
+				body: 'A velocity-sensitive keyboard with one-button major, minor, suspended, and diminished triads, 6th, 7th, and 9th extensions, your own chords saved to any button, up to three split zones, and an arpeggiator synced to the EP-1320 clock.',
 			},
 			{
 				title: 'Every EP-1320 pad setting on one screen',
@@ -164,8 +214,8 @@ export const devices: readonly Device[] = [
 				body: 'Every pad in the group as a grid of waveforms and names. Toggle mute, pitch up, pitch down, and reverse on individual pads without leaving the view.',
 			},
 			{
-				title: 'Bank Snapshots and backups',
-				body: 'Snapshot a single EP-1320 bank to recall later, back up the current project, or back up the entire system. Everything is named, dated, and restorable in one tap.',
+				title: 'A Library for everything you save',
+				body: 'Snapshot a single EP-1320 bank to recall later, back up the current project, or back up the entire system. Everything is named, dated, and restorable in one tap, filed alongside your bounces. Preview a backup before restoring it, extract a project from a system backup, and iCloud keeps it all in sync across your Apple devices.',
 			},
 			{
 				title: 'A real sample editor',
@@ -186,10 +236,14 @@ export const devices: readonly Device[] = [
 				a: 'Yes. Best Friend can build and edit multi-samples on the EP-1320. Layer several samples together, set the length, crop and loop each layer, preview the result, then save it as a single waveform. Individual layers stay editable afterwards.',
 			},
 			{
-				q: 'What cable do I need to connect an EP-1320 to an iPhone?',
+				q: 'What cable do I need to connect an EP-1320 to an iPhone or Android phone?',
 				a: cableAnswer('EP-1320 Medieval'),
 			},
 			{ q: 'Can I back up my EP-1320 Medieval?', a: backupAnswer('EP-1320 Medieval') },
+			{
+				q: 'Can I export audio stems from my EP-1320 Medieval?',
+				a: bounceAnswer('EP-1320 Medieval'),
+			},
 			{
 				q: 'Can I add my own samples to the EP-1320?',
 				a: 'Yes. Import samples from Files or pull audio straight out of a video, edit them in Best Friend, then send them to any pad. Existing samples can be edited and replaced in place.',
@@ -212,24 +266,28 @@ export const faq: readonly FaqItem[] = [
 		a: 'Best Friend supports the EP-133 K.O. II, the EP-40 Riddim, and the EP-1320 Medieval, and includes a matching theme for each in light and dark mode.',
 	},
 	{
-		q: 'What cable do I need to connect my sampler to an iPhone, iPad, or Mac?',
-		a: 'Use a USB-C to USB-C data cable. Charge-only cables will not work. On a Lightning iPhone or iPad, use an MFi-certified Lightning to USB adapter together with a USB-IF certified USB-A to USB-C cable.',
+		q: 'What cable do I need to connect my sampler to an iPhone, iPad, Mac, or Android phone?',
+		a: 'Use a USB-C to USB-C data cable. Charge-only cables will not work. On a Lightning iPhone or iPad, use an MFi-certified Lightning to USB adapter together with a USB-IF certified USB-A to USB-C cable. On Android, your phone or tablet needs USB OTG support.',
 	},
 	{
 		q: 'What does Best Friend cost?',
-		a: `Best Friend is a one-time purchase of $${site.price} ${site.priceCurrency}. That single purchase covers iPhone, iPad, and Mac — there is no subscription.`,
+		a: `Best Friend is a one-time purchase of $${site.price} ${site.priceCurrency} per store. One App Store purchase covers iPhone, iPad, and Mac. One Google Play purchase covers your Android devices. Both support family sharing, and there is no subscription.`,
 	},
 	{
-		q: 'Do I have to buy Best Friend separately for iPhone, iPad, and Mac?',
-		a: 'No. It is one universal purchase. Buy it once and run it on iPhone, iPad, and Mac, with the same editor and the same projects on each.',
+		q: 'Do I need to buy Best Friend separately for iPhone, iPad, and Mac?',
+		a: 'No. One App Store purchase is universal across iPhone, iPad, and Mac, with the same editor and the same projects on each.',
 	},
 	{
-		q: 'Is Best Friend coming to Android?',
-		a: `Yes. An Android version is in active development and is expected to land by ${site.androidEta}. Today Best Friend runs on iPhone, iPad, and Mac.`,
+		q: 'Do I need to buy Best Friend separately from Apple devices and Android devices?',
+		a: 'Yes. The App Store and Google Play are separate storefronts, so a purchase on one does not carry across to the other. One App Store purchase covers all of your Apple devices, and one Google Play purchase covers all of your Android devices.',
+	},
+	{
+		q: 'Does Best Friend work on Android?',
+		a: `Yes. Best Friend is on Google Play and runs on Android ${site.minAndroid} or later, with the same features as the Apple version. Your phone or tablet needs USB OTG support and a USB-C data cable.`,
 	},
 	{
 		q: 'What are the system requirements for Best Friend?',
-		a: `Best Friend requires iOS ${site.minOs}, iPadOS ${site.minOs}, or macOS ${site.minOs} or later. On Mac it requires Apple silicon (M1 or later). You also need one of the supported EP-Series samplers and a USB-C data cable.`,
+		a: `Best Friend requires iOS ${site.minOs}, iPadOS ${site.minOs}, or macOS ${site.minOs} or later, or Android ${site.minAndroid} or later. On Mac it requires Apple silicon (M1 or later), and on Android it requires USB OTG support. You also need one of the supported EP-Series samplers and a USB-C data cable.`,
 	},
 	{
 		q: 'Does Best Friend work without the hardware connected?',
@@ -237,7 +295,27 @@ export const faq: readonly FaqItem[] = [
 	},
 	{
 		q: 'Can I back up my EP-133, EP-40, or EP-1320?',
-		a: 'Yes. Best Friend takes Bank Snapshots of a single bank, project backups of the set you are working on, and system backups of everything on the device. All of them are named and dated, and any of them is one tap from being loaded back.',
+		a: 'Yes. Best Friend makes Project and System backups, and can take Bank Snapshots of a single bank. All of them are named and dated, and any of them is one tap from being loaded back. Best Friend also supports importing Project and System from the official EP Sample Tool so you can keep your backups in one place.',
+	},
+	{
+		q: 'Can I export individual stems from my EP?',
+		a: 'Yes. Best Friend bounces multi-track audio stems of a Scene or an entire Song directly off the hardware. Every one of the 48 pads comes out as its own isolated track, with fader automation included. You can also export group mixdowns, a stereo mixdown, and the MIDI data from a Scene or Song, then bring everything into your DAW.',
+	},
+	{
+		q: 'Does Best Friend use AI to separate stems?',
+		a: 'Not for bouncing. When you export stems from a Scene or Song, Best Friend reads the real samples and pad data off your EP, so every pad is genuinely isolated rather than guessed at by a separation model. Stem splitting is a separate feature: that one does use source separation, but only to pull drums, bass, vocals, guitar, and instruments out of a single sample you bring in.',
+	},
+	{
+		q: 'Can I see my Scenes and Songs in Best Friend?',
+		a: 'Yes. Best Friend shows every sequenced note across every bank in a Scene or Song on one timeline, along with the fader automation lanes for each bank. The playhead follows automatically as it plays.',
+	},
+	{
+		q: 'Can I use Best Friend as a MIDI controller?',
+		a: 'Yes. Best Friend includes a velocity-sensitive keyboard that plays your EP. Build major, minor, suspended, or diminished triads with a button and add a 6th, 7th, 9th, or the lower octave, save your own chords to any Chord or Extension button, split the keys into up to three zones for alternate positions, and run an arpeggiator with 4 modes, 6 rates, and 3 octaves synced to the hardware clock.',
+	},
+	{
+		q: 'Does Best Friend sync across my devices?',
+		a: 'On Apple devices, yes. iCloud automatically backs up and syncs your Bank Snapshots, project and system backups, and bounces across your iPhone, iPad, and Mac, so anything you save on one is there on the others.',
 	},
 	{
 		q: 'Can Best Friend split a song into stems?',

@@ -42,7 +42,7 @@
 		<h2 class="mb-0">Future changes</h2>
 		<p>
 			If paid features or in-app purchases are added later, this policy will be updated. Purchases
-			would be processed by Apple — we would not receive your payment or billing details.
+			would be processed by Apple or Google — we would not receive your payment or billing details.
 		</p>
 
 		<h2 class="mb-0">Contact</h2>

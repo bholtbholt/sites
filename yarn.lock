@@ -1892,7 +1892,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "bf@workspace:packages/bestfriend"
   dependencies:
+    "@sveltejs/vite-plugin-svelte": "npm:^7.1.2"
     eslint-config: "workspace:^"
+    mdsvex: "npm:^0.12.8"
     svelte-config: "workspace:^"
     typescript: "npm:^6.0.3"
   languageName: unknown

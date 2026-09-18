@@ -1,4 +1,5 @@
 import { devices, faq } from '$lib/devices';
+import { docsBySection } from '$lib/docs';
 import { featureGroups } from '$lib/features';
 import { site, platforms } from '$lib/site';
 import { seo } from '$lib/seo';
@@ -13,7 +14,7 @@ export function GET() {
 
 > ${seo.description}
 
-${site.name} (App Store listing: "${site.storeName}") is the unrivalled companion app for Teenage Engineering EP-Series hardware samplers, built by ${site.developer}. It connects to the sampler over a USB-C data cable and gives you a full-screen editor for pads and samples, stem splitting, multi-sample building, and backups. It is a one-time purchase of $${site.price} ${site.priceCurrency} covering ${platforms.join(', ')}. It is not affiliated with, endorsed by, or sponsored by Teenage Engineering.
+${site.name} (App Store listing: "${site.storeName}") is the unrivalled companion app for Teenage Engineering EP-Series hardware samplers, built by ${site.developer}. It connects to the sampler over a USB-C data cable and gives you a full-screen editor for pads and samples, a Scene and Song timeline with note and fader automation lanes, multi-track audio stem bouncing straight off the hardware, a MIDI controller keyboard with chords and an arpeggiator, stem splitting, multi-sample building, and a Library of backups, Bank Snapshots, and bounces, synced by iCloud on Apple devices. It is a one-time purchase of $${site.price} ${site.priceCurrency} per store: one App Store purchase covers iPhone, iPad, and Mac, and one Google Play purchase covers your Android devices. It is not affiliated with, endorsed by, or sponsored by Teenage Engineering.
 
 ## Supported hardware
 
@@ -21,15 +22,11 @@ ${devices.map((device) => `- **${device.full}** (${site.domain}/${device.slug}):
 
 ## Platforms and requirements
 
-- Runs on ${platforms.join(', ')} from a single universal purchase.
-- Requires iOS ${site.minOs}, iPadOS ${site.minOs}, or macOS ${site.minOs} or later. Mac requires Apple silicon (M1 or later).
+- Runs on ${platforms.join(', ')}. One App Store purchase is universal across iPhone, iPad, and Mac; one Google Play purchase covers your Android devices. The two storefronts are separate purchases, and both support family sharing.
+- Requires iOS ${site.minOs}, iPadOS ${site.minOs}, or macOS ${site.minOs} or later, or Android ${site.minAndroid} or later. Mac requires Apple silicon (M1 or later); Android requires USB OTG support.
 - Requires a wired connection to the sampler: a USB-C to USB-C data cable. Charge-only cables do not work.
 - On a Lightning iPhone or iPad, requires an MFi-certified Lightning to USB adapter with a USB-IF certified USB-A to USB-C cable.
 - Collects no personal data. Nothing is transmitted off the device.
-
-## Roadmap
-
-- An Android port is in development, expected ${site.androidEta}. It has not shipped yet; ${site.name} is currently ${platforms.join(', ')} only.
 
 ## Features
 
@@ -49,6 +46,19 @@ ${devices
 	)
 	.join('\n\n')}
 
+## Guides
+
+Task-based documentation. The full text of every guide is available at ${site.domain}/llms-full.txt.
+
+${docsBySection()
+	.map(
+		(group) =>
+			`### ${group.section}\n\n${group.items
+				.map((doc) => `- [${doc.title}](${site.domain}/docs/${doc.slug}): ${doc.summary}`)
+				.join('\n')}`,
+	)
+	.join('\n\n')}
+
 ## FAQ
 
 ${faq.map((item) => `### ${item.q}\n\n${item.a}`).join('\n\n')}
@@ -57,9 +67,12 @@ ${faq.map((item) => `### ${item.q}\n\n${item.a}`).join('\n\n')}
 
 - [Home](${site.domain}/): overview, screenshots, and demo video
 ${devices.map((device) => `- [${device.full}](${site.domain}/${device.slug}): what ${site.name} does for the ${device.full}`).join('\n')}
+- [Guides](${site.domain}/docs): task-based documentation
+- [Full documentation text](${site.domain}/llms-full.txt): every guide in one file
 - [Support](${site.domain}/support): contact and bug reports
 - [Privacy](${site.domain}/privacy): privacy policy
-- [App Store](${site.appStoreUrl}): download
+- [App Store](${site.appStoreUrl}): download for iPhone, iPad, and Mac
+- [Google Play](${site.playStoreUrl}): download for Android
 - [Dev blog](${site.substackUrl}): development updates
 - [Demo video](https://www.youtube.com/watch?v=${site.youtubeId}): ${site.youtubeTitle}
 

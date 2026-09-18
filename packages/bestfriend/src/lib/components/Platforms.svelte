@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { platforms, site } from '$lib/site';
+	import { platforms } from '$lib/site';
 </script>
 
 <section
@@ -12,10 +12,11 @@
 			Universal
 		</p>
 		<h2 class="text-3xl font-bold tracking-tight text-balance sm:text-4xl">
-			One app for any of your Apple devices.
+			One app for every device you own.
 		</h2>
 		<p class="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-slate-600 dark:text-slate-300">
-			Buy it once and run it on iPhone, iPad, and Mac.
+			Buy it once and run it on every device you own — iPhone, iPad, and Mac, or your Android phones
+			and tablets. On Apple devices iCloud keeps your Library in sync across all of them.
 		</p>
 
 		<ul class="mt-8 flex flex-wrap justify-center gap-3">
@@ -26,18 +27,10 @@
 					{platform}
 				</li>
 			{/each}
-
-			<!-- Dashed ring marks this one as not-yet-shipping, so it reads differently to the
-			     platforms you can actually buy today. -->
-			<li
-				class="rounded-full border border-dashed border-slate-400 px-5 py-2 font-semibold text-slate-500 dark:border-slate-600 dark:text-slate-400"
-			>
-				Android
-			</li>
 		</ul>
 
 		<p class="mt-6 text-slate-500 dark:text-slate-400">
-			Android in development, expected {site.androidEta}.
+			Separate purchases are required for Apple and Android devices.
 		</p>
 	</div>
 </section>

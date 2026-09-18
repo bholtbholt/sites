@@ -33,9 +33,7 @@
 			class="rounded-full bg-orange-500 px-4 py-2 text-sm font-semibold text-white transition hover:bg-orange-600 {pinned
 				? 'opacity-100'
 				: 'pointer-events-none opacity-0'}"
-			href={site.appStoreUrl}
-			rel="external noopener noreferrer"
-			target="_blank"
+			href="#download"
 			tabindex={pinned ? 0 : -1}
 		>
 			Get {site.name}
