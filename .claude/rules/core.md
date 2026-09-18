@@ -1,8 +1,3 @@
----
-description: Core project conventions - package manager, monorepo structure
-alwaysApply: true
----
-
 # Core Conventions
 
 ## Node Version
