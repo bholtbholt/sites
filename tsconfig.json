@@ -1,9 +1,3 @@
 {
-	"references": [
-		{ "path": "./packages/bestfriend" },
-		{ "path": "./packages/badbadpower" },
-		{ "path": "./packages/commacomma" },
-		{ "path": "./packages/portfolio" }
-	],
 	"exclude": ["node_modules"]
 }
