@@ -1,7 +1,8 @@
 {
 	"references": [
-		{ "path": "./packages/commacomma" },
+		{ "path": "./package/bestfriend" },
 		{ "path": "./packages/badbadpower" },
+		{ "path": "./packages/commacomma" },
 		{ "path": "./packages/portfolio" }
 	],
 	"exclude": ["node_modules"]
