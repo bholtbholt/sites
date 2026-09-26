@@ -1,6 +1,6 @@
 {
 	"references": [
-		{ "path": "./package/bestfriend" },
+		{ "path": "./packages/bestfriend" },
 		{ "path": "./packages/badbadpower" },
 		{ "path": "./packages/commacomma" },
 		{ "path": "./packages/portfolio" }
