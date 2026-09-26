@@ -3,9 +3,9 @@
 	import { page } from '$app/state';
 	import { resolve } from '$app/paths';
 	const links = [
-		['/', 'Work'],
-		['/now', 'Now'],
-		['/contact', 'Contact'],
+		[resolve('/'), 'Work'],
+		[resolve('/now'), 'Now'],
+		[resolve('/contact'), 'Contact'],
 	] as const;
 	const active = 'text-slate-800 dark:text-slate-300 font-bold';
 	const inactive =
@@ -24,7 +24,7 @@
 >
 	{#each links as [href, text] (href)}
 		<a
-			href={resolve(href)}
+			{href}
 			class="{page.url.pathname === href ? active : inactive}
         inline-block px-6 py-4
         transition-colors duration-200 ease-out"

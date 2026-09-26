@@ -41,6 +41,7 @@ jobs:
       matrix:
         name:
           - bbp
+          - bf
           - cc
           - p
 
