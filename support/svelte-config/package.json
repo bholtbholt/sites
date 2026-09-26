@@ -10,8 +10,8 @@
 		"build:clean": "yarn workspaces foreach -A --include \"./packages/*\" exec rm -rf .svelte-kit .wrangler",
 		"cf:open": "cd $INIT_CWD && wrangler pages dev .svelte-kit/cloudflare",
 		"lint:tsc": "cd $INIT_CWD && svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-		"svelte:dev": "cd $INIT_CWD && vite dev --open --config $PROJECT_CWD/support/svelte-config/vite.config.js",
-		"svelte:build": "cd $INIT_CWD && vite build --config $PROJECT_CWD/support/svelte-config/vite.config.js",
+		"svelte:dev": "cd $INIT_CWD && svelte-kit sync && vite dev --open --config $PROJECT_CWD/support/svelte-config/vite.config.js",
+		"svelte:build": "cd $INIT_CWD && svelte-kit sync && vite build --config $PROJECT_CWD/support/svelte-config/vite.config.js",
 		"svelte:preview": "cd $INIT_CWD && vite preview --open --config $PROJECT_CWD/support/svelte-config/vite.config.js",
 		"svelte:prepare": "cd $INIT_CWD && svelte-kit sync || echo ''"
 	},
