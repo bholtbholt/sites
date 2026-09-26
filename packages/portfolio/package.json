@@ -11,9 +11,10 @@
 	},
 	"devDependencies": {
 		"@types/headroom.js": "^0.12.4",
+		"@typescript/native": "npm:typescript@7",
 		"eslint-config": "workspace:^",
 		"svelte-config": "workspace:^",
-		"typescript": "^6.0.3"
+		"typescript": "~6.0.3"
 	},
 	"dependencies": {
 		"headroom.js": "^0.12.0"

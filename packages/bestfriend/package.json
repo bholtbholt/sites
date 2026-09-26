@@ -10,9 +10,10 @@
 	},
 	"devDependencies": {
 		"@sveltejs/vite-plugin-svelte": "^7.3.0",
+		"@typescript/native": "npm:typescript@7",
 		"eslint-config": "workspace:^",
 		"mdsvex": "^0.12.8",
 		"svelte-config": "workspace:^",
-		"typescript": "^6.0.3"
+		"typescript": "~6.0.3"
 	}
 }
