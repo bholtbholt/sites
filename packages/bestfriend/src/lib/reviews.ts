@@ -16,10 +16,52 @@ export type Review = {
 
 export const reviews: readonly Review[] = [
 	{
+		title: 'BUY IT',
+		date: '2026-09-22',
+		author: 'DeForrest. G',
+		body: 'Change your koii into an almost limitless idea machine!!! And production tool that can hold its weight against any mpc or Roland sp.',
+		rating: 5,
+	},
+	{
+		title: 'Finally!',
+		date: '2026-09-19',
+		author: 'Enis P Dump',
+		body: 'Finally someone has built an App to address the shortcomings of ep-133, ep-1320 and ep-40. These machines are beautiful and highly capable but confusing. This App brings a ton of quality of life features that make the ep series more fun.',
+		rating: 5,
+	},
+	{
+		title: 'Plug & Wow !',
+		date: '2026-09-16',
+		author: 'Jonadav',
+		body: 'So glad to see a dev exploring how to expand and grow the UX of the EP series that is a beautiful, fun but also occasionally cryptic concept, this is so useful already every KO II user should get this !',
+		rating: 5,
+	},
+	{
 		title: 'A must have for the K.O.II',
 		body: "If you like your K.O.II, you will love this App!! It helps to unlock the full potential of the machine and gives you creative control of it's features. The App is so well made and the constant upgrades make it a big bang for the buck!! It doesn't track you data, but will elevate your workflow and creativity working with the K.O.II!! Get it - you'll never regret it!! :)",
 		author: 'Patpuls',
 		date: '2026-09-16',
+		rating: 5,
+	},
+	{
+		title: 'So good, loving it so far',
+		date: '2026-09-24',
+		author: 'Jeoqw1',
+		body: 'Keep up the awesome work on this! Loving the app so far. Would be really cool if there’s a way to get the keyboard to be multi touch so can play chords, but I know you can still play them with the chord buttons.. so much fun to be had!',
+		rating: 5,
+	},
+	{
+		title: 'Great app!',
+		date: '2026-09-25',
+		author: 'Oddsbodikinz',
+		body: 'Great companion to the Ep series!!',
+		rating: 5,
+	},
+	{
+		title: 'Yes',
+		date: '2026-09-25',
+		author: '7x7x7',
+		body: 'Sooooo good',
 		rating: 5,
 	},
 	{
