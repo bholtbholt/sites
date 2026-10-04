@@ -36,6 +36,8 @@ export const site = {
 	// Used when the build-time lookup fails, so a flaky Apple never breaks a deploy. Already
 	// worldwide, straight from App Store Connect, so `ratingPadding` does not apply to it.
 	fallbackRating: { value: 4.9, count: 90 },
+	// Public by design; the matching secret lives in the Pages dashboard as TURNSTILE_SECRET.
+	turnstileSiteKey: '0x4AAAAAAFN0NA3X90YTx-fI',
 } as const;
 
 export const navLinks = [
