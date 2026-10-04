@@ -13,13 +13,6 @@
 <Seo {title} {description} path="/docs" />
 
 <div class="mx-auto max-w-5xl px-5 py-16 sm:py-24">
-	<nav class="mb-8 text-sm" aria-label="Breadcrumb">
-		<a
-			class="font-medium text-blue-700 underline underline-offset-4 transition hover:text-orange-500 dark:text-blue-400 dark:hover:text-orange-400"
-			href={resolve('/')}>&larr; {site.name}</a
-		>
-	</nav>
-
 	<h1 class="text-4xl font-bold tracking-tight text-balance sm:text-5xl">Guides</h1>
 	<p class="mt-6 max-w-2xl text-lg leading-relaxed text-slate-600 dark:text-slate-300">
 		Everything you can do with a Teenage Engineering EP-133 K.O. II, EP-40 Riddim, or EP-1320

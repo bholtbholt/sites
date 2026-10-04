@@ -12,7 +12,6 @@
 		platforms,
 		Seo,
 		site,
-		StickyBar,
 		StoreBadges,
 	} from '$lib/index';
 	import padEp133 from '$lib/assets/pad-ep133.png?enhanced';
@@ -55,8 +54,6 @@
 	const device = $derived(data.device);
 	const others = $derived(devices.filter((other) => other.slug !== device.slug));
 	const guides = $derived(deviceDocs(device));
-
-	let sentinel = $state<HTMLElement | null>(null);
 </script>
 
 <Seo
@@ -66,17 +63,8 @@
 	schema={deviceSchema(device)}
 />
 
-<StickyBar {sentinel} />
-
 <section class="px-5 pt-24 pb-12 sm:pt-32 sm:pb-16">
 	<div class="mx-auto max-w-5xl">
-		<nav class="mb-8 text-sm" aria-label="Breadcrumb">
-			<a
-				class="font-medium text-blue-700 underline underline-offset-4 transition hover:text-orange-500 dark:text-blue-400 dark:hover:text-orange-400"
-				href={resolve('/')}>&larr; {site.name}</a
-			>
-		</nav>
-
 		<div class="grid items-center gap-10 sm:gap-16 lg:grid-cols-2">
 			<div>
 				<p
@@ -112,8 +100,6 @@
 		</div>
 	</div>
 </section>
-
-<div bind:this={sentinel} aria-hidden="true"></div>
 
 <section
 	class="bg-gradient-to-b from-white to-slate-100 px-5 py-16 sm:py-24 dark:from-slate-800 dark:to-slate-900"

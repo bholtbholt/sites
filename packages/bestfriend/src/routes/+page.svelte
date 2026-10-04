@@ -14,7 +14,6 @@
 		Reviews,
 		Seo,
 		seo,
-		StickyBar,
 		VideoFacade,
 	} from '$lib/index';
 	import bank from '$lib/assets/bank.png?enhanced';
@@ -27,20 +26,11 @@
 	import edit from '$lib/assets/edit.png?enhanced';
 
 	let { data } = $props();
-
-	// StickyBar goes solid once this element scrolls out of view.
-	let sentinel = $state<HTMLElement | null>(null);
 </script>
 
 <Seo title={seo.title} description={seo.description} schema={homeSchema(data.rating)} />
 
-<StickyBar {sentinel} />
-
-<div id="top"></div>
-
 <Hero />
-
-<div bind:this={sentinel} aria-hidden="true"></div>
 
 <VideoFacade />
 
