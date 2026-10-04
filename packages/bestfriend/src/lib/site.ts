@@ -42,6 +42,7 @@ export const site = {
 
 export const navLinks = [
 	{ href: '/docs', label: 'Guides' },
+	{ href: '/bank-snapshots', label: 'Bank Snapshots' },
 	{ href: '/support', label: 'Support' },
 	{ href: '/privacy', label: 'Privacy' },
 ] as const;
