@@ -89,6 +89,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@cloudflare/workers-types@npm:^5.20260927.1":
+  version: 5.20260927.1
+  resolution: "@cloudflare/workers-types@npm:5.20260927.1"
+  checksum: 10c0/d6c15009cb06d00c0ba92ac408dae23bd60ec1739818000725ef9851743094d394ccf94a9b985ba752d592fb5b93d3cbb7d134286f100997e6434686fae528d7
+  languageName: node
+  linkType: hard
+
 "@cspotcode/source-map-support@npm:0.8.1":
   version: 0.8.1
   resolution: "@cspotcode/source-map-support@npm:0.8.1"
@@ -1965,10 +1972,14 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "bf@workspace:packages/bestfriend"
   dependencies:
+    "@cloudflare/workers-types": "npm:^5.20260927.1"
     "@sveltejs/vite-plugin-svelte": "npm:^7.3.0"
     eslint-config: "workspace:^"
+    fflate: "npm:^0.8.3"
     mdsvex: "npm:^0.12.8"
     svelte-config: "workspace:^"
+    vitest-config: "workspace:^"
+    wrangler: "npm:^4.135.0"
   languageName: unknown
   linkType: soft
 
@@ -2634,6 +2645,13 @@ __metadata:
     picomatch:
       optional: true
   checksum: 10c0/e345083c4306b3aed6cb8ec551e26c36bab5c511e99ea4576a16750ddc8d3240e63826cc624f5ae17ad4dc82e68a253213b60d556c11bfad064b7607847ed07f
+  languageName: node
+  linkType: hard
+
+"fflate@npm:^0.8.3":
+  version: 0.8.3
+  resolution: "fflate@npm:0.8.3"
+  checksum: 10c0/eab181ca37f5348ae76d4b6f840e0026e30220e33153289ac942222d8b9638237d486507dbcc09878d724095bd354993a2ee48bbee99c8f2c6440d4448719aa7
   languageName: node
   linkType: hard
 
@@ -4759,7 +4777,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vitest-config@workspace:support/vitest-config":
+"vitest-config@workspace:^, vitest-config@workspace:support/vitest-config":
   version: 0.0.0-use.local
   resolution: "vitest-config@workspace:support/vitest-config"
   dependencies:

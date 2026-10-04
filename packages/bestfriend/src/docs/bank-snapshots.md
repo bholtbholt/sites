@@ -33,7 +33,8 @@ without loading them.
 Swipe a snapshot, or long-press it for a menu:
 
 - **Rename** and recolour it, and add notes.
-- **Share** it as a single `<name>.epbank` file — AirDrop it, or save it to Files.
+- **Share** it as a single `<name>.epbank` file — AirDrop it, save it to Files, or upload it to
+  [Bank Snapshots](/bank-snapshots) for anyone to download.
 - **Delete** it from the Library. Delete does not reset the pads on the EP.
 
 `<name>.epbank` files are archives, so you can rename to `<name>.zip` and unzip to access both the samples as well as the Group configuration settings.

@@ -1,53 +1,70 @@
 User-agent: *
 Allow: /
+Disallow: /bank-snapshots/*/download
 
 # Named explicitly so there is no ambiguity about AI crawlers and answer engines.
 User-agent: GPTBot
 Allow: /
+Disallow: /bank-snapshots/*/download
 
 User-agent: OAI-SearchBot
 Allow: /
+Disallow: /bank-snapshots/*/download
 
 User-agent: ChatGPT-User
 Allow: /
+Disallow: /bank-snapshots/*/download
 
 User-agent: ClaudeBot
 Allow: /
+Disallow: /bank-snapshots/*/download
 
 User-agent: Claude-SearchBot
 Allow: /
+Disallow: /bank-snapshots/*/download
 
 User-agent: Claude-User
 Allow: /
+Disallow: /bank-snapshots/*/download
 
 User-agent: Google-Extended
 Allow: /
+Disallow: /bank-snapshots/*/download
 
 User-agent: Applebot
 Allow: /
+Disallow: /bank-snapshots/*/download
 
 User-agent: Applebot-Extended
 Allow: /
+Disallow: /bank-snapshots/*/download
 
 User-agent: PerplexityBot
 Allow: /
+Disallow: /bank-snapshots/*/download
 
 User-agent: Perplexity-User
 Allow: /
+Disallow: /bank-snapshots/*/download
 
 User-agent: Bingbot
 Allow: /
+Disallow: /bank-snapshots/*/download
 
 User-agent: DuckAssistBot
 Allow: /
+Disallow: /bank-snapshots/*/download
 
 User-agent: meta-externalagent
 Allow: /
+Disallow: /bank-snapshots/*/download
 
 User-agent: Amazonbot
 Allow: /
+Disallow: /bank-snapshots/*/download
 
 User-agent: cohere-ai
 Allow: /
+Disallow: /bank-snapshots/*/download
 
 Sitemap: https://epbf.app/sitemap.xml

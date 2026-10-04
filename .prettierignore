@@ -22,3 +22,8 @@ yarn.lock
 *.mp4
 *.svg
 robots.txt
+*.sql
+*.sh
+*.toml
+*.epbank
+.dev.vars*

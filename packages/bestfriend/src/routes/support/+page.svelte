@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { resolve } from '$app/paths';
 	import { Seo, site } from '$lib/index';
 
 	const link =
@@ -13,8 +12,6 @@
 />
 
 <div class="mx-auto max-w-3xl space-y-6 px-5 py-16 sm:py-24">
-	<a class="text-sm {link}" href={resolve('/')}>&larr; {site.name}</a>
-
 	<h1 class="text-4xl font-bold tracking-tight text-blue-700 dark:text-blue-400">Support</h1>
 
 	<p class="text-lg leading-relaxed text-slate-600 dark:text-slate-300">

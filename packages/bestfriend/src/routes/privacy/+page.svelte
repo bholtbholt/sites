@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { resolve } from '$app/paths';
 	import { Seo, site } from '$lib/index';
 </script>
 
@@ -10,11 +9,6 @@
 />
 
 <div class="mx-auto max-w-3xl px-5 py-16 sm:py-24">
-	<a
-		class="text-sm font-medium text-blue-700 underline underline-offset-4 transition hover:text-orange-500 dark:text-blue-400 dark:hover:text-orange-400"
-		href={resolve('/')}>&larr; {site.name}</a
-	>
-
 	<article
 		class="prose prose-slate dark:prose-invert prose-a:text-blue-700 dark:prose-a:text-blue-400 prose-headings:text-blue-700 dark:prose-headings:text-blue-400 mt-6 max-w-none"
 	>

@@ -1,0 +1,14 @@
+# Must match the Cloudflare Pages project name.
+name = "bf"
+pages_build_output_dir = ".svelte-kit/cloudflare"
+compatibility_date = "2026-06-20"
+
+[[r2_buckets]]
+binding = "BANKS"
+bucket_name = "bf-bank-snapshots"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "bf-bank-snapshots"
+database_id = "bb102ee9-71ac-4985-9972-4a2b60615f2c"
+migrations_dir = "migrations"

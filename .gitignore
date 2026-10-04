@@ -42,3 +42,6 @@ svelte.sublime-workspace
 
 .claude/plans/
 .claude/research/
+
+# Wrangler local secrets
+.dev.vars*
