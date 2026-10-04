@@ -6,12 +6,20 @@
 	"scripts": {
 		"dev": "yarn svelte:dev",
 		"build": "yarn svelte:build",
-		"preview": "yarn svelte:preview"
+		"preview": "yarn svelte:preview",
+		"test": "yarn unit:test",
+		"snapshots:delete": "sh scripts/delete-snapshot.sh"
 	},
 	"devDependencies": {
+		"@cloudflare/workers-types": "^5.20260927.1",
 		"@sveltejs/vite-plugin-svelte": "^7.3.0",
 		"eslint-config": "workspace:^",
 		"mdsvex": "^0.12.8",
-		"svelte-config": "workspace:^"
+		"svelte-config": "workspace:^",
+		"vitest-config": "workspace:^",
+		"wrangler": "^4.135.0"
+	},
+	"dependencies": {
+		"fflate": "^0.8.3"
 	}
 }
