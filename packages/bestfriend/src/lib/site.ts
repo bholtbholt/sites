@@ -27,6 +27,8 @@ export const site = {
 	youtubeTitle:
 		'Introducing Best Friend: The Teenage Engineering EP-133, EP-40, and EP-1320 Companion App',
 	youtubeUploadDate: '2026-08-02',
+	// The standalone chord controller, extracted from this app's MIDI Controller.
+	motherMidiUrl: 'https://mothermidi.app',
 	cableGuideUrl: 'https://www.instagram.com/reel/DawLuoiuV6X',
 	// The storefronts worth asking for ratings at build time. Apple has no global endpoint,
 	// only per-country ones, so this is the top five rather than all ~175.
