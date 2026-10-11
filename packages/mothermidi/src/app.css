@@ -1,0 +1,107 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+
+@theme {
+	--font-serif: 'EB Garamond Variable', ui-serif, 'New York', Georgia, serif;
+	--default-font-family: var(--font-serif);
+
+	--color-ink: #0a0a0a;
+	--color-bone: #ece6dc;
+
+	--color-ash-300: #c9c3b9;
+	--color-ash-400: #a8a29a;
+	--color-ash-500: #8a857d;
+	--color-ash-600: #6b665f;
+	--color-ash-700: #3a3734;
+	--color-ash-800: #1f1d1b;
+	--color-ash-900: #141312;
+
+	/* 400 is the lightest that still reads as oxblood and clears 4.5:1 on ink for small text.
+	   500 only clears 3:1, so it is for large type (numerals, display rules) only. */
+	--color-oxblood-400: #d9566a;
+	--color-oxblood-500: #b51f35;
+	--color-oxblood-700: #7a1020;
+	--color-oxblood-800: #5a0c18;
+	--color-oxblood-900: #2a070c;
+}
+
+/* Light mode is worn paper rather than white, so the scale flips instead of inverting: ink
+   becomes the paper, bone the type, and ash runs from dark text down to faint hairlines.
+   Every text token still clears 4.5:1 on the paper; oxblood-500 clears it too, despite only
+   needing 3:1 for large type. ash-900 is left alone because it only paints device bezels. */
+@media (prefers-color-scheme: light) {
+	:root {
+		--color-ink: #c9c3b9;
+		--color-bone: #151311;
+
+		--color-ash-300: #2b2825;
+		--color-ash-400: #46423d;
+		--color-ash-500: #4f4a44;
+		--color-ash-600: #6b665f;
+		--color-ash-700: #8a847b;
+		--color-ash-800: #ada79d;
+
+		--color-oxblood-400: #8a1426;
+		--color-oxblood-500: #9c1a2e;
+		/* Only ever behind bone text (selection, button hover), so it lightens with the paper. */
+		--color-oxblood-700: #d48c94;
+	}
+}
+
+html {
+	color-scheme: light dark;
+}
+
+body {
+	@apply bg-ink text-bone min-h-screen font-serif text-lg antialiased;
+	font-feature-settings: 'kern', 'liga', 'onum';
+}
+
+img {
+	@apply max-w-full;
+}
+
+::selection {
+	@apply bg-oxblood-700 text-bone;
+}
+
+@utility smallcaps {
+	font-variant-caps: all-small-caps;
+	letter-spacing: 0.14em;
+}
+
+@utility link {
+	@apply text-bone decoration-oxblood-500 hover:decoration-bone underline decoration-1 underline-offset-4 transition;
+}
+
+@utility prose-mm {
+	--tw-prose-body: var(--color-ash-300);
+	--tw-prose-headings: var(--color-bone);
+	--tw-prose-lead: var(--color-ash-300);
+	--tw-prose-links: var(--color-bone);
+	--tw-prose-bold: var(--color-bone);
+	--tw-prose-counters: var(--color-oxblood-400);
+	--tw-prose-bullets: var(--color-oxblood-500);
+	--tw-prose-hr: var(--color-ash-700);
+	--tw-prose-quotes: var(--color-bone);
+	--tw-prose-quote-borders: var(--color-oxblood-500);
+	--tw-prose-code: var(--color-bone);
+
+	& :where(a) {
+		@apply link font-normal;
+	}
+
+	& :where(h1, h2, h3) {
+		@apply font-normal tracking-tight;
+	}
+
+	/* Each guide is one short page, so its headings are subsections under the page's own H1. */
+	& :where(h2, h3) {
+		@apply smallcaps text-ash-400;
+	}
+
+	& :where(kbd) {
+		@apply border-ash-700 text-bone rounded border px-1.5 py-0.5 text-[0.85em] font-normal shadow-none;
+	}
+}
