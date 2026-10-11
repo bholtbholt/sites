@@ -414,6 +414,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@fontsource-variable/eb-garamond@npm:^5.3.0":
+  version: 5.3.0
+  resolution: "@fontsource-variable/eb-garamond@npm:5.3.0"
+  checksum: 10c0/9b309eae7d0f1def439558deebe5c9e6ddc4d30ec9db1a50e501f5f8ea3d90e77f432fcba874a9cbaf83c1a2482178eb4711bbe9936941de73bf178f5edc0f29
+  languageName: node
+  linkType: hard
+
 "@humanfs/core@npm:^0.19.1":
   version: 0.19.1
   resolution: "@humanfs/core@npm:0.19.1"
@@ -3469,6 +3476,19 @@ __metadata:
   checksum: 10c0/5aad75ab0090b8266069c9aabe582c021ae53eb33c6c691054a13a45db3b4f91a7fb1bd79151e6b4e9e9a86727b522527c0a06ec7d45206b745d54cd3097bcec
   languageName: node
   linkType: hard
+
+"mm@workspace:packages/mothermidi":
+  version: 0.0.0-use.local
+  resolution: "mm@workspace:packages/mothermidi"
+  dependencies:
+    "@fontsource-variable/eb-garamond": "npm:^5.3.0"
+    "@sveltejs/vite-plugin-svelte": "npm:^7.3.0"
+    eslint-config: "workspace:^"
+    mdsvex: "npm:^0.12.8"
+    svelte-config: "workspace:^"
+    wrangler: "npm:^4.135.0"
+  languageName: unknown
+  linkType: soft
 
 "mri@npm:^1.1.0":
   version: 1.2.0

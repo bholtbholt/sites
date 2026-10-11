@@ -14,6 +14,7 @@
 		Reviews,
 		Seo,
 		seo,
+		site,
 		VideoFacade,
 	} from '$lib/index';
 	import bank from '$lib/assets/bank.png?enhanced';
@@ -88,6 +89,15 @@
 		Save your own chords onto any Chord or Extension button, split the keys into up to three zones
 		for alternate positions, and run the arpeggiator — 4 modes, 6 rates, 3 octaves — locked to the
 		hardware clock.
+	</p>
+	<p>
+		Want it for any synth, not just your EP? It's also on its own as
+		<a
+			class="font-medium text-blue-700 underline underline-offset-4 transition hover:text-orange-500 dark:text-blue-400 dark:hover:text-orange-400"
+			href={site.motherMidiUrl}
+			rel="external noopener noreferrer"
+			target="_blank">Mother MIDI</a
+		>.
 	</p>
 </FeatureBand>
 

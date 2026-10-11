@@ -43,6 +43,7 @@ jobs:
           - bbp
           - bf
           - cc
+          - mm
           - p
 
     steps:

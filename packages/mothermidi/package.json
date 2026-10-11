@@ -1,0 +1,21 @@
+{
+	"name": "mm",
+	"description": "Static site for Mother MIDI",
+	"version": "0.0.1",
+	"type": "module",
+	"scripts": {
+		"dev": "yarn svelte:dev",
+		"build": "yarn svelte:build",
+		"preview": "yarn svelte:preview"
+	},
+	"devDependencies": {
+		"@sveltejs/vite-plugin-svelte": "^7.3.0",
+		"eslint-config": "workspace:^",
+		"mdsvex": "^0.12.8",
+		"svelte-config": "workspace:^",
+		"wrangler": "^4.135.0"
+	},
+	"dependencies": {
+		"@fontsource-variable/eb-garamond": "^5.3.0"
+	}
+}
