@@ -52,7 +52,7 @@ Designed to speed up music production workflows, this app features offline 12-pa
 
 ## At a glance
 
-**A blank cell means unverified as of September 2026, not unsupported.** Check each app's own
+**A blank cell means unverified as of October 2026, not unsupported.** Check each app's own
 listing for its current state.
 
 |                          | Best Friend | Official EP Sample Tool | Cornerman | EP-PatchStudio | PunchKit |
