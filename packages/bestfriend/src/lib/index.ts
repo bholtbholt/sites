@@ -31,6 +31,7 @@ export { default as FeatureBand } from './components/FeatureBand.svelte';
 export { default as FeatureGrid } from './components/FeatureGrid.svelte';
 export { default as DocsNav } from './components/DocsNav.svelte';
 export { default as Footer } from './components/Footer.svelte';
+export { default as HardwareShot } from './components/HardwareShot.svelte';
 export { default as Header } from './components/Header.svelte';
 export { default as Hero } from './components/Hero.svelte';
 export { default as PhoneFan } from './components/PhoneFan.svelte';
