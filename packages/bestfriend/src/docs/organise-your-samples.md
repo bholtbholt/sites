@@ -34,7 +34,7 @@ Long-press a sample:
 - **Duplicate** copies it to another slot.
 - **Rename** changes the name, up to 16 characters.
 - **Share** sends it to Files, AirDrop, or another app.
-- **Delete** removes it from the hardware. You can also swipe a row left and choose Delete.
+- **Delete** removes it from the hardware. On Apple devices you can also swipe a row left and choose Delete.
 - **Convert to multi-sample** turns it into a multi-sample. EP-40 and EP-1320 only. See
   [build a multi-sample](/docs/build-multi-samples).
 

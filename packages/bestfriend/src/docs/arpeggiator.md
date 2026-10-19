@@ -47,6 +47,11 @@ phrase.
 
 The arpeggiator sends MIDI note-on/note-off commands to the EP, which can be recorded as if from any other MIDI controller. The EP's **Time Correction** and **Swing** settings will apply to the incoming notes. Ensure the rate in Best Friend matches the hardware for the most reliable and predictable results.
 
+## On other gear
+
+Want this arpeggiator for a synth or a DAW? It is also in [Mother MIDI](https://mothermidi.app), the
+standalone chord controller from the same developer.
+
 ## Related
 
 - [Play your EP from a keyboard with chords and an arpeggiator](/docs/midi-keyboard-and-chords)

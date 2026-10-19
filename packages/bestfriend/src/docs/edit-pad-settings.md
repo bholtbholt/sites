@@ -48,12 +48,21 @@ Double-tap a control to reset it.
 - **Legato** plays while held. A new note continues the sample instead of restarting it.
 - **Loop** toggles loop playback and mute. EP-40 only.
 
+Changing the play mode resets the envelope's release to match, the same as changing it on the
+hardware does.
+
 ## Time Mode
 
 - **Off** plays the sample at its own speed.
 - **BPM** stretches the sample to the project tempo.
 - **Bar** stretches the sample to fit a number of bars.
 - **Rev** plays the sample backwards.
+
+## Tune a pad
+
+Tap the **tuner** in Pad Settings to open a chromatic tuner. It listens to your
+[audio input](/docs/app-settings) and shows the nearest note and how far off it is, so you can set
+**Pitch** by ear without guessing.
 
 ## Mute group (choke group)
 

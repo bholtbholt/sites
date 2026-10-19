@@ -76,7 +76,7 @@ Tap a bounce in the Library to open it. Tap a file to show its waveform, and tap
 Tap or drag on the waveform to jump.
 
 - Tap **Share** in the top right to share the whole bounce.
-- Swipe a file to share or delete it.
+- Swipe a file to share or delete it. On Android, long-press it instead.
 - Tap a name to rename it.
 - Tap the **MIDI** row to open it as a [MIDI pattern](/docs/import-midi-patterns) and play it back
   at the hardware.

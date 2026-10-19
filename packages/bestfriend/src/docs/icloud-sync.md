@@ -61,12 +61,6 @@ Tap **Undo** on the banner to bring back something you deleted. See
 The Library works entirely **locally**. Best Friend tells you that items stay on this device and do
 not sync, and nothing else changes.
 
-## Coming from an older version
-
-Upgrading from a build before iCloud sync moves your Library once, behind a "Moving Library to
-iCloud…" progress view. Every item keeps its name, colour, and notes, and nothing duplicates. If
-the app is interrupted mid-move it finishes on the next launch.
-
 ## On Android
 
 Android backups are stored **on the device**. Google Play and the App Store are separate purchases

@@ -69,7 +69,7 @@ A group inside a backup can be saved as a snapshot too — see
 
 ## Share, duplicate, and delete
 
-Long-press a snapshot for **Edit**, **Duplicate**, **Share**, and **Delete**, or swipe it to share
+Long-press a snapshot for **Edit**, **Duplicate**, **Share**, and **Delete**, or, on Apple devices, swipe it to share
 or delete.
 
 - **Share** sends a single `<name>.epbank` file — AirDrop it, save it to Files, or upload it to

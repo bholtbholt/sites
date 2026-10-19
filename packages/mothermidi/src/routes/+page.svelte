@@ -35,7 +35,7 @@
 	<p>
 		Touch the root key, a chord button, and extension to build rich chords. Double-tap to latch.
 	</p>
-	<p>And each of the four chord and four extensions slots are fully customizable.</p>
+	<p>And each of the four chord and four extension slots are fully customizable.</p>
 </FeatureBand>
 
 <FeatureBand numeral={2} eyebrow="Arpeggiator" title="A litany of notes." mirrored>
@@ -46,7 +46,7 @@
 		/>
 	{/snippet}
 	<p>
-		Six rates, four patterns, and one to three octaves, with Root +12 and double notes. Sync'd to
+		Six rates, four patterns, and one to three octaves, with Root +12 and double notes. Synced to
 		your hardware or software MIDI clock, or to its own tempo.
 	</p>
 </FeatureBand>
@@ -106,7 +106,7 @@
 			<a class="link" href={site.bestFriendUrl} rel="external noopener noreferrer" target="_blank"
 				>{site.bestFriendName}</a
 			>, the unrivalled companion app for Teenage Engineering EP-Series samplers. Now she answers to
-			any hardware of software instrument that speaks MIDI.
+			any hardware or software instrument that speaks MIDI.
 		</p>
 	</div>
 </section>

@@ -12,7 +12,8 @@ App Settings holds the app-wide options that mostly work in the background.
 
 ## Open App Settings
 
-On iPhone, tap the **Library** tab twice. On iPad and Mac, choose **Settings** in the sidebar.
+On iPhone, tap the **Library** tab twice. On iPad and Mac, choose **Settings** in the sidebar. On
+Android, tap **Settings** in the bottom bar.
 
 ## Theme
 
@@ -20,11 +21,15 @@ Choose from four themes: **Apple System**, **EP-133**, **EP-1320**, and **EP-40*
 Best Friend uses the theme that matches the EP you connect. Every theme has light, dark, and
 high-contrast variants that follow your device.
 
+On Android the choices are **Auto**, **System**, **EP-133**, **EP-1320**, and **EP-40**. Auto
+matches the EP you connect, and each theme has light and dark variants that follow your phone.
+
 The themes are purely aesthetic. Nothing else changes.
 
 ## List sort order
 
-Set the order of Library items: **Newest**, **Oldest**, **Ascending A–Z**, or **Descending Z–A**.
+Set the order of Library items: **Newest**, **Oldest**, **Ascending A–Z**, or **Descending Z–A**. On
+Android it applies to Bank Snapshots and Backups.
 
 ## Storage and cache
 
@@ -56,6 +61,7 @@ choice is remembered. Pick your EP explicitly if a capture sounds wrong.
 
 File imports take a bulk selection, and iOS does not let apps remember the folder for one — the
 picker opens in its own default every time. Set a starting folder here if that gets in your way.
+Apple devices only.
 
 ## Reset preferences
 

@@ -77,7 +77,9 @@ Fader automation is **included when you bounce**, so the stems carry the moves y
 A group whose fader is parked away from rest with nothing recorded on that lane bounces at the
 parked value — that static base is what the hardware plays.
 
-FX and FX automation are not included in bounces.
+FX and FX automation are not included in offline bounces. To keep them, use
+[real-time capture](/docs/bounce-stems-to-your-daw), which records the hardware's
+own output.
 
 ## Related
 

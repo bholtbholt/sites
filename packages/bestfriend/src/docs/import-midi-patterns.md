@@ -60,7 +60,7 @@ assigned to another group are harmless to leave playing.
 ## Share and organise
 
 Tap **Share** in the top right to share the pattern. Long-press a pattern for **Delete**, **Edit**,
-and **Share**, or swipe it to share or delete.
+and **Share**, or on Apple devices swipe it to share or delete.
 
 Mappings and track names are saved in the app. The `.mid` file itself is not changed.
 

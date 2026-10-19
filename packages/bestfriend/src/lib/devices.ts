@@ -291,7 +291,7 @@ export const faq: readonly FaqItem[] = [
 	},
 	{
 		q: 'Does Best Friend work without the hardware connected?',
-		a: `No. Best Friend is an extended display and management tool, so it needs a wired connection to the hardware while you work. Sample editing happens in the app, and changes are written to the device over the cable.`,
+		a: `Partly. Editing pads, playing the keyboard, and sending samples need a wired connection to the hardware. The Library works without it: browse, preview, share, and bounce from your backups, and build kits and Bank Snapshots to load later.`,
 	},
 	{
 		q: 'Can I back up my EP-133, EP-40, or EP-1320?',
@@ -315,7 +315,7 @@ export const faq: readonly FaqItem[] = [
 	},
 	{
 		q: 'Does Best Friend sync across my devices?',
-		a: 'On Apple devices, yes. iCloud automatically backs up and syncs your Bank Snapshots, project and system backups, and bounces across your iPhone, iPad, and Mac, so anything you save on one is there on the others.',
+		a: 'On Apple devices, yes. iCloud automatically backs up and syncs your Bank Snapshots, project and system backups, bounces, and MIDI patterns across your iPhone, iPad, and Mac, so anything you save on one is there on the others.',
 	},
 	{
 		q: 'Can Best Friend split a song into stems?',
@@ -323,7 +323,7 @@ export const faq: readonly FaqItem[] = [
 	},
 	{
 		q: 'Can I build multi-samples?',
-		a: 'Yes, on the EP-40 and EP-1320. Combine samples into one playable instrument, set the length, crop and loop each layer, preview it, then save it as a single waveform.',
+		a: 'Yes, on the EP-40 and EP-1320. Combine samples into one playable instrument, set the length, crop and loop each layer, preview it, then save it as a single waveform. You can also convert any sample, recording, or video into a multi-sample, auto-split into notes.',
 	},
 	{
 		q: 'Can I import samples from a video?',

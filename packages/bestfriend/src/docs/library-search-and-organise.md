@@ -28,7 +28,7 @@ Every item takes a **name**, a **colour**, and **notes**, and new items each arr
 colour so a run of them is easy to tell apart. Colour groups related takes at a
 glance, and **notes are what search matches on** for a backup — the filename is device-generated.
 
-Rename and recolour by long-pressing a row and choosing **Edit**. Swipe a row to share or delete it. Every backup row's subtitle
+Rename and recolour by long-pressing a row and choosing **Edit**. Swipe a row to share or delete it (long-press on Android). Every backup row's subtitle
 carries its **file size**.
 
 ## Search

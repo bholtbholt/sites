@@ -5,7 +5,7 @@ section: Getting started
 order: 1
 question: How do I connect my EP-133 K.O. II to my iPhone?
 devices: [ep-133, ep-40, ep-1320]
-updated: 2026-09-17
+updated: 2026-10-19
 ---
 
 Best Friend connects to your Teenage Engineering EP over a **wired USB-C data connection**.
@@ -28,8 +28,9 @@ Keep your EP on the latest firmware.
 2. Plug the USB-C data cable into the EP and into your iPhone, iPad, Mac, or Android device.
 3. Open Best Friend. It detects the connected hardware and identifies which EP it is.
 
-There is no pairing step and no permission dialog to approve. If the cable carries data, the
-EP appears.
+There is no pairing step. On iPhone, iPad, and Mac there is no permission dialog either: if the
+cable carries data, the EP appears. Android asks once for permission to access the USB device —
+tick **Always** so it does not ask again.
 
 Once connected, Best Friend loads the project currently on the hardware — every pad, every
 bank, and the Scene and Song data behind them.
@@ -45,7 +46,8 @@ device fails to see the hardware.
 
 Your Android device needs **USB OTG** (On-The-Go) support to act as the host on the
 connection. Most Android phones and tablets from the last several years have it. If yours
-does not, the EP will charge from the connection but will not appear in Best Friend.
+does not, the EP will charge from the connection but will not appear in Best Friend. Some
+phones also need **OTG** turned on in the phone's Settings before they act as a USB host.
 
 ## Nothing happening?
 

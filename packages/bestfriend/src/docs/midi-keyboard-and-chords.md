@@ -84,7 +84,7 @@ over cleanly.
 A slide across the chord column that ends over a different button is not treated as a tap, so the
 latch does not move by accident.
 
-Two extensions can be held at once with two fingers. Adding an extension **adds its note** without
+Hold as many extensions together as you like. Adding an extension **adds its note** without
 restriking the chord, and lifting it drops only that note while the rest keeps ringing.
 
 ### Sub
@@ -130,6 +130,12 @@ Typed notes always play at velocity 100.
 
 The keyboard plays your EP. It does not alter a single pad setting while doing it — open the pad
 afterwards and it is exactly as you left it.
+
+## Play other synths too
+
+The same chord keyboard and arpeggiator is available on its own as
+[Mother MIDI](https://mothermidi.app), for iPhone and iPad. It plays any MIDI synth, app, or DAW
+rather than an EP, and follows incoming MIDI clock or runs its own tempo.
 
 ## Related
 

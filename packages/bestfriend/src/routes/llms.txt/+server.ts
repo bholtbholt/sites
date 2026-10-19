@@ -14,7 +14,7 @@ export function GET() {
 
 > ${seo.description}
 
-${site.name} (App Store listing: "${site.storeName}") is the unrivalled companion app for Teenage Engineering EP-Series hardware samplers, built by ${site.developer}. It connects to the sampler over a USB-C data cable and gives you a full-screen editor for pads and samples, a Scene and Song timeline with note and fader automation lanes, multi-track audio stem bouncing straight off the hardware, a MIDI controller keyboard with chords and an arpeggiator, stem splitting, multi-sample building, and a Library of backups, Bank Snapshots, and bounces, synced by iCloud on Apple devices. It is a one-time purchase of $${site.price} ${site.priceCurrency} per store: one App Store purchase covers iPhone, iPad, and Mac, and one Google Play purchase covers your Android devices. It is not affiliated with, endorsed by, or sponsored by Teenage Engineering.
+${site.name} (App Store listing: "${site.storeName}") is the unrivalled companion app for Teenage Engineering EP-Series hardware samplers, built by ${site.developer}. It connects to the sampler over a USB-C data cable and gives you a full-screen editor for pads and samples, a Scene and Song timeline with note and fader automation lanes, multi-track audio stem bouncing straight off the hardware (rendered offline or captured in real time), a MIDI controller keyboard with chords and an arpeggiator, MIDI file import, sample recording, chopping a sample across pads, stem splitting, multi-sample building, and a Library of backups, Bank Snapshots, bounces, and MIDI patterns, synced by iCloud on Apple devices. Backups can be browsed and partly restored: a single group, pattern, or set of samples. It is a one-time purchase of $${site.price} ${site.priceCurrency} per store: one App Store purchase covers iPhone, iPad, and Mac, and one Google Play purchase covers your Android devices. It is not affiliated with, endorsed by, or sponsored by Teenage Engineering.
 
 ## Supported hardware
 
@@ -74,6 +74,7 @@ ${devices.map((device) => `- [${device.full}](${site.domain}/${device.slug}): wh
 - [App Store](${site.appStoreUrl}): download for iPhone, iPad, and Mac
 - [Google Play](${site.playStoreUrl}): download for Android
 - [Dev blog](${site.substackUrl}): development updates
+- [Mother MIDI](${site.motherMidiUrl}): standalone MIDI chord controller for iPhone and iPad, by the same developer, built from ${site.name}'s MIDI Controller
 - [Demo video](https://www.youtube.com/watch?v=${site.youtubeId}): ${site.youtubeTitle}
 
 ## Contact
