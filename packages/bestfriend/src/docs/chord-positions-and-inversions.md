@@ -5,12 +5,13 @@ section: Playing
 order: 2
 question: How do I play chord inversions on the EP-133?
 devices: [ep-133, ep-40, ep-1320]
-updated: 2026-09-17
+updated: 2026-10-19
 ---
 
 By default the Root Keyboard selector will play the root position chord. With Chord Zones, the keyboard is split into multiple zones that change the voicing of the chord.
 
-Turn it on in the keyboard's settings sheet, under **Split Keyboard into zones**.
+Open **Settings** in the chord toolbar, choose the **Settings** tab, and turn on the inversions you
+want under **Split Keyboard into Zones**.
 
 ## The zones
 

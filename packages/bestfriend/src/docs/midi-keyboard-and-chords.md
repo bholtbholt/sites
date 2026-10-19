@@ -5,7 +5,7 @@ section: Playing
 order: 1
 question: Can I use Best Friend as a MIDI controller for my EP-133?
 devices: [ep-133, ep-40, ep-1320]
-updated: 2026-09-17
+updated: 2026-10-19
 ---
 
 Best Friend includes a velocity-sensitive keyboard that plays your EP-133 K.O. II, EP-40
@@ -13,15 +13,29 @@ Riddim, or EP-1320 Medieval directly over the same USB-C connection.
 
 ## Arm it first
 
-The keyboard plays **one pad, chromatically**:
+The keyboard plays **one pad, chromatically**. There are two ways to point it at a pad.
 
-1. On the EP, press **KEYS** and pick the pad you want to play.
-2. If the pad has a MIDI channel set, sync it with Best Friend. In Best Friend, open the
-   keyboard's settings sheet and set MIDI to the same channel. The stepper runs **0 to 16,
-   where 0 is Off** — on Off the keyboard sends nothing.
+### With KEYS
+
+1. Select a pad on the hardware.
+2. Press <kbd>KEYS</kbd>.
+
+### Over a MIDI channel
+
+Give the pad its own MIDI channel so other pads can still be triggered:
+
+1. Select a pad on the hardware.
+2. Hold <kbd>SHIFT</kbd> + <kbd>SOUND</kbd> to enter Sound Edit mode.
+3. Use <kbd>+</kbd> to navigate to MIDI Settings, then turn the <kbd>Y</kbd> knob to an unused
+   MIDI channel.
+4. Tap **MIDI** in Best Friend's chord toolbar and set the same channel. The stepper runs **0 to
+   16, where 0 is Off** — on Off the keyboard sends nothing.
 
 Play the keyboard and you get that one sample pitched across the keys. A **different pad per
-note** means the channel does not match or the pad is not in keys mode.
+note** means the channel does not match or the pad is not in KEYS mode.
+
+**Note:** the pad must be in **Key** [play mode](/docs/edit-pad-settings) to play chords
+polyphonically. One shot and Legato pads play one note at a time.
 
 Each pad's MIDI channel is editable alongside its other parameters. See
 [edit pad settings](/docs/edit-pad-settings).
@@ -48,7 +62,7 @@ it started on, so nothing is left ringing on the old one.
 
 ## Pitch bend
 
-Drag the pitch wheel and release: it springs back and lands **exactly** at rest, so a note held
+Drag the **Pitch** wheel to bend up or down two semitones, and release: it springs back and lands **exactly** at rest, so a note held
 through the return ends in tune rather than a few cents off. Grabbing it again mid-return takes
 over cleanly.
 
@@ -70,7 +84,7 @@ over cleanly.
 A slide across the chord column that ends over a different button is not treated as a tap, so the
 latch does not move by accident.
 
-Two extensions can be held at once with two fingers. Adding an extension **adds its note** without
+Hold as many extensions together as you like. Adding an extension **adds its note** without
 restriking the chord, and lifting it drops only that note while the rest keeps ringing.
 
 ### Sub
@@ -89,13 +103,43 @@ Four modes, six rates, and a three-octave range, **synced to the hardware clock*
 [MIDI clock out](/docs/midi-clock-and-system-codes) — see
 [the arpeggiator](/docs/arpeggiator) for the detail.
 
+## Settings
+
+Tap **Settings** in the chord toolbar. It has three tabs:
+
+- **Settings** — [velocity, modulation](/docs/velocity-and-modulation), and
+  [Keyboard Zones](/docs/chord-positions-and-inversions).
+- **Chords** — [edit the chord and extension buttons](/docs/custom-chords-and-extensions).
+- **Arpeggiator** — the [arpeggiator](/docs/arpeggiator)'s options.
+
+## Play from a computer keyboard
+
+On a Mac, or an iPad with a keyboard attached, you can play chords by typing. The keys follow Logic
+Pro's Musical Typing layout:
+
+- <kbd>A</kbd> through <kbd>'</kbd> play notes, starting from C. The row above plays the black keys.
+- Hold <kbd>Shift</kbd> for the 1st inversion, or <kbd>Option</kbd> for the 2nd.
+- <kbd>7</kbd>, <kbd>8</kbd>, <kbd>9</kbd>, and <kbd>0</kbd> pick chords. <kbd>1</kbd>–<kbd>4</kbd>
+  add extensions. Tap a number to latch it.
+- <kbd>Z</kbd> and <kbd>X</kbd> move down and up an octave.
+- <kbd>Space</kbd> turns the arpeggiator on and off.
+
+Typed notes always play at velocity 100.
+
 ## This screen writes nothing
 
 The keyboard plays your EP. It does not alter a single pad setting while doing it — open the pad
 afterwards and it is exactly as you left it.
 
+## Play other synths too
+
+The same chord keyboard and arpeggiator is available on its own as
+[Mother MIDI](https://mothermidi.app), for iPhone and iPad. It plays any MIDI synth, app, or DAW
+rather than an EP, and follows incoming MIDI clock or runs its own tempo.
+
 ## Related
 
+- [Chords aren't playing, or play the wrong pads](/docs/troubleshooting)
 - [Chord positions and inversions](/docs/chord-positions-and-inversions)
 - [Build your own chords and extensions](/docs/custom-chords-and-extensions)
 - [Velocity and modulation](/docs/velocity-and-modulation)

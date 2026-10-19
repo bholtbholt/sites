@@ -5,15 +5,17 @@ section: Playing
 order: 4
 question: How do I change velocity sensitivity on the Best Friend keyboard?
 devices: [ep-133, ep-40, ep-1320]
-updated: 2026-09-17
+updated: 2026-10-19
 ---
 
-Both controls live in the keyboard's settings sheet, and both are off until you switch them on.
+Both controls live in the **Settings** tab of the chord toolbar's Settings. **Velocity sensitive**
+is on by default; **Modulation sensitive** is off until you switch it on.
 
 ## Velocity
 
 **Velocity sensitive** turns the keyboard's velocity response on. The band underneath it has
 **two handles** — a floor and a ceiling — so you decide the softest and loudest a strike can be.
+The default band is 80–127. With sensitivity off, every note plays at 100.
 
 - Each handle moves on its own, and stops against the other rather than pushing it.
 - No strike is ever quieter than your floor or louder than your ceiling.

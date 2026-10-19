@@ -5,7 +5,7 @@ section: Samples
 order: 7
 question: Can I split a song into stems for my EP-133?
 devices: [ep-133, ep-40, ep-1320]
-updated: 2026-09-17
+updated: 2026-10-19
 ---
 
 Any sample in Best Friend can be split into its parts: **drums, bass, vocals, guitar, and
@@ -22,8 +22,10 @@ ships inside the app: nothing to install, and it runs **on your device** — no 
 A single progress bar takes you through it: _Loading model…_, _Processing audio…_, _Splitting
 stems…_. A fifteen-second section takes tens of seconds, not minutes.
 
-There is **no cancel**, by design. The progress bar holds the screen until it finishes; leaving
-the screen abandons the split.
+Tap **Stop** to abandon a split partway; **Split stems** comes back and nothing is lost. Leaving
+the screen abandons it too.
+
+Split Stems is not available for [multi-samples](/docs/build-multi-samples).
 
 ## It splits your crop, not the whole file
 
@@ -40,7 +42,10 @@ out of a five-minute track and splitting that is quick; splitting the whole trac
 
 ## The mix
 
-Each part gets a fader. Double-tap one to send it back to 100.
+Set the drums, bass, vocals, guitar, and instruments levels with the faders. The stems mix down to
+one sample. Double-tap a fader to send it back to 100.
+
+The quality depends heavily on the source material.
 
 If you leave **every** fader at unity, Best Friend bypasses the mixdown entirely and uploads bytes
 identical to an unsplit upload — so an accidental split costs you nothing in quality.
@@ -51,7 +56,7 @@ files; re-opening the same sample offers **Split stems** again. Nothing accumula
 ## How it fits the workflow
 
 1. Get the source audio into Best Friend — import from Files, or pull the audio straight out
-   of a video. See [Get samples onto your EP in bulk](/docs/upload-samples-in-bulk).
+   of a video. See [record or import a sample](/docs/record-or-import-a-sample).
 2. Trim to the section you actually want.
 3. Split it into stems.
 4. Remix the levels or mute the parts you do not want.

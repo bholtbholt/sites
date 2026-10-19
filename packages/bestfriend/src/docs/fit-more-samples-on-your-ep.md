@@ -5,11 +5,11 @@ section: Samples
 order: 5
 question: My EP-133 is full — how do I fit more samples on it?
 devices: [ep-133, ep-40, ep-1320]
-updated: 2026-09-17
+updated: 2026-10-19
 ---
 
 The EP has a fixed amount of sample memory, and a long stereo file eats a lot of it. Best
-Friend gives you four ways to make a sample smaller **before** it goes on the device, all of
+Friend gives you several ways to make a sample smaller **before** it goes on the device, all of
 them audible live while the preview plays.
 
 Reductions stack: a 100 kB hi-fi stereo sample becomes a 50 kB mono sample, then a 12.5 kB
@@ -25,13 +25,18 @@ ten.
 
 ## Repitch
 
-Repitch drops the sample an octave and plays it back correspondingly slower, which halves the
-data. Pitch it back up on the pad to get the sound back, grainier.
+Repitch resamples the sample an octave up, then plays it an octave down, which halves the data. It
+still plays at its original pitch, with a grainier, lo-fi character because some high-frequency
+detail is lost.
+
+Repitch also doubles the length limit: a sample can normally be 20 seconds in stereo or 40 in mono,
+and repitched it can be 40 in stereo or 80 in mono.
 
 ## Sample rate
 
-Lowering the sample rate cuts the file proportionally. The editor's fidelity control moves
-between the settings audibly, so you can hear exactly how far you can push a given sound
+Lowering the sample rate cuts the file proportionally. The rates map to Teenage Engineering's own:
+**Hi** 46,875 Hz (default), **Mid** 32,000 Hz, and **Lo** 26,250 Hz. The editor moves between them
+audibly, so you can hear exactly how far you can push a given sound
 before it stops being the sound you wanted. A hi-hat survives far more of this than a pad
 chord does.
 
@@ -40,17 +45,24 @@ device — fidelity the upload discarded is gone.
 
 ## Stereo to mono
 
-Collapsing a stereo file to mono halves it. For most one-shots — kicks, snares, bass notes —
+Collapsing a stereo file to mono halves it. **Channels** cycles through Stereo, Mono, Left, and
+Right. For most one-shots — kicks, snares, bass notes —
 the stereo image was never doing anything for you. Keep stereo for room recordings, wide pads,
 and anything with a deliberate left-right move.
 
 You can also take just the **left** or just the **right** channel rather than summing them,
 which is occasionally the better-sounding option on a mid-side recording.
 
+## Crop silence with Strip
+
+**Strip** moves the crop handles in to the first and last sound, so silence at either end never
+reaches the device.
+
 ## When the device is already full
 
 An upload to a full device fails with a clear error rather than wedging — the app stays
-responsive and the EP takes no harm. Delete some slots and the retry succeeds:
+responsive and the EP takes no harm. Remaining memory is shown in
+[App Settings](/docs/app-settings). Delete some slots and the retry succeeds:
 
 1. Open **Samples**.
 2. Turn on select mode and pick the slots you no longer want.

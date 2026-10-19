@@ -8,15 +8,16 @@
 		devices,
 		deviceTitle,
 		Faq,
+		HardwareShot,
 		PhoneFrame,
 		platforms,
 		Seo,
 		site,
 		StoreBadges,
 	} from '$lib/index';
-	import padEp133 from '$lib/assets/pad-ep133.png?enhanced';
-	import padEp40 from '$lib/assets/pad-ep40.png?enhanced';
-	import padEp1320 from '$lib/assets/pad-ep1320.png?enhanced';
+	import hardwareEp133 from '$lib/assets/hardware-ep133.webp?enhanced';
+	import hardwareEp40 from '$lib/assets/hardware-ep40.webp?enhanced';
+	import hardwareEp1320 from '$lib/assets/hardware-ep1320.webp?enhanced';
 	import ep133Scenes from '$lib/assets/ep133-scenes.png?enhanced';
 	import ep133Samples from '$lib/assets/ep133-samples.png?enhanced';
 	import ep133Library from '$lib/assets/ep133-library.png?enhanced';
@@ -29,21 +30,22 @@
 	import ep1320Samples from '$lib/assets/ep1320-samples.png?enhanced';
 	import ep1320Library from '$lib/assets/ep1320-library.png?enhanced';
 	import ep1320Chords from '$lib/assets/ep1320-chords.png?enhanced';
+	import type { Picture } from 'vite-imagetools';
 	import type { PageProps } from './$types';
 
 	let { data }: PageProps = $props();
 
-	// Each device page shows its own themed screenshots — the same reason the pages
-	// exist at all is that they should not look or read alike.
-	const shots: Record<string, typeof padEp133> = {
-		'ep-133': padEp133,
-		'ep-40': padEp40,
-		'ep-1320': padEp1320,
+	// Each device page shows its own hardware and themed screenshots — the same reason the
+	// pages exist at all is that they should not look or read alike.
+	const hardware: Record<string, Picture> = {
+		'ep-133': hardwareEp133,
+		'ep-40': hardwareEp40,
+		'ep-1320': hardwareEp1320,
 	};
 
 	// The four screens worth showing off, in each device's own theme. Labels are shared
 	// because the screens are the same app — only the palette changes.
-	const galleries: Record<string, (typeof padEp133)[]> = {
+	const galleries: Record<string, Picture[]> = {
 		'ep-133': [ep133Scenes, ep133Samples, ep133Library, ep133Chords],
 		'ep-40': [ep40Scenes, ep40Samples, ep40Library, ep40Chords],
 		'ep-1320': [ep1320Scenes, ep1320Samples, ep1320Library, ep1320Chords],
@@ -63,10 +65,10 @@
 	schema={deviceSchema(device)}
 />
 
-<section class="px-5 pt-24 pb-12 sm:pt-32 sm:pb-16">
-	<div class="mx-auto max-w-5xl">
-		<div class="grid items-center gap-10 sm:gap-16 lg:grid-cols-2">
-			<div>
+<section class="overflow-hidden px-5 pt-28 sm:pt-36 lg:flex lg:min-h-svh lg:flex-col lg:pt-32">
+	<div class="mx-auto max-w-5xl lg:flex lg:w-full lg:flex-1 lg:flex-col">
+		<div class="grid items-center gap-14 sm:gap-16 lg:flex-1 lg:grid-cols-2 lg:gap-12">
+			<div class="lg:pb-16">
 				<p
 					class="mb-2 text-sm font-semibold tracking-widest text-blue-700 uppercase dark:text-blue-400"
 				>
@@ -87,16 +89,13 @@
 				</div>
 			</div>
 
-			<div class="mx-auto max-w-[16rem] sm:max-w-xs">
-				<PhoneFrame>
-					<enhanced:img
-						src={shots[device.slug]}
-						alt="{site.name} showing the {device.full} pad settings in the {device.name} theme"
-						sizes="(min-width: 640px) 320px, 64vw"
-						class="block w-full"
-					/>
-				</PhoneFrame>
-			</div>
+			<HardwareShot
+				hardware={hardware[device.slug]}
+				hardwareAlt="A Teenage Engineering {device.full} sampler"
+				screen={galleries[device.slug][0]}
+				screenAlt="{site.name} showing a Scene timeline in the {device.name} theme"
+				eager
+			/>
 		</div>
 	</div>
 </section>

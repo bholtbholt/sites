@@ -53,6 +53,16 @@ const website = {
 	publisher: { '@id': url('/#developer') },
 };
 
+// The standalone chord controller, by the same developer. Mother MIDI's own schema points back
+// at Best Friend's app node, so this closes the loop from this side.
+const motherMidi = {
+	'@type': 'SoftwareApplication',
+	'@id': `${site.motherMidiUrl}/#app`,
+	name: 'Mother MIDI',
+	url: site.motherMidiUrl,
+	applicationCategory: 'MultimediaApplication',
+};
+
 /**
  * The app itself. This is the block AI answer engines and Google both read to decide
  * what Best Friend *is*, so it carries the full feature list rather than a summary.
@@ -101,6 +111,7 @@ const application = {
 	sameAs: [site.appStoreUrl, site.playStoreUrl, site.instagramUrl, site.substackUrl],
 	isAccessoryOrSparePartFor: hardwareRefs,
 	about: hardwareRefs,
+	isRelatedTo: { '@id': motherMidi['@id'] },
 };
 
 /**
@@ -176,6 +187,7 @@ export const homeSchema = (rating: Rating) => ({
 		person,
 		website,
 		ratedApplication(rating),
+		motherMidi,
 		...hardware,
 		faqPage(url('/#faq'), faq),
 		...video(),

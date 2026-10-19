@@ -1,11 +1,11 @@
 ---
 title: Sync your Library across your Apple devices
-summary: Backups, bounces, and Bank Snapshots move between your iPhone, iPad, and Mac over iCloud.
+summary: Backups, bounces, Bank Snapshots, and MIDI patterns move between your iPhone, iPad, and Mac over iCloud.
 section: Library
 order: 2
 question: Does Best Friend sync EP-133 backups between iPhone and Mac?
 devices: [ep-133, ep-40, ep-1320]
-updated: 2026-09-17
+updated: 2026-10-19
 ---
 
 On Apple devices, your whole Library syncs over **iCloud**. Take a backup on your phone at a
@@ -14,10 +14,13 @@ so there is nothing else to set up.
 
 ## What syncs
 
-Everything in the Library: **Backups**, **Bounces**, and **Bank Snapshots**, each with its name, colour, and notes.
+Everything in the Library: **Bank Snapshots**, **Backups**, **Bounces**, and **MIDI patterns**, each
+with its name, colour, and notes. Sign in to the same Apple Account on each device; there is
+nothing else to set up.
 
-You can see them in Files ▸ iCloud Drive ▸ Best Friend, in three folders — `Backups/`, `Bounces/`,
-and `BankSnapshots/` — each holding the file itself plus a small sidecar with its metadata.
+You can see them in Files ▸ iCloud Drive ▸ Best Friend. Each Library page has its own folder —
+`Backups/`, `Bounces/`, `BankSnapshots/` — holding the file itself plus a small sidecar with its
+metadata. Backups are ordinary `.pak` and `.ppak` files you can copy to a computer.
 
 ## It arrives while you are looking at it
 
@@ -34,22 +37,29 @@ Deleting on one device removes the row on the other.
 iCloud may offload a file you have not touched in a while. Those rows list with a **cloud badge**,
 and VoiceOver reads them as "In iCloud, not downloaded".
 
-- The **first tap downloads** the item, and does not open the restore sheet.
-- The **second tap** acts normally.
+- **Tap it to download it.** A backup opens once it is down.
 - Restoring, previewing, or sharing an offloaded item shows "Downloading from iCloud…" first, then
   proceeds.
 - With no connection, the download fails with a banner rather than spinning forever.
 
+## Using the Library with no EP
+
+The Library works without your EP. When a connection attempt times out, tap **Open Library**.
+Browsing, previewing, importing, sharing, deleting, and bouncing from a backup all work.
+
+Anything that talks to the hardware needs it connected: taking a snapshot, **Load**, backing up,
+restoring, sending samples, bouncing the live project, and playing a MIDI pattern. Plug the EP in
+and Best Friend lands back on the same Library page.
+
+## Undoing a delete
+
+Tap **Undo** on the banner to bring back something you deleted. See
+[search and organise your Library](/docs/library-search-and-organise).
+
 ## If you are not signed in to iCloud
 
-The Library works entirely **locally**. Best Friend tells you that items stay on this device, and
-nothing else changes.
-
-## Coming from an older version
-
-Upgrading from a build before iCloud sync moves your Library once, behind a "Moving Library to
-iCloud…" progress view. Every item keeps its name, colour, and notes, and nothing duplicates. If
-the app is interrupted mid-move it finishes on the next launch.
+The Library works entirely **locally**. Best Friend tells you that items stay on this device and do
+not sync, and nothing else changes.
 
 ## On Android
 

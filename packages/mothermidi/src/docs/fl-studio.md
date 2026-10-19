@@ -5,14 +5,16 @@ section: connecting
 order: 110
 ---
 
+[Connect to the Mac](/docs/connecting-to-a-mac) first.
+
 ## Playing and recording
 
 1. Open **Options > MIDI Settings**.
-2. Under **Input**, select your iPhone or iPad and click **Enable**.
-3. Select an instrument in the Channel Rack and play Mother MIDI.
+2. Under **Input**, select your device and click **Enable**.
+3. Select an instrument in the Channel Rack.
 
 ## Sending clock
 
-1. In **Options > MIDI Settings**, under **Output**, select your iPhone or iPad.
+1. Under **Output**, select your device.
 2. Turn on **Send master sync**.
 3. Set **Port** to a number, then press play.

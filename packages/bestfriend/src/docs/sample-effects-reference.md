@@ -5,7 +5,7 @@ section: Samples
 order: 3
 question: What effects does Best Friend have for EP-133 samples?
 devices: [ep-133, ep-40, ep-1320]
-updated: 2026-09-17
+updated: 2026-10-19
 ---
 
 Effects in Best Friend are **baked into the sample** before it is uploaded, so the EP plays
@@ -17,7 +17,8 @@ Reset action in the rotor. The one exception is the delay's Time / Repeats pad �
 
 ## EQ
 
-A multi-band EQ over the whole sample.
+A low shelf, a mid band, and a high shelf, each with frequency and gain. Select a node and drag
+up or down to change it.
 
 | Control    | Range                                       |
 | ---------- | ------------------------------------------- |
@@ -36,7 +37,12 @@ A multi-band EQ over the whole sample.
 | Release | `40 ms` – `1000 ms`, in `20 ms` steps  | `200 ms`  |
 | Ratio   | 2, 4, 8, 20                            | 4         |
 
+Increase the Input to set the threshold and output volume. The defaults are a good start for punchy
+drums.
+
 ## Grit (Distortion and Saturation)
+
+Increase the Gain to turn it on, and shape it with the Tone fader.
 
 | Control | Range                                  | Default |
 | ------- | -------------------------------------- | ------- |
@@ -49,10 +55,15 @@ A multi-band EQ over the whole sample.
 | Control | Type   | Range                       | Default |
 | ------- | ------ | --------------------------- | ------- |
 | Octaver | Blend  | ±50 Octave down / octave up | `0`     |
-| Phaser  | Rate   | Off to 50                   | Off     |
-| Chorus  | Toggle | Slow, Fast, Both            | Off     |
+| Phaser  | Blend  | Off to 50                   | Off     |
+| Chorus  | Toggle | I, II, Both                 | Off     |
 | Tremolo | Depth  | Off to full                 | Off     |
 |         | Rate   | 0.63 Hz to 14 Hz            | `38`    |
+
+- **Octaver** blends in a pitched copy: up adds an octave up, down adds an octave down, and the
+  middle is off.
+- **Phaser** is inspired by the EHX Small Stone. Slide up to increase the blend.
+- **Chorus** is Juno-inspired. Toggle I for a little, II for more, or both for a lot.
 
 ## Space
 

@@ -1,44 +1,45 @@
 ---
 title: Search and organise your Library
-summary: Bank Snapshots, backups, and bounces in one place — colour-coded, annotated, searchable, and bulk-editable with undo.
+summary: Bank Snapshots, backups, bounces, and MIDI patterns in one place — colour-coded, annotated, searchable, and bulk-editable with undo.
 section: Library
 order: 1
 question: Where does Best Friend keep my EP-133 backups and bounces?
 devices: [ep-133, ep-40, ep-1320]
-updated: 2026-09-17
+updated: 2026-10-19
 ---
 
-Everything Best Friend saves lives in the **Library**, split into three pages:
+Everything Best Friend saves lives in the **Library**, split into four pages:
 
-- **Bank Snapshots** — single banks, saved and recallable.
+- **Bank Snapshots** — single groups, saved and recallable.
 - **Backups** — projects and full systems.
 - **Bounces** — the zips you have exported.
+- **MIDI Patterns** — imported `.mid` files, mapped to pads. See
+  [play a MIDI file on your EP](/docs/import-midi-patterns).
 
 Tap between them with the capsule above the tab bar. It hides as you scroll down a long list and
 comes back when you scroll up or reach the top.
 
-On iPad and Mac each of the three has its own screen in the sidebar, with its own title, toolbar,
+On iPad and Mac each page has its own screen in the sidebar, with its own title, toolbar,
 and search.
 
 ## Name, colour, and annotate
 
-Every item takes a **name**, a **colour**, and **notes**. Colour groups related takes at a
+Every item takes a **name**, a **colour**, and **notes**, and new items each arrive in a different
+colour so a run of them is easy to tell apart. Colour groups related takes at a
 glance, and **notes are what search matches on** for a backup — the filename is device-generated.
 
-Rename and recolour by swiping a row, or long-pressing it for a menu. Every backup row's subtitle
+Rename and recolour by long-pressing a row and choosing **Edit**. Swipe a row to share or delete it (long-press on Android). Every backup row's subtitle
 carries its **file size**.
 
 ## Search
 
-Search covers **all three types at once**. Results replace the page, grouped by type, with empty
+Search covers **every type at once**. Results replace the page, grouped by type, with empty
 groups omitted.
 
 - A backup matches on its **note**, not its device filename.
 - A snapshot result pushes straight to its detail screen.
 - A Restore started from a search result presents its sheet there, against the right scope —
   project backups restore a project, system backups the device.
-- Projects inside an unopened system backup are listed flat, so you can find them without opening
-  the parent.
 
 ## Select mode
 
@@ -65,11 +66,18 @@ quit the app stays deleted, and leaves nothing orphaned behind.
 ## Adding things
 
 The **+** is page-aware: it opens the snapshot save sheet on Bank Snapshots, the backup sheet on
-Backups, and the bounce wizard on Bounces. On Backups, one sheet carries the type picker, the
+Backups, and the [bounce wizard](/docs/bounce-stems-to-your-daw) on Bounces. The **import** button
+in the top right adds a file from Files — see
+[import backups and Bank Snapshots](/docs/import-backups-and-snapshots). On Backups, one sheet carries the type picker, the
 colour, and the notes together, and its detail line names the project the device is actually on.
 
 Disconnected, the sheet still opens and still lets you switch type, but tells you to connect a
 device and leaves Back Up disabled.
+
+## App Settings
+
+On iPhone, tap the **Library** tab again to open App Settings — theme, sort order, cache, and more.
+See [App Settings](/docs/app-settings).
 
 ## Related
 

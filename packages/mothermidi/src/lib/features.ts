@@ -15,7 +15,7 @@ export const featureGroups: readonly FeatureGroup[] = [
 			'Extensions stack — hold as many as you like',
 			'Edit any slot: up to 5 notes across two octaves',
 			'Suboctave of the root on a single toggle',
-			'Pitch wheel bends ±2 semitones',
+			'Pitch wheel, with the bend range set on your instrument',
 		],
 	},
 	{
@@ -31,12 +31,12 @@ export const featureGroups: readonly FeatureGroup[] = [
 	},
 	{
 		title: 'Arpeggiator & MIDI',
-		blurb: 'Follows your clock and sends where you choose.',
+		blurb: 'Follows your clock, or sets its own, and sends where you choose.',
 		items: [
 			'Rates of 4, 8, 8T, 16, 16T and 32',
 			'Up, Down, Up-Down and Down-Up patterns across 1–3 octaves',
 			'Root +12 and double notes',
-			'Follows incoming MIDI clock from a DAW or hardware',
+			'Follows incoming MIDI clock, or runs and sends its own tempo',
 			'MIDI channel 1–16',
 			'Send to every destination, or only the ones you pick',
 		],

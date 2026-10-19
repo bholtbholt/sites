@@ -14,7 +14,7 @@ export function GET() {
 
 > ${seo.description}
 
-${site.name} is a MIDI chord controller for iPhone and iPad, built by ${site.developer}. Hold a chord button and touch one of twelve root keys, and it sends the whole chord — or an arpeggio of it, locked to incoming MIDI clock — to any connected synth, app, or DAW. It makes no sound of its own. It began as the chord controller inside ${site.bestFriendName} (${site.bestFriendUrl}), the companion app for Teenage Engineering EP-Series samplers. It is a one-time purchase of $${site.price} ${site.priceCurrency}, universal across iPhone and iPad.
+${site.name} is a MIDI chord controller for iPhone and iPad, built by ${site.developer}. Hold a chord button and touch one of twelve root keys, and it sends the whole chord — or an arpeggio of it, locked to MIDI clock — to any connected synth, app, or DAW. It makes no sound of its own. It began as the chord controller inside ${site.bestFriendName} (${site.bestFriendUrl}), the companion app for Teenage Engineering EP-Series samplers. It is a one-time purchase of $${site.price} ${site.priceCurrency}, universal across iPhone and iPad.
 
 ## Platforms and requirements
 

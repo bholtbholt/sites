@@ -56,6 +56,10 @@
 		Take all 48 individually, group mixdowns, or a stereo mixdown, with the fader automation baked
 		in. Export the MIDI while you're there, then open the whole thing in your DAW.
 	</p>
+	<p>
+		Or capture in real time to keep what an offline render can't: your live performance, Supertone,
+		punch-ins, and effects. Every take is MIDI-synced, so it lines up the moment it lands in a DAW.
+	</p>
 </FeatureBand>
 
 <FeatureBand eyebrow="Scenes" title="See the whole arrangement.">
@@ -91,6 +95,10 @@
 		hardware clock.
 	</p>
 	<p>
+		Import a MIDI file, map its tracks to pads, and play it at the EP in time with its clock — then
+		record it straight into a pattern.
+	</p>
+	<p>
 		Want it for any synth, not just your EP? It's also on its own as
 		<a
 			class="font-medium text-blue-700 underline underline-offset-4 transition hover:text-orange-500 dark:text-blue-400 dark:hover:text-orange-400"
@@ -110,6 +118,7 @@
 		Trim, envelope, volume, pitch, pan, play mode, time-stretch, MIDI channel — visible and editable
 		without diving through a menu. And of course, the waveform itself.
 	</p>
+	<p>Change several pads at once, and tune a pad by ear with the built-in tuner.</p>
 	<p>Themes for the EP-133, EP-40, EP-1320, or the system in both light and dark mode.</p>
 </FeatureBand>
 
@@ -123,7 +132,11 @@
 
 	<p>
 		Every pad in the group, waveform and name, laid out the way the hardware is. Move through A, B,
-		C, and D without losing your place then drag and drop to reassign samples.
+		C, and D without losing your place, then drag and drop to reassign samples.
+	</p>
+	<p>
+		Copy a pad and its settings to another, or chop one sample across pads — in equal slices, at its
+		transients, or by hand while it plays.
 	</p>
 	<p>
 		And apply momentary performance effects like individual pad mutes, pitch changes, or reverse
@@ -177,8 +190,9 @@
 	{/snippet}
 
 	<p>
-		Bulk upload from Files or straight out of a video. Then select what you want and move, share, or
-		delete it in one pass — or edit a sample and replace it in place.
+		Bulk upload from Files or straight out of a video, or record audio right into the app. Then
+		select what you want and move, share, or delete it in one pass — or edit a sample and replace it
+		in place.
 	</p>
 </FeatureBand>
 
@@ -191,9 +205,14 @@
 	{/snippet}
 
 	<p>
-		Bank Snapshots, Project and System backups, and your bounces, arranged together. Snapshot a bank
-		you've built and recall it later — even on another EP. Preview a backup's audio before you
-		restore it, or pull a single Project back out of a full System backup.
+		Bank Snapshots, Project and System backups, your bounces, and MIDI patterns, arranged together.
+		Snapshot a bank you've built and recall it later — even on another EP — or build one without the
+		hardware connected.
+	</p>
+	<p>
+		Open any backup and browse it, no EP needed: its projects, scenes, groups, patterns, and
+		samples. Hear a scene before you restore, then take back only what you want — one group, a few
+		samples, a pattern as MIDI — or pull a single Project out of a full System backup.
 	</p>
 	<p>
 		On Apple devices iCloud keeps all of it in sync across your iPhone, iPad, and Mac,

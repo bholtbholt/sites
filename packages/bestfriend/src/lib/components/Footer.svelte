@@ -48,6 +48,14 @@
 			>
 				Dev Blog
 			</a>
+			<a
+				class={footerLink}
+				href={site.motherMidiUrl}
+				rel="external noopener noreferrer"
+				target="_blank"
+			>
+				Mother MIDI
+			</a>
 		</nav>
 		<p class="text-xs leading-relaxed text-slate-500 dark:text-slate-400">
 			Best Friend is not affiliated with, endorsed by, or sponsored by Teenage Engineering. EP-133,

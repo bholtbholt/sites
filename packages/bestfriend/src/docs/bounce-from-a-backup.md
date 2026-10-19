@@ -5,7 +5,7 @@ section: Backups & bouncing
 order: 7
 question: Can I bounce stems from an EP-133 backup without the device?
 devices: [ep-133, ep-40, ep-1320]
-updated: 2026-09-17
+updated: 2026-10-19
 ---
 
 Best Friend rebuilds a scene or song from the project data and the samples, which means a
@@ -13,12 +13,15 @@ Best Friend rebuilds a scene or song from the project data and the samples, whic
 
 ## Bounce one
 
-1. Open the Library's **Backups** page.
-2. Long-press a **project** backup and choose **Bounce**.
-3. Walk the wizard through to a finished bounce.
+Start from any of these:
 
-The wizard opens on that backup's own project: its scenes, its pad names, first scene selected.
-**Change** picks any other scene the backup holds, or the whole **Song**.
+- Long-press a **project** backup in the Library and choose **Bounce**.
+- Open a backup and tap **Bounce** on the project's **Scenes** page.
+- Open a scene inside a backup and tap **Bounce**.
+
+Then walk the wizard through to a finished bounce. It opens on that backup's own project: its
+scenes, its pad names, first scene selected — or the song, when you start from a Scenes page whose
+chain holds one. **Change** picks any other scene the backup holds, or the whole **Song**.
 
 No device reads happen at any point — the samples come out of the backup file.
 
@@ -30,12 +33,12 @@ restoring it first, and without losing what is on the device now.
 ## Projects inside a system backup
 
 A **system** backup itself offers Restore but not Bounce — it is a container, not a project. Open
-it and the projects revealed inside each offer Bounce, exactly like an imported `.ppak`. See
-[pull one project out of a system backup](/docs/extract-a-project-from-a-system-backup).
+it and each project inside offers Bounce, as does an
+[extracted project](/docs/extract-a-project-from-a-system-backup).
 
 ## The extras still work
 
-Turn on **Samples** and **MIDI** in the wizard's extras and both land in the zip. The samples
+Turn on **Sample Sources** and **MIDI File** under **Include** and both land in the zip. The samples
 exported are the backup's own WAVs, with their metadata intact. See
 [what's inside a bounce](/docs/whats-in-a-bounce).
 

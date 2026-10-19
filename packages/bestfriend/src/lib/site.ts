@@ -23,10 +23,9 @@ export const site = {
 	instagramUrl: 'https://www.instagram.com/badbadpower',
 	youtubeUrl: 'https://www.youtube.com/@badbadpower',
 	betaFormUrl: 'https://forms.gle/jvMsX5sYRAZZVqPu7',
-	youtubeId: 'X7Qb79Qyd0E',
-	youtubeTitle:
-		'Introducing Best Friend: The Teenage Engineering EP-133, EP-40, and EP-1320 Companion App',
-	youtubeUploadDate: '2026-08-02',
+	youtubeId: 'abjS3GltFJ8',
+	youtubeTitle: "I built an Android App for Teenage Engineering's EP-133 K.O. II series samplers",
+	youtubeUploadDate: '2026-10-01',
 	// The standalone chord controller, extracted from this app's MIDI Controller.
 	motherMidiUrl: 'https://mothermidi.app',
 	cableGuideUrl: 'https://www.instagram.com/reel/DawLuoiuV6X',
