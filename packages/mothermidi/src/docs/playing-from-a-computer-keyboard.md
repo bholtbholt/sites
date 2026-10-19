@@ -1,16 +1,16 @@
 ---
 title: Playing from a computer keyboard
-summary: "Play Mother MIDI by typing, with Logic Pro's Musical Typing layout."
+summary: "Play Mother MIDI by typing on an iPad keyboard, with Logic Pro's Musical Typing layout."
 section: playing
 order: 60
 ---
 
-With a computer keyboard connected to your iPhone or iPad, you can play Mother MIDI by typing. The notes follow Logic Pro's Musical Typing layout:
+Play Mother MIDI from a keyboard connected to your iPad. Keys follow Logic Pro's Musical Typing layout.
 
-- A through ' play notes, starting from C.
-- Hold Shift for the 1st inversion, or Option for the 2nd.
-- 7, 8, 9 and 0 pick chords. 1–4 add extensions. Tap a number to latch it.
-- Z and X move down and up an octave.
-- Space turns the arpeggiator on and off.
+- <kbd>A</kbd> to <kbd>'</kbd> play notes from C. The row above plays the black keys.
+- Hold <kbd>Shift</kbd> for the 1st inversion, <kbd>Option</kbd> for the 2nd.
+- <kbd>7</kbd> to <kbd>0</kbd> pick chords. <kbd>1</kbd> to <kbd>4</kbd> add extensions. Tap a number to latch it.
+- <kbd>Z</kbd> and <kbd>X</kbd> change octave.
+- <kbd>Space</kbd> turns the arpeggiator on and off.
 
-Typed notes always play at velocity 100.
+Typed notes play at velocity 100.

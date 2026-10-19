@@ -21,11 +21,11 @@ export const faq: readonly FaqItem[] = [
 	},
 	{
 		q: 'Why is the arpeggiator silent?',
-		a: `The arpeggiator follows an incoming MIDI clock — ${site.name} doesn't make one of its own. Send clock from your DAW or hardware and press play. The Arp tab of Settings shows which clock it is following. Chords and single notes never need a clock.`,
+		a: `The arpeggiator needs a MIDI clock. Set the clock to External and press play in your DAW, or set it to Internal and pick a tempo. The toolbar reads No clock when none is arriving. Chords and single notes never need a clock.`,
 	},
 	{
 		q: 'Does it work with GarageBand?',
-		a: `Yes. On iPad, open ${site.name} in Split View beside GarageBand — no cable needed. On a Mac, GarageBand hears it as soon as the device is enabled in Audio MIDI Setup. GarageBand doesn't send MIDI clock, so the arpeggiator won't run, but chords and notes play as normal.`,
+		a: `Yes. On iPad, open ${site.name} in Split View beside GarageBand — no cable needed. On a Mac, GarageBand hears it as soon as the device is enabled in Audio MIDI Setup. GarageBand doesn't send MIDI clock, so set ${site.name}'s clock to Internal and match the song's tempo to arpeggiate.`,
 	},
 	{
 		q: 'Can I play it from a computer keyboard?',

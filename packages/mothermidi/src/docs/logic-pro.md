@@ -1,25 +1,35 @@
 ---
 title: Logic Pro
-summary: 'Play, record and quantize Mother MIDI in Logic Pro, and send it clock for the arpeggiator.'
+summary: 'Play, record, and quantize Mother MIDI in Logic Pro, and send it clock for the arpeggiator.'
 section: connecting
 order: 90
 ---
 
-## Playing and recording
+## Playing and recording on a Mac
+
+[Connect to the Mac](/docs/connecting-to-a-mac) first.
 
 1. Create a Software Instrument track and record-enable it.
 2. Play Mother MIDI. Logic hears every MIDI input by default.
 
-To limit a track to Mother MIDI, open the inspector (<kbd>I</kbd>) and set **MIDI In Port** to your iPhone or iPad. If nothing plays, open **Logic Pro > Settings > MIDI > Inputs** and make sure the port is turned on.
+To limit a track to Mother MIDI, open the inspector (<kbd>I</kbd>) and set **MIDI In Port** to your iPhone or iPad. If nothing plays, check the port is on in **Logic Pro > Settings > MIDI > Inputs**.
 
-## Sending clock
+## Sending clock from a Mac
 
-1. Choose **File > Project Settings > Synchronization**, then the **MIDI** tab.
+1. Choose **File > Project Settings > Synchronization**, then **MIDI**.
 2. Set **Destination** to your iPhone or iPad and turn on **Clock**.
 3. Press play.
 
-If the arpeggio runs slightly ahead of or behind Logic, adjust **Delay** on the same tab.
+If the arpeggio drifts ahead or behind, adjust **Delay** on the same tab.
 
 ## Quantizing while you record
 
-Logic can't quantize notes as you play them, but it can quantize each new recording. Click an empty part of the Tracks area so no region is selected. The Region inspector now reads **MIDI Thru**. Set **Quantize** there, and every region you record on that track uses it. You can change it or turn it off later.
+Click an empty part of the Tracks area so no region is selected. The Region inspector reads **MIDI Thru**. Set **Quantize** there, and every new recording on that track uses it.
+
+## On iPad
+
+1. Open Mother MIDI in Split View or Slide Over beside Logic Pro.
+2. Create a Software Instrument track and record-enable it.
+3. Play Mother MIDI.
+
+To send clock, open **Project Settings > MIDI > Sync**, turn on **Clock** for **Mother MIDI**, and press play.

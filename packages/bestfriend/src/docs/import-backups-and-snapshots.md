@@ -1,27 +1,29 @@
 ---
 title: Import backups and Bank Snapshots
-summary: Which file types Best Friend opens, the three ways to get them in, and drag-and-drop on a Mac.
+summary: Which file types Best Friend opens, the three ways to get them in, and drag-and-drop on iPad and Mac.
 section: Library
 order: 3
 question: Can Best Friend open EP-133 .pak and .ppak files?
 devices: [ep-133, ep-40, ep-1320]
-updated: 2026-09-17
+updated: 2026-10-19
 ---
 
-Best Friend opens three file types, and each one lands on its own Library page.
+Best Friend opens these file types, and each one lands on its own Library page.
 
 | File      | What it is              | Where it lands                |
 | --------- | ----------------------- | ----------------------------- |
 | `.pak`    | A full system backup    | Backups, as `System · …`      |
 | `.ppak`   | A single project backup | Backups, as `Project <n> · …` |
 | `.epbank` | A Bank Snapshot         | Bank Snapshots                |
+| `.mid`    | A MIDI file             | MIDI Patterns                 |
 
 ## Three ways in
 
-- **Import** in the Library toolbar, then pick the file. Available from the sidebar's Backups
-  screen on iPad and Mac too.
+- The **import** button in the top right of the Library, then pick the file. Available from the
+  sidebar's screens on iPad and Mac too. MIDI files import from the
+  [MIDI Patterns](/docs/import-midi-patterns) page.
 - **Open in Best Friend**, from Files, Mail, or AirDrop.
-- **Drag and drop**, on a Mac.
+- **Drag and drop**, on iPad and Mac.
 
 Whichever you use, the Library switches to the page the file landed on, and leaves the other pages
 untouched.
@@ -39,15 +41,15 @@ and it reveals the projects inside.
 A backup shared out of Best Friend opens in the official EP Sample Tool, so the round trip works in
 both directions.
 
-## Drag and drop on a Mac
+## Drag and drop on iPad and Mac
 
-On a Mac you can drop files onto **any** screen — Pad, Pad Group, Samples, Bank Snapshots,
+On iPad and Mac you can drop files onto **any** screen — Pad, Pad Group, Samples, Bank Snapshots,
 Backups, Settings — and Best Friend routes them by type. The overlay names the destination _before_
 you release: "Import audio file", "Add System Backup", "Add Project Backup", "Add Bank Snapshot",
 or "Import 2 files" for a mixed selection.
 
 - **Audio files** open the sample importer, in Finder's order, with their **original filenames**
-  intact.
+  intact. See [record or import a sample](/docs/record-or-import-a-sample).
 - **Containers** land in their Library section and the sidebar jumps there.
 - A file type Best Friend cannot use shows the forbidden cursor and is never accepted.
 

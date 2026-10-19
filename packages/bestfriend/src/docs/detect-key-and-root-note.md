@@ -5,7 +5,7 @@ section: Samples
 order: 4
 question: How do I find the key of a sample for my EP-133?
 devices: [ep-133, ep-40, ep-1320]
-updated: 2026-09-17
+updated: 2026-10-19
 ---
 
 Every sample you open shows its key in the label above the waveform, alongside its size in

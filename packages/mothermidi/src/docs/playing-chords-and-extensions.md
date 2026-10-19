@@ -1,33 +1,26 @@
 ---
 title: Playing chords and extensions
-summary: 'Hold a chord with a root key, latch it, add extensions, invert it with zones, and edit the chord slots.'
+summary: 'Hold a chord with a root key, latch it, add extensions, and invert it with Keyboard Zones.'
 section: playing
 order: 40
 ---
 
-With no chord selected, a key plays a single note. Hold a chord button and a root key together to play the chord. Only one chord plays at a time. A chord doesn't sound until you press a root key.
+Hold a chord button and press a key to play that chord from the key. Only one chord plays at a time. With no chord held, a key plays a single note.
+
+The chords start as **dim**, **min**, **Maj**, and **sus4**, the extensions as **6**, **m7**, **M7**, and **9**. To change them, see [Editing chord slots](/docs/editing-chord-slots).
+
+## Latching a chord
 
 - Double-tap a chord to latch it. Double-tap again to unlatch.
-- While a chord is latched, a single tap on another chord moves the latch.
-- Holding a different chord overrides the latch until you let go.
+- Tap another chord to move the latch.
+- Hold another chord to play it until you let go.
 
-Extensions add notes to the chord. Hold any number of them with the root key. Extensions don't latch.
+## Adding extensions
+
+Hold any number of extensions with the key. Extensions don't latch.
 
 ## Inverting a chord with Keyboard Zones
 
-Keyboard Zones split each key into 1–3 blocks that play the chord in root position, first inversion or second inversion.
+Keyboard Zones split each key into up to 3 blocks: root position, 1st inversion, and 2nd inversion. Turn them on in [Settings](/docs/settings).
 
-Open Settings in the toolbar, choose the Settings tab, and turn on the inversions you want under Split Keyboard into Zones.
-
-Velocity and modulation still work with Keyboard Zones. Velocity is measured within each zone.
-
-## Editing a chord slot
-
-Open Settings in the toolbar and choose the Chords tab. Tap a chord or extension, then tap notes on the keyboard to add or remove them.
-
-- A chord holds up to 5 notes, including the root, across two octaves. Chords are shown with a C root.
-- An extension is a single note.
-
-## Pitch bending
-
-Use the **Pitch** wheel to bend a chord up or down two semitones.
+Velocity is measured within each zone.

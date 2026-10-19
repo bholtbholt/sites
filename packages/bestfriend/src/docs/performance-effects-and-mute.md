@@ -5,7 +5,7 @@ section: Pads
 order: 3
 question: How do I mute or reverse a single pad on the EP-133?
 devices: [ep-133, ep-40, ep-1320]
-updated: 2026-09-17
+updated: 2026-10-19
 ---
 
 Best Friend puts five performance effects on every pad, switchable while the rest of the
@@ -22,7 +22,7 @@ your head.
 
 ## Entering and exiting performance mode
 
-Toggle the finger icon in the top-right toolbar. Any pad you tap is latched into the new
+Toggle the **Performance** button in the toolbar. Any pad you tap is latched into the new
 state, and stays there until you tap it again.
 
 Leaving performance mode **reverts every pad automatically**, so you do not have to undo your
@@ -40,7 +40,7 @@ position — so pad 5 in bank A keeps its effect whether or not the sample on it
 ## What each one does
 
 - **Mute** drops that pad's amplitude to zero.
-- **Mute Group** mutes a set of pads together, across groups.
+- **Mute Group** silences every pad set to Mute Group, across all four groups, together.
 - **Pitch up** and **Pitch down** shift the pad by an octave, **clamped** to the device's
   range. A pad already near the ±12 limit shifts as far as it can rather than having the
   write rejected.
@@ -62,13 +62,14 @@ Set it back by hand, on the pad's own screen:
 | Reverse           | **Time Mode** picker |
 
 Double-tap a fader to reset it. Time Mode is a picker, so set it back rather than resetting
-it. On the hardware, press **SHIFT** + **SOUND** and use the XY knobs.
+it. On the hardware, press <kbd>SHIFT</kbd> + <kbd>SOUND</kbd> and use the <kbd>X</kbd> and
+<kbd>Y</kbd> knobs.
 
 ## Three different mutes
 
 The word covers three separate things:
 
-1. **Pad settings ▸ Mute** writes the device's own choke-group flag. It silences **other**
+1. **Pad settings ▸ Mute group** writes the device's own choke-group flag. It silences **other**
    pads when this one plays. See
    [edit pad settings](/docs/edit-pad-settings).
 2. **Performance ▸ Mute** drops **this** pad's amplitude to zero, and nothing else.

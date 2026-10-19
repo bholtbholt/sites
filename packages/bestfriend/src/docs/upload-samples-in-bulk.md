@@ -1,42 +1,42 @@
 ---
 title: Get samples onto your EP in bulk
-summary: Import from Files or straight out of a video, then move, rename, replace, and delete samples in batches instead of one pad at a time.
+summary: Import a whole folder at once, then move, share, delete, and snapshot samples in batches instead of one pad at a time.
 section: Samples
 order: 1
 question: How do I get samples onto my EP-133 in bulk?
 devices: [ep-133, ep-40, ep-1320]
-updated: 2026-09-17
+updated: 2026-10-19
 ---
 
 Loading samples onto an EP means one slot at a time through a three-character display. Best
 Friend does it in batches.
 
-## Import from Files
+## Import a folder at once
 
-Pull in a whole folder of samples at once from iCloud Drive, Dropbox, an external drive, or
-anywhere else the Files app can reach. Select what you want, import it, and assign the
-samples to pads.
+On **Pads** or **Samples**, tap **+** and **Choose file…**. Pull in a whole folder of samples from
+iCloud Drive, Dropbox, an external drive, or anywhere else the Files app can reach. Each file opens
+in the editor in turn; skip and discard any you do not want and carry on to the next.
 
-## Import from a video
+On iPad and Mac, drop the files anywhere on Best Friend instead.
 
-Audio can be pulled directly out of a video in your library — a phone recording of a
-rehearsal, a clip you saved, anything with a soundtrack. Best Friend extracts the audio, and
-from there it behaves like any other sample: edit it, trim it, send it to a pad.
+Audio can also come straight out of a video, or from a recording. See
+[record or import a sample](/docs/record-or-import-a-sample).
 
 ## Work in batches once they are on
 
 Tap **Select**, then tap the samples you want. Everything that is tedious one pad at a time
 becomes a single operation:
 
-- **Move** samples between pads and banks.
+- **Move** samples between slots and banks.
 - **Delete** in bulk to reclaim space.
 - **Share** a selection out to another app or another person.
+- **Send to Group** to fill the current group's empty pads.
+- **Convert to a Bank Snapshot** to keep the selection as a kit.
 
 One at a time, you can also:
 
 - **Search** your samples by name.
 - **Duplicate** a sample by giving it a different target slot number.
-- **Reorder** by dragging a row.
 - **Edit and replace in place** — change a sample and put it back on the pad it came from,
   without rebuilding the arrangement around it.
 

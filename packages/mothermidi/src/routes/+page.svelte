@@ -47,7 +47,7 @@
 	{/snippet}
 	<p>
 		Six rates, four patterns, and one to three octaves, with Root +12 and double notes. Sync'd to
-		your hardware or software MIDI clock.
+		your hardware or software MIDI clock, or to its own tempo.
 	</p>
 </FeatureBand>
 

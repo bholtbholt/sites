@@ -5,7 +5,7 @@ section: Getting started
 order: 3
 question: Why won't my EP-133 connect to Best Friend?
 devices: [ep-133, ep-40, ep-1320]
-updated: 2026-09-17
+updated: 2026-10-19
 ---
 
 Best Friend needs a wired data connection to your EP-133 K.O. II, EP-40 Riddim, or EP-1320
@@ -51,6 +51,11 @@ Turn the EP off and on again with the cable connected, then reopen Best Friend.
 ## 7. Check the firmware
 
 Keep your EP on the latest firmware — you may need to [update your EP](https://teenage.engineering/apps/update).
+
+## Connected, but something else is wrong?
+
+Uploads failing, chords playing the wrong pads, or a silent arpeggiator — see
+[fix common Best Friend problems](/docs/troubleshooting).
 
 ## Still stuck?
 

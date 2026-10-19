@@ -5,12 +5,12 @@ section: Playing
 order: 3
 question: Can I make custom chords in Best Friend for the EP-133?
 devices: [ep-133, ep-40, ep-1320]
-updated: 2026-09-17
+updated: 2026-10-19
 ---
 
 The chord buttons ship as major, minor, suspended, and diminished, with **6th, dominant
-7th, major 7th, and 9th** extensions — four of each. **All of them are editable.** Open the keyboard's settings sheet and choose
-**Chords** or **Extensions**, then tap the button you want to change.
+7th, major 7th, and 9th** extensions — four of each. **All of them are editable.** Open **Settings** in the chord toolbar and
+choose the **Chords** tab, then tap the chord or extension you want to change.
 
 ## Editing a chord
 

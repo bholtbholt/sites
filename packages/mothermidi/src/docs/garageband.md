@@ -1,25 +1,23 @@
 ---
 title: GarageBand
-summary: "Play Mother MIDI into GarageBand on a Mac, or beside it on iPad. GarageBand sends no clock, so the arpeggiator won't run."
+summary: 'Play Mother MIDI into GarageBand on a Mac, or beside it on iPad.'
 section: connecting
 order: 120
 ---
 
+GarageBand sends no clock. To arpeggiate, set the clock to **Internal** and match the song's tempo. See [Syncing the arpeggiator](/docs/syncing-the-arpeggiator).
+
 ## On a Mac
 
-1. Create a Software Instrument track and select it.
-2. Play Mother MIDI. GarageBand hears every MIDI input automatically.
+[Connect to the Mac](/docs/connecting-to-a-mac) first.
 
-GarageBand for Mac doesn't send MIDI clock, so the arpeggiator won't run. Chords and single notes work as normal.
+1. Create a Software Instrument track and select it.
+2. Play Mother MIDI.
 
 ## On iPad
 
-No cable needed. GarageBand picks up Mother MIDI on the same iPad.
-
-1. Open GarageBand and choose a Keyboard or other touch instrument.
+1. Open a Keyboard or other touch instrument in GarageBand.
 2. Open Mother MIDI in Split View or Slide Over beside it.
-3. Play Mother MIDI. GarageBand plays the notes and records them when you press record.
+3. Play Mother MIDI. Press record in GarageBand to record it.
 
-Both apps must stay on screen. On iPhone, switching to GarageBand pauses Mother MIDI, so the two can't play together.
-
-GarageBand for iPad doesn't send MIDI clock, so the arpeggiator won't run.
+Both apps must stay on screen, so this doesn't work on iPhone.

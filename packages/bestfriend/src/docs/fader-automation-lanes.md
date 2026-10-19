@@ -1,11 +1,11 @@
 ---
 title: See the fader automation you recorded
-summary: Level, pitch, time, filter, and FX automation drawn as curves under the notes, four lanes at a time.
+summary: Level, pitch, filter, envelope, FX, and wheel automation drawn as curves under the notes, four lanes at a time.
 section: Scenes & performance
 order: 3
 question: How do I see fader automation on the EP-133?
 devices: [ep-133, ep-40, ep-1320]
-updated: 2026-09-17
+updated: 2026-10-19
 ---
 
 The EP records fader moves alongside your notes. There is no way to see them on the hardware.
@@ -18,17 +18,27 @@ Best Friend draws them as curves beneath the notes on the
 | ---- | ----------------- |
 | LVL  | Level             |
 | PTC  | Pitch             |
-| TIME | Time / stretch    |
+| TIME | Time stretch      |
 | LPF  | Low-pass filter   |
 | HPF  | High-pass filter  |
-| FX   | Effect send       |
+| FX   | Effect            |
+| ATK  | Attack            |
+| REL  | Release           |
+| PAN  | Pan               |
+| TUNE | Tune              |
+| VEL  | Velocity          |
+| MOD  | Modulation        |
+| PBN  | Pitch bend        |
+| MWH  | Mod wheel         |
+
+PBN and MWH appear when a pad was played from a controller's pitch bend or mod wheel.
 
 A badge row appears above the timeline listing **only the lanes this scene actually has
 automation on**. A scene with no automation gets no badge row at all.
 
 ## Showing and hiding them
 
-Tap the automation icon in the transport row and Best Friend selects the **first four lanes in
+Tap the automation button in the bottom panel and Best Friend selects the **first four lanes in
 device order**. Then tap individual badges to change the selection.
 
 **Four curves is the maximum.** Adding a fifth turns off the longest-shown lane and takes its

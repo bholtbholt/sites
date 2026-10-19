@@ -5,17 +5,19 @@ section: Playing
 order: 5
 question: Does the EP-133 have an arpeggiator?
 devices: [ep-133, ep-40, ep-1320]
-updated: 2026-09-17
+updated: 2026-10-19
 ---
 
 The EP has an arpeggiator, but it is limited to note repeat and as-played notes. Best Friend adds a more robust one, that syncs to the clock of the EP-133, EP-1320, or EP-40.
 
 ## Before you start
 
-The arpeggiator needs the EP to be sending MIDI clock: **SHIFT + SYSTEM → 102 → ENTER**. See
+The arpeggiator needs the EP to be sending MIDI clock:
+<kbd>SHIFT</kbd> + <kbd>SYSTEM</kbd> → <kbd>102</kbd> → <kbd>ENTER</kbd>. See
 [turn on MIDI clock](/docs/midi-clock-and-system-codes).
 
-The arpeggiator icon will show as a warning and be disabled with the clock off.
+With the clock off, the toolbar reads **No clock** with a warning triangle and the arpeggiator
+toggle is disabled.
 
 ## How to use Best Friend's arpeggiator
 
@@ -27,13 +29,16 @@ The arp toggle latches it on, but phrases will not begin until the root note is 
 
 ## Controls
 
-| Control      | Options                                           | Default |
-| ------------ | ------------------------------------------------- | ------- |
-| Rate         | 1/4, 1/8, 1/8 triplets, 1/16, 1/16 triplets, 1/32 |         |
-| Mode         | Up, Down, Up-Down, Down-Up                        |         |
-| Oct          | One to three octaves                              |         |
-| Root +12     | Adds the root note one octave up                  | On      |
-| Double notes | Plays every note twice                            | Off     |
+| Control      | Options                                            | Default |
+| ------------ | -------------------------------------------------- | ------- |
+| Rate         | 4, 8, 8T, 16, 16T, 32 (1/4 to 1/32, with triplets) |         |
+| Mode         | Up, Down, Up-Down, Down-Up                         |         |
+| Oct          | One to three octaves                               |         |
+| Root +12     | Adds the root note one octave up                   | On      |
+| Double notes | Plays every note twice                             | Off     |
+
+Rate, Mode, and Oct sit beside the Pitch wheel; tap one to cycle through its options. **Root +12**
+and **Double notes** are in the **Arpeggiator** tab of Settings.
 
 **Root +12 is on by default**, which is the extra closing note you hear at the top of a
 phrase.

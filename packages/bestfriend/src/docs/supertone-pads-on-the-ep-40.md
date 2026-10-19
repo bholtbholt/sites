@@ -2,10 +2,10 @@
 title: See Supertone settings on the EP-40 Riddim
 summary: Supertone pads show their engine index, their two named parameters, and their baked waveform instead of a blank editor.
 section: Pads
-order: 5
+order: 6
 question: What are the Supertone settings on the Teenage Engineering EP-40?
 devices: [ep-40]
-updated: 2026-09-17
+updated: 2026-10-19
 ---
 
 The EP-40 Riddim has **Supertone** pads: synthesised voices rather than samples. On the
@@ -21,14 +21,22 @@ hardware there is very little to see. Best Friend gives each one a proper readou
 
 ## They are a display, not an editor
 
-The gauges are **read-only**. Best Friend never writes a Supertone's engine parameters because it is not possible. Instead, it shows you what the voice is set to so you can see where you are, and you make the change on the hardware. The Sample Editor is hidden on a Supertone pad, since there is no sample to edit.
+The gauges are **read-only**. Best Friend never writes a Supertone's engine parameters because it is not possible. Instead, it shows you what the voice is set to so you can see where you are, and you make the change on the hardware. The Sample Editor is hidden on a Supertone pad, since there is no sample to edit, and Trim is
+unavailable, as it is on the hardware.
+
+> **Warning:** changing a Supertone pad's settings while the Supertone is playing often crashes the
+> EP, requiring you to turn it off and on again. This appears to be a firmware bug, reported to
+> Teenage Engineering. Let the note stop before you change its settings.
 
 ## Elsewhere in the app
 
 - **Swapping pads** works normally in both directions. The Supertone keeps its engine index.
-- **Bouncing** skips Supertone pads — they are synthesised on the device, so there is no audio
-  for Best Friend to rebuild. Skipped pads are named on the result screen and in the bounce's
-  `Notes.txt`.
+- **Bouncing** offline skips Supertone pads — they are synthesised on the device, so there is no
+  audio for Best Friend to rebuild. Skipped pads are named on the result screen and in the
+  bounce's `Notes.txt`. Use [real-time capture](/docs/bounce-stems-to-your-daw) to record them.
+- **Performance effects** skip Supertone pads.
+- **Bank Snapshots** keep Supertone pads, but loading one onto a device without Supertones leaves
+  those pads empty.
 - **Loop** is an EP-40 exclusive too: it appears as a fourth Play Mode on the EP-40
   and is absent on the EP-133 and EP-1320, which offer One shot, Key, and Legato.
 

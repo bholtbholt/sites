@@ -3,6 +3,7 @@ import type { Component } from 'svelte';
 /** Nav order. An unknown section in a guide's frontmatter fails the build. */
 const sectionLabels = {
 	playing: 'Playing',
+	settings: 'Settings',
 	connecting: 'Connecting',
 } as const;
 

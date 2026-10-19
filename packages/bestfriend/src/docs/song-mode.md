@@ -5,15 +5,16 @@ section: Scenes & performance
 order: 2
 question: How do I see the whole Song on my EP-133?
 devices: [ep-133, ep-40, ep-1320]
-updated: 2026-09-17
+updated: 2026-10-19
 ---
 
 A Song on the EP is a chain of scenes. On the hardware you see one position at a time. Song
 mode in Best Friend draws **the entire chain as one timeline**, in the order the device plays
 it.
 
-Tap the link icon at the right of the transport row on the
-[Scenes timeline](/docs/see-scenes-and-songs).
+Choose **Song** from the menu in the top left of the
+[Scenes timeline](/docs/see-scenes-and-songs). On the hardware, hold <kbd>MAIN</kbd> +
+<kbd>PLAY</kbd> to play the chain.
 
 ## What you get
 
@@ -28,8 +29,8 @@ Tap the link icon at the right of the transport row on the
   still has its row, so nothing appears or disappears halfway along. The automation lane badges
   likewise list every lane that any scene in the song automates.
 
-While song mode is on, the toolbar menu reads **Song** and the scene picker is disabled. Turn
-it off and you land back on the scene the device is sitting on.
+While song mode is on, the menu shows **Song** with a checkmark. Pick a scene from the same menu to
+leave it.
 
 ## Playback
 
@@ -40,16 +41,16 @@ With [MIDI clock out enabled](/docs/midi-clock-and-system-codes):
 - At the end of the song the playhead **stops on the last step** and the timer freezes rather
   than wrapping to bar 1. Press play again and both restart from zero.
 
-The transport row drops the pattern label in song mode, and the bar count becomes the song's.
+In song mode the bar count on the transport row is the song's.
 
 ## Two things that are not bugs
 
-**The icon is disabled** when the chain has fewer than two resolvable scenes. There is no song
-to draw.
+**Song is listed but disabled** when the chain has fewer than two resolvable scenes. There is no
+song to draw.
 
-**The song can be longer than what the EP plays.** A chain position you have cut on the device
-is still present in the project data, so the timeline may show scenes the hardware skips.
-Compare against the EP's own song screen before treating it as wrong.
+**The song changed on the device.** Song mode draws the chain Best Friend last read. Cut or add a
+chain position on the EP, then pull down on the piano roll to refresh, and the roll matches the
+EP's own song screen.
 
 ## It never touches the device
 
