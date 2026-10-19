@@ -23,7 +23,7 @@ store.
 
 [App Store](https://apps.apple.com/app/best-friend/id6782250723) ·
 [Google Play](https://play.google.com/store/apps/details?id=com.studio133.bestfriend) ·
-[What it does](/)
+[Website](/)
 
 ## EP Sample Tool
 
@@ -42,6 +42,7 @@ A dedicated third-party sample librarian and backup utility for the physical har
 A companion app for the EP series with an emphasis on sample preparation: multi-sample creation, auto-sampling, batch processing, and converting between project formats.
 
 [App Store](https://apps.apple.com/app/ep-patchstudio/id6778625335)
+[Website](https://squarewave.studio/ep-patchstudio)
 
 ## PunchKit
 
@@ -54,41 +55,54 @@ Designed to speed up music production workflows, this app features offline 12-pa
 **A blank cell means unverified as of September 2026, not unsupported.** Check each app's own
 listing for its current state.
 
-|                         | Best Friend | Official EP Sample Tool | Cornerman | EP-PatchStudio | PunchKit |
-| ----------------------- | ----------- | ----------------------- | --------- | -------------- | -------- |
-| EP-133 K.O. II          | Yes         | Yes                     | Yes       | Yes            | Yes      |
-| EP-40 Riddim            | Yes         | Yes                     | Yes       |                | Yes      |
-| EP-1320 Medieval        | Yes         | Yes                     | Yes       |                | Yes      |
-| Desktop Browser         |             | Yes                     |           |                |          |
-| Mac                     | Yes         |                         |           | Yes            |          |
-| iPhone / iPad           | Yes         | Yes                     | Yes       | Yes            |          |
-| Android                 | Yes         |                         |           | Yes            |          |
-| Backups                 | Yes         | Yes                     | Yes       | Yes            | Yes      |
-| Backup extraction       | Yes         |                         |           | Yes            |          |
-| Sample List             | Yes         | Yes                     |           | Yes            | Yes      |
-| Bulk Management         | Yes         | Yes                     |           | Yes            |          |
-| Sample editing          | Yes         |                         |           | Yes            | Yes      |
-| Effects                 | Yes         |                         |           | Yes            | Yes      |
-| Stem splitting          | Yes         |                         |           |                | Yes      |
-| Sample processing       | Yes         |                         |           | Yes            |          |
-| Batch processing        | Yes         |                         |           | Yes            |          |
-| Multi-sample building   | Yes         |                         |           | Yes            |          |
-| Auto-sampler            |             |                         |           | Yes            |          |
-| Pad Settings Display    | Yes         |                         |           |                |          |
-| Pad Group Display       | Yes         |                         |           |                |          |
-| Performance effects     | Yes         |                         |           |                | Yes      |
-| Kit/Group building      | Yes         |                         |           | Yes            | Yes      |
-| Scene/Song Screen       | Yes         |                         |           | Yes            |          |
-| Fader automation view   | Yes         |                         |           | Yes            |          |
-| MIDI Export             | Yes         |                         |           | Yes            |          |
-| Individual track export | Yes         |                         |           |                |          |
-| Group Export            | Yes         |                         |           |                |          |
-| Stereo Export           | Yes         |                         |           |                | Yes      |
-| Stereo Capture          |             |                         |           |                | Yes      |
-| MIDI keyboard           | Yes         |                         |           |                | Yes      |
-| Arpeggiator             | Yes         |                         |           |                |          |
-| iCloud sync             | Yes         |                         |           |                |          |
-| Price                   | $9.99       | Free                    | $14.99    | $29.99         | $14.99   |
+|                          | Best Friend | Official EP Sample Tool | Cornerman | EP-PatchStudio | PunchKit |
+| ------------------------ | ----------- | ----------------------- | --------- | -------------- | -------- |
+| EP-133 K.O. II           | Yes         | Yes                     | Yes       | Yes            | Yes      |
+| EP-40 Riddim             | Yes         | Yes                     | Yes       | Yes            | Yes      |
+| EP-1320 Medieval         | Yes         | Yes                     | Yes       | Yes            | Yes      |
+| Desktop web browser      |             | Yes                     |           |                |          |
+| Android                  | Yes         |                         |           | Yes            |          |
+| iPhone / iPad            | Yes         | Yes                     | Yes       | Yes            | Yes      |
+| Mac                      | Yes         |                         |           | Yes            |          |
+| Windows                  |             |                         |           | Yes            |          |
+| Linux                    |             |                         |           | Yes            |          |
+| Dedicated themes         | Yes         | Yes                     |           | Yes            | Yes      |
+| Backups                  | Yes         | Yes                     | Yes       | Yes*           | Yes      |
+| Backup contents browser  | Yes         |                         |           |                |          |
+| Backup extraction        | Yes         |                         |           | Yes*           |          |
+| Sample list              | Yes         | Yes                     |           | Yes*           | Yes      |
+| Bulk file management     | Yes         | Yes                     |           | Yes*           |          |
+| Sample editing           | Yes         |                         |           | Yes            | Yes      |
+| Effects                  | Yes         |                         |           | Yes            | Yes      |
+| Stem splitting           | Yes         |                         |           | Yes*           | Yes      |
+| Sample processing        | Yes         |                         |           | Yes            |          |
+| Batch processing         | Yes         |                         |           | Yes            |          |
+| In-app recording         | Yes         |                         |           | Yes            | Yes      |
+| MIDI-synced recording    | Yes         |                         |           |                |          |
+| Video importing          | Yes         |                         |           |                |          |
+| Multi-sample creating    | Yes         |                         |           | Yes            |          |
+| Multi-sample editing     | Yes         |                         |           | Yes            |          |
+| Auto-sampler             |             |                         |           | Yes            |          |
+| Pad settings screen      | Yes         |                         |           |                |          |
+| Pad Group screen         | Yes         |                         |           |                |          |
+| Bulk Pad setting changes | Yes         |                         |           |                |          |
+| Copy pads                | Yes         |                         |           |                |          |
+| Chop samples onto pads   | Yes         |                         |           |                |          |
+| Performance effects      | Yes         |                         |           |                | Yes      |
+| Individual Pad mutes     | Yes         |                         |           |                |          |
+| Kit/Group building       | Yes         |                         |           | Yes*           | Yes      |
+| Song screen              | Yes         |                         |           | Yes*           |          |
+| Scenes screen            | Yes         |                         |           | Yes*           |          |
+| Pattern screen           | Yes         |                         |           | Yes*           |          |
+| Fader automation view    | Yes         |                         |           | Yes*           |          |
+| MIDI Export              | Yes         |                         |           | Yes*           |          |
+| Individual track export  | Yes         |                         |           | Yes*           |          |
+| Group export             | Yes         |                         |           | Yes*           |          |
+| Stereo export            | Yes         |                         |           | Yes*           | Yes      |
+| MIDI Chord Generator     | Yes         |                         |           |                |          |
+| Arpeggiator              | Yes         |                         |           |                |          |
+| iCloud sync              | Yes         |                         |           |                |          |
+| Price                    | $9.99       | Free                    | $14.99    | Free, $29.99*  | $14.99   |
 
 ## Related
 
