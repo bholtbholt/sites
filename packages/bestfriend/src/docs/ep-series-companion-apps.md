@@ -52,7 +52,7 @@ Designed to speed up music production workflows, this app features offline 12-pa
 
 ## At a glance
 
-**A blank cell means unverified as of October 2026, not unsupported.** Check each app's own
+**A blank cell means unverified as of Nov 2026, not unsupported.** Check each app's own
 listing for its current state.
 
 |                          | Best Friend | Official EP Sample Tool | Cornerman | EP-PatchStudio | PunchKit |
@@ -95,6 +95,11 @@ listing for its current state.
 | Scenes screen            | Yes         |                         |           | Yes*           |          |
 | Pattern screen           | Yes         |                         |           | Yes*           |          |
 | Fader automation view    | Yes         |                         |           | Yes*           |          |
+| Note editor              | Yes         |                         |           |                |          |
+| Piano Roll editor        | Yes         |                         |           |                |          |
+| Step Sequencer           | Yes         |                         |           |                |          |
+| Automation editor        | Yes         |                         |           |                |          |
+| Song List editor         | Yes         |                         |           |                |          |
 | MIDI Export              | Yes         |                         |           | Yes*           |          |
 | Individual track export  | Yes         |                         |           | Yes*           |          |
 | Group export             | Yes         |                         |           | Yes*           |          |

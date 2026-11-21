@@ -2,10 +2,10 @@
 title: See the fader automation you recorded
 summary: Level, pitch, filter, envelope, FX, and wheel automation drawn as curves under the notes, four lanes at a time.
 section: Scenes & performance
-order: 3
+order: 7
 question: How do I see fader automation on the EP-133?
 devices: [ep-133, ep-40, ep-1320]
-updated: 2026-10-19
+updated: 2026-11-21
 ---
 
 The EP records fader moves alongside your notes. There is no way to see them on the hardware.
@@ -65,10 +65,11 @@ If a bank uses only lanes outside the first four, nothing is drawn until you pic
   to live — gaps first, then upward. Banks without that lane keep their own height.
 - In follow mode the curves track the window with no dropout at either edge.
 
-## It never touches the device
+## Showing a lane never touches the device
 
 The badges and curves are read from the project Best Friend already loaded. Showing a lane
-issues no read and writes nothing.
+issues no read and writes nothing. To change automation, use the **Fader** tab — see
+[draw fader automation](/docs/draw-fader-automation).
 
 ## Automation and bouncing
 
@@ -83,6 +84,7 @@ own output.
 
 ## Related
 
+- [Draw fader automation](/docs/draw-fader-automation)
 - [See your Scenes and Songs on a full timeline](/docs/see-scenes-and-songs)
 - [See your whole Song end to end](/docs/song-mode)
 - [Bounce multi-track stems into Ableton, Logic, or FL Studio](/docs/bounce-stems-to-your-daw)

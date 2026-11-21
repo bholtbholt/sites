@@ -33,10 +33,10 @@ export const site = {
 	// only per-country ones, so this is the top five rather than all ~175.
 	reviewStorefronts: ['us', 'gb', 'de', 'ca', 'jp'],
 	// Ratings from every storefront we don't query.
-	ratingPadding: 33,
+	ratingPadding: 53,
 	// Used when the build-time lookup fails, so a flaky Apple never breaks a deploy. Already
 	// worldwide, straight from App Store Connect, so `ratingPadding` does not apply to it.
-	fallbackRating: { value: 4.9, count: 90 },
+	fallbackRating: { value: 4.9, count: 158 },
 	// Public by design; the matching secret lives in the Pages dashboard as TURNSTILE_SECRET.
 	turnstileSiteKey: '0x4AAAAAAFN0NA3X90YTx-fI',
 } as const;

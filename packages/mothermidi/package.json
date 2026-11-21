@@ -9,11 +9,11 @@
 		"preview": "yarn svelte:preview"
 	},
 	"devDependencies": {
-		"@sveltejs/vite-plugin-svelte": "^7.3.0",
+		"@sveltejs/vite-plugin-svelte": "^7.3.1",
 		"eslint-config": "workspace:^",
 		"mdsvex": "^0.12.8",
 		"svelte-config": "workspace:^",
-		"wrangler": "^4.135.0"
+		"wrangler": "^4.162.0"
 	},
 	"dependencies": {
 		"@fontsource-variable/eb-garamond": "^5.3.0"

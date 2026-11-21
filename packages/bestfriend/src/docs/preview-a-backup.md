@@ -5,7 +5,7 @@ section: Backups & bouncing
 order: 3
 question: Can I listen to an EP-133 backup before restoring it?
 devices: [ep-133, ep-40, ep-1320]
-updated: 2026-10-19
+updated: 2026-11-21
 ---
 
 Backups are named and dated, which tells you when you made one and not what is in it. Best Friend
@@ -53,7 +53,7 @@ preview any of the projects inside. See
 - A backup, scene, or pattern with **nothing recorded** shows a greyed-out ▶. There is nothing to
   play, and you get no error for it.
 - A backup from a **different EP model** than the one you have connected still previews and opens.
-  Only restoring it is unavailable.
+  Only restoring it whole is unavailable; its samples, groups, and patterns can still be taken out.
 - A backup imported from Teenage Engineering's official EP Sample Tool previews like any other.
 - Deleting a backup while its preview is playing silences it.
 

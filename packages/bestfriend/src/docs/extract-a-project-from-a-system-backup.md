@@ -5,7 +5,7 @@ section: Backups & bouncing
 order: 4
 question: Can I restore a single project from an EP-133 system backup?
 devices: [ep-133, ep-40, ep-1320]
-updated: 2026-10-19
+updated: 2026-11-21
 ---
 
 A system backup is the whole device. Restoring one to get a single project back means throwing
@@ -59,7 +59,9 @@ extracted copies in place.
 
 ## A backup from a different model
 
-A system backup this EP cannot restore still **opens and browses**. Only Restore is greyed out.
+A system backup this EP cannot restore still **opens and browses**. Only a full Restore is greyed
+out — samples, groups, and patterns inside it can still be taken out to any model. See
+[take pieces out without restoring](/docs/back-up-and-restore).
 
 ## Related
 

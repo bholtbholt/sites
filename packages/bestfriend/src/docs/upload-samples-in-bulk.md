@@ -5,7 +5,7 @@ section: Samples
 order: 1
 question: How do I get samples onto my EP-133 in bulk?
 devices: [ep-133, ep-40, ep-1320]
-updated: 2026-10-19
+updated: 2026-11-21
 ---
 
 Loading samples onto an EP means one slot at a time through a three-character display. Best
@@ -19,7 +19,8 @@ in the editor in turn; skip and discard any you do not want and carry on to the 
 
 On iPad and Mac, drop the files anywhere on Best Friend instead.
 
-Audio can also come straight out of a video, or from a recording. See
+Audio can also come straight out of a video, from a recording, or from another app with
+**Record system audio…** (iOS 27 / macOS 27). See
 [record or import a sample](/docs/record-or-import-a-sample).
 
 ## Work in batches once they are on

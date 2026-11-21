@@ -5,7 +5,7 @@ section: Backups & bouncing
 order: 6
 question: What files does Best Friend export when it bounces an EP-133 scene?
 devices: [ep-133, ep-40, ep-1320]
-updated: 2026-10-19
+updated: 2026-11-21
 ---
 
 A bounce is a single `.zip`. This is what you find when you open it, and what each part is for.
@@ -36,7 +36,7 @@ Notes.txt
 
 ## The audio
 
-Every file is **48 kHz, 24-bit, stereo**.
+Every file is **48 kHz, 24-bit, stereo** WAV. Choose `.m4a` when sharing for smaller files.
 
 - Every stem **starts at zero** and lines up, so you can drop the whole folder into your DAW at
   bar 1 and it fits.

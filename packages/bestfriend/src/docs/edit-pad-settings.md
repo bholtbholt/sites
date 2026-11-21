@@ -5,7 +5,7 @@ section: Pads
 order: 2
 question: How do I edit pad settings on my EP-133?
 devices: [ep-133, ep-40, ep-1320]
-updated: 2026-10-19
+updated: 2026-11-21
 ---
 
 On the hardware, pad parameters live behind menus and read out through a three-character
@@ -60,9 +60,13 @@ hardware does.
 
 ## Tune a pad
 
-Tap the **tuner** in Pad Settings to open a chromatic tuner. It listens to your
-[audio input](/docs/app-settings) and shows the nearest note and how far off it is, so you can set
-**Pitch** by ear without guessing.
+Use the **Tuner** to find the note of incoming audio, then set **Pitch** to match.
+
+1. Tap the tuner button in the top right.
+2. Pick the input in the top left. Your choice is shared with the
+   [audio input](/docs/app-settings) setting.
+3. Play the sound. The detected note appears, and the needle shows how sharp or flat it is. Both
+   light up when it is in tune.
 
 ## Mute group (choke group)
 
@@ -91,7 +95,8 @@ and upload, or hold <kbd>SHIFT</kbd> + <kbd>SOUND</kbd> on the hardware.
 
 ## Change several pads at once
 
-Select mode on the pad grid applies a change to many pads together. See
+Select mode on the pad grid applies a change to many pads together, including mapping MIDI notes
+from a template such as an electronic drum kit. See
 [see every pad in a bank at once](/docs/see-a-bank-of-pads).
 
 ## Supertone pads on the EP-40

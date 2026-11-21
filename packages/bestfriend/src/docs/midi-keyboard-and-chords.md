@@ -5,7 +5,7 @@ section: Playing
 order: 1
 question: Can I use Best Friend as a MIDI controller for my EP-133?
 devices: [ep-133, ep-40, ep-1320]
-updated: 2026-10-19
+updated: 2026-11-21
 ---
 
 Best Friend includes a velocity-sensitive keyboard that plays your EP-133 K.O. II, EP-40
@@ -35,7 +35,8 @@ Play the keyboard and you get that one sample pitched across the keys. A **diffe
 note** means the channel does not match or the pad is not in KEYS mode.
 
 **Note:** the pad must be in **Key** [play mode](/docs/edit-pad-settings) to play chords
-polyphonically. One shot and Legato pads play one note at a time.
+polyphonically. One shot and Legato pads play one note at a time. The pad can't be in a mute
+(choke) group either.
 
 Each pad's MIDI channel is editable alongside its other parameters. See
 [edit pad settings](/docs/edit-pad-settings).
@@ -99,7 +100,7 @@ With the arpeggiator running, the sub is walked as an ordinary tone: C–E–G p
 
 ## Arpeggiator
 
-Four modes, six rates, and a three-octave range, **synced to the hardware clock**. It needs
+Five modes (including **Stack**, which plays the whole chord every step), six rates, and a three-octave range, **synced to the hardware clock**. It needs
 [MIDI clock out](/docs/midi-clock-and-system-codes) — see
 [the arpeggiator](/docs/arpeggiator) for the detail.
 
@@ -125,6 +126,11 @@ Pro's Musical Typing layout:
 - <kbd>Space</kbd> turns the arpeggiator on and off.
 
 Typed notes always play at velocity 100.
+
+## Keys pause during transfers
+
+While a sample, backup, or snapshot transfers, the keyboard holds its notes until the transfer
+finishes. Playing a key mid-transfer can crash the EP.
 
 ## This screen writes nothing
 

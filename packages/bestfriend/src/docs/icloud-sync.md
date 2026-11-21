@@ -5,7 +5,7 @@ section: Library
 order: 2
 question: Does Best Friend sync EP-133 backups between iPhone and Mac?
 devices: [ep-133, ep-40, ep-1320]
-updated: 2026-10-19
+updated: 2026-11-21
 ---
 
 On Apple devices, your whole Library syncs over **iCloud**. Take a backup on your phone at a
@@ -15,7 +15,8 @@ so there is nothing else to set up.
 ## What syncs
 
 Everything in the Library: **Bank Snapshots**, **Backups**, **Bounces**, and **MIDI patterns**, each
-with its name, colour, and notes. Sign in to the same Apple Account on each device; there is
+with its name, colour, and notes — plus your
+[MIDI note templates](/docs/see-a-bank-of-pads). Sign in to the same Apple Account on each device; there is
 nothing else to set up.
 
 You can see them in Files ▸ iCloud Drive ▸ Best Friend. Each Library page has its own folder —
@@ -60,6 +61,12 @@ Tap **Undo** on the banner to bring back something you deleted. See
 
 The Library works entirely **locally**. Best Friend tells you that items stay on this device and do
 not sync, and nothing else changes.
+
+## Turning off iCloud sync
+
+1. Open **System Settings**.
+2. Open your account ▸ **iCloud** ▸ **Saved to iCloud**.
+3. Find Best Friend in the list and toggle it off.
 
 ## On Android
 

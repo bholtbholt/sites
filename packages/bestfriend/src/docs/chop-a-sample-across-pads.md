@@ -1,11 +1,11 @@
 ---
 title: Chop a sample across pads
-summary: Slice one sample onto several pads by hand while it plays, into equal lengths, or at its transients.
+summary: Slice one sample onto several pads by hand while it plays, evenly, or at its peaks.
 section: Pads
 order: 5
 question: How do I chop a sample across pads on the EP-133?
 devices: [ep-133, ep-40, ep-1320]
-updated: 2026-10-19
+updated: 2026-11-21
 ---
 
 Chop Mode slices one sample across the pads of a group — a drum break into hits, a phrase into
@@ -16,12 +16,13 @@ words — without exporting anything.
 1. On the [pad grid](/docs/see-a-bank-of-pads), tap the **Chop** icon.
 2. Tap a pad with a sample to chop.
 3. Use the trim to refine the part of the sample you want.
-4. Pick a chop mode: **Lazy**, **Equal**, or **Transient**.
+4. Pick a chop mode: **Lazy**, **Even**, or **Peak**.
 
 Add chops by pressing a pad on the hardware, tapping in the app, or with the chop stepper. Remove
 one by lowering the stepper or dragging its pin down. Drag a pin's handle left or right to move it.
 
-Set the **Play Mode** and **mute group** for the chopped pads before you commit. See
+Set the **Play Mode**, **mute group**, **Time Mode**, and **MIDI channel** before you commit.
+They apply to every chopped pad. See
 [edit pad settings](/docs/edit-pad-settings).
 
 ## Lazy chopping
@@ -33,14 +34,14 @@ Chop by ear, in time with the sample.
 
 Removing a chop deletes the one added last.
 
-## Equal chopping
+## Even chopping
 
 Add any number of chops. Each time you add or remove one, every chop is recalculated so the slices
 are equal in length.
 
-## Transient chopping
+## Peak chopping
 
-Add any number of chops. Each one lands on the next largest transient, wherever the sample is
+Add any number of chops. Each one lands on the next loudest peak, wherever the sample is
 playing. Removing a chop deletes the one added last.
 
 ## Related

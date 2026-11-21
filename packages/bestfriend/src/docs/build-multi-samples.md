@@ -5,7 +5,7 @@ section: Samples
 order: 6
 question: How do I build a multi-sample on the EP-1320?
 devices: [ep-40, ep-1320]
-updated: 2026-10-19
+updated: 2026-11-21
 ---
 
 A multi-sample combines several pitches into a single waveform on one pad, so playing it in KEYS
@@ -55,7 +55,25 @@ In the **All** tab:
 - Tap below the waveform to add a note, up to 8.
 - Drag a note's handle left or right to move where it starts.
 - Drag a note's handle down to remove it.
-- Change the note with the Note stepper.
+- Use the stepper on the right to add or remove notes. **+** adds a note at the next pitch or
+  transient change Best Friend detects; **−** removes the note with the weakest change.
+
+### Edit a note
+
+Tap the note's tab. The stepper beside **Root** sets its root note.
+
+The buttons between the dividers act on this note only:
+
+- **Strip** crops away silence at the start and end.
+- **Normalize** matches this note's loudness to the middle of the set, so notes play evenly across
+  the keys. Its caption shows the change, like `+3.2 dB`. A quiet note is raised only as far as it
+  can go without clipping.
+- **Reverse** plays the note backwards.
+- **Loop** finds a clean sustain loop. Tap again to try the next one: long loops through the body
+  of the note, short loops near the tail, or early loops just after the attack for sounds that
+  fade. The dots under Loop show how many it found and which one is playing. Tap past the last dot
+  to turn the loop off.
+- **Detect** finds the root note again from the cropped audio, replacing a value you set by hand.
 
 ### Crop a note
 
@@ -69,7 +87,11 @@ A note loops for as long as the key is held once it has loop points.
 
 1. Tap the note's tab.
 2. Select **Loop**.
-3. Drag the handles. The preview retriggers on its own, to help you find a smooth, click-free loop.
+3. Tap **Loop** to place the handles, or drag them yourself.
+4. Turn on the loop button beside **Play**, then tap **Play** to hear the loop repeat. Listen for a
+   click where it joins.
+
+With loop playback off, Play plays the whole crop once.
 
 ### Length
 

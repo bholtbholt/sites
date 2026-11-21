@@ -55,7 +55,7 @@ Keep your EP on the latest firmware — you may need to [update your EP](https:/
 ## Connected, but something else is wrong?
 
 Uploads failing, chords playing the wrong pads, or a silent arpeggiator — see
-[fix common Best Friend problems](/docs/troubleshooting).
+[fix common problems](/docs/troubleshooting).
 
 ## Still stuck?
 

@@ -5,7 +5,7 @@ section: Samples
 order: 2
 question: Can I edit samples for my EP-133 on my phone?
 devices: [ep-133, ep-40, ep-1320]
-updated: 2026-10-19
+updated: 2026-11-21
 ---
 
 Best Friend includes a full sample editor, tailored to the hardware's limits. You can fix a sample
@@ -30,7 +30,8 @@ Switch the waveform between **Crop** and **Envelope**.
 - In **Envelope**, drag the markers to set the default attack and release. A pad can override them
   in [Pad Settings](/docs/edit-pad-settings).
 
-Pinch to zoom and double-tap to reset.
+Pinch to zoom and double-tap to reset. Moving the crop window only works while zoomed out, so
+panning never drags it by accident.
 
 ## Processing
 
@@ -54,7 +55,7 @@ Best Friend also [detects the key and root note](/docs/detect-key-and-root-note)
 
 ## Preview
 
-Tap **Preview** at the bottom of the editor to hear your edits, and loop it with the Repeat button.
+Tap **Play** at the bottom of the editor to hear your edits, and loop it with the loop button beside it.
 Previews play through the EP, so they are silent without
 [USB Input Monitoring](/docs/midi-clock-and-system-codes) (code 511) turned on.
 

@@ -11,7 +11,7 @@ export const seo = {
 	// in a SERP, but the visible head is the part that matters.
 	title: `${site.name} — Companion App for Teenage Engineering EP-133, EP-40 & EP-1320`,
 	description:
-		'The unrivalled companion app for Teenage Engineering EP-133, EP-40 and EP-1320 samplers. See your Scenes, bounce real stems, edit samples, back up projects. iPhone, iPad, Mac, and Android.',
+		'The unrivalled companion app for Teenage Engineering EP-133, EP-40 and EP-1320 samplers. Edit your Scenes, bounce real stems, process samples, back up projects. iPhone, iPad, Mac, and Android.',
 	image: `${site.domain}/og-image.png`,
 	imageAlt: `${site.name} running on a phone next to a Teenage Engineering EP-Series sampler pad editor`,
 } as const;

@@ -1,6 +1,6 @@
 <script lang="ts">
 	import hardware from '$lib/assets/hardware-ep133.webp?enhanced';
-	import scenes from '$lib/assets/ep133-scenes.png?enhanced';
+	import scenes from '$lib/assets/scenes.png?enhanced';
 	import HardwareShot from './HardwareShot.svelte';
 	import StoreBadges from './StoreBadges.svelte';
 	import { site, platforms } from '$lib/site';
@@ -33,7 +33,7 @@
 			{hardware}
 			hardwareAlt="A Teenage Engineering EP-133 K.O. II sampler"
 			screen={scenes}
-			screenAlt="{site.name} showing a Scene timeline in the EP-133 theme"
+			screenAlt="{site.name} editing a Scene, with notes, fader automation, and the Notes, Fader, Pitch, Step, and Song tabs"
 			eager
 		/>
 	</div>

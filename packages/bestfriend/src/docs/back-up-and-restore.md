@@ -5,7 +5,7 @@ section: Backups & bouncing
 order: 1
 question: How do I back up my EP-133 K.O. II?
 devices: [ep-133, ep-40, ep-1320]
-updated: 2026-10-19
+updated: 2026-11-21
 ---
 
 Best Friend backs your EP up at three different sizes, depending on how much you want to put
@@ -58,8 +58,9 @@ Tap **Restore** in the top right of an open backup, or long-press a backup and t
 - **System** erases everything on the device and replaces it with the backup.
 - **Project** asks which project to restore to, 1 to 9, then replaces that project.
 
-Backups from different EP models are incompatible: they still open and browse, but Restore is
-greyed out.
+Backups from different EP models are incompatible as a whole: they still open and browse, but
+Restore is greyed out. Individual pieces inside — samples, a group, a pattern as MIDI — can still
+go to any model, as below.
 
 ## Take pieces out without restoring
 
@@ -67,9 +68,10 @@ You do not have to restore a whole backup to get something back:
 
 - **Send samples to the device.** Open **Samples** or **All Samples** and long-press a sample, or
   tap **Select**, pick several, and tap **Send**. The samples open in the
-  [sample editor](/docs/sample-editor-and-effects) before they upload.
-- **Restore one group.** Open a group's **Samples** and use the menu in the top right.
-  **Restore to Group** writes its 12 pads into the device's current group with their trim, pitch,
+  [sample editor](/docs/sample-editor-and-effects) before they upload. The same toolbar can also
+  **Share** the selection or turn it into a [Bank Snapshot](/docs/bank-snapshots).
+- **Restore one group.** Open a group's **Samples** — its 12 pads as they were assigned, tap one
+  to preview it — and use the two buttons in the top right. **Restore** writes its 12 pads into the device's current group with their trim, pitch,
   volume, and other pad settings; empty pads are cleared, and samples the device already has are
   not sent again. **Save as Bank Snapshot** keeps the group in the Library instead.
 - **Open a pattern as MIDI.** Tap a pattern to open it as a

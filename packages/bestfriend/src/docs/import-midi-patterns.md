@@ -5,7 +5,7 @@ section: Playing
 order: 6
 question: How do I import a MIDI file into the EP-133?
 devices: [ep-133, ep-40, ep-1320]
-updated: 2026-10-19
+updated: 2026-11-21
 ---
 
 The EP cannot open a MIDI file. Best Friend can: import a `.mid`, point its tracks at pads, and play
@@ -43,6 +43,7 @@ Tap play in the panel at the top. It plays in time with the EP, so it needs
 
 - Pinch to zoom, and double-tap to reset.
 - Drag the handles to set what plays. They snap to bars.
+- Turn on the loop button beside play to repeat it.
 - Tap **Mute** or **Solo** to isolate parts while it plays.
 
 Mapping changes take effect while it plays.

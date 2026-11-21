@@ -1,11 +1,11 @@
 ---
 title: Best Friend's App Settings
-summary: Theme, Library sort order, the sample cache, audio inputs, the default import folder, and resetting preferences.
+summary: Theme, Library sort order, Large Scenes Grid, keep screen awake, the sample cache, audio inputs, the default import folder, walkthroughs, and resetting preferences.
 section: Getting started
 order: 5
 question: Where are the settings in Best Friend?
 devices: [ep-133, ep-40, ep-1320]
-updated: 2026-10-19
+updated: 2026-11-21
 ---
 
 App Settings holds the app-wide options that mostly work in the background.
@@ -30,6 +30,19 @@ The themes are purely aesthetic. Nothing else changes.
 
 Set the order of Library items: **Newest**, **Oldest**, **Ascending A–Z**, or **Descending Z–A**. On
 Android it applies to Bank Snapshots and Backups.
+
+## Follow active pad
+
+Scroll the [Samples list](/docs/organise-your-samples) to the pad your EP is playing.
+
+## Large Scenes Grid
+
+Make rows in the [Scenes](/docs/edit-notes-in-scenes) piano roll 50% taller so notes are easier to
+tap. Applies to the Notes, Fader, and Pitch tabs. Horizontal zoom works as before.
+
+## Keep screen awake
+
+Stop your iPhone or iPad from locking while Best Friend is open. Not shown on Mac.
 
 ## Storage and cache
 
@@ -62,6 +75,11 @@ choice is remembered. Pick your EP explicitly if a capture sounds wrong.
 File imports take a bulk selection, and iOS does not let apps remember the folder for one — the
 picker opens in its own default every time. Set a starting folder here if that gets in your way.
 Apple devices only.
+
+## Replay the walkthroughs
+
+Tap **Replay onboarding tutorial** to see every walkthrough again. Each one shows the next time you
+open its screen. Your other preferences stay as they are.
 
 ## Reset preferences
 

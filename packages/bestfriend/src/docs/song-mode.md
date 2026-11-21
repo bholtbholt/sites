@@ -2,10 +2,10 @@
 title: See your whole Song end to end
 summary: Song mode draws every chained scene in one continuous timeline, with continuous bar numbers and each scene's own meter.
 section: Scenes & performance
-order: 2
+order: 6
 question: How do I see the whole Song on my EP-133?
 devices: [ep-133, ep-40, ep-1320]
-updated: 2026-10-19
+updated: 2026-11-21
 ---
 
 A Song on the EP is a chain of scenes. On the hardware you see one position at a time. Song
@@ -52,13 +52,15 @@ song to draw.
 chain position on the EP, then pull down on the piano roll to refresh, and the roll matches the
 EP's own song screen.
 
-## It never touches the device
+## Viewing never touches the device
 
 Song mode is a second reading of the project Best Friend already loaded. It issues no reads and
-writes nothing.
+writes nothing. To change the chain, use the **Song** tab — see
+[arrange the song](/docs/arrange-the-song).
 
 ## Related
 
+- [Arrange the song](/docs/arrange-the-song)
 - [See your Scenes and Songs on a full timeline](/docs/see-scenes-and-songs)
 - [See the fader automation lanes](/docs/fader-automation-lanes)
 - [Bounce multi-track stems into Ableton, Logic, or FL Studio](/docs/bounce-stems-to-your-daw)
