@@ -5,7 +5,7 @@ section: Backups & bouncing
 order: 5
 question: How do I get stems from my EP-133 into Ableton?
 devices: [ep-133, ep-40, ep-1320]
-updated: 2026-10-19
+updated: 2026-11-21
 ---
 
 Best Friend bounces multi-track audio stems of a Scene or an entire Song directly off your
@@ -31,8 +31,12 @@ real-time capture, below, to include them.
 3. Choose the tracks and extras, then tap **Next**.
 4. Name it, then tap **Bounce**.
 
-On the source step, tap **Change** to pick another scene, and **Preview** to hear the source before
+On the source step, tap **Change** to pick another scene, and **Play** to hear the source before
 you bounce it.
+
+Bouncing from Scenes re-syncs with the hardware first, so notes recorded since the last re-sync are
+included. If you have [uncommitted edits](/docs/edit-notes-in-scenes), commit or
+cancel them first — while they're pending, Bounce becomes Play.
 
 ## What you can export
 
@@ -78,8 +82,12 @@ Tap or drag on the waveform to jump.
 - Tap **Share** in the top right to share the whole bounce.
 - Swipe a file to share or delete it. On Android, long-press it instead.
 - Tap a name to rename it.
+- Tap **Capture** to record more takes into the bounce.
 - Tap the **MIDI** row to open it as a [MIDI pattern](/docs/import-midi-patterns) and play it back
   at the hardware.
+
+Audio is shared as `.wav` by default. Choose `.m4a` instead for smaller files when you are sending
+a bounce to someone rather than into a DAW.
 
 ## Into your DAW
 

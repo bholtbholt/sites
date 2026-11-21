@@ -39,7 +39,7 @@
 	Bands alternate tinted/plain the whole way down, and the tinted ones are also the
 	mirrored ones, so the screenshot swaps sides every time.
 -->
-<FeatureBand eyebrow="Bounce audio tracks" title="Export the real thing." mirrored tinted>
+<FeatureBand eyebrow="Bounce audio tracks" title="Export tracks for mixing." mirrored tinted>
 	{#snippet visual()}
 		<PhoneShot
 			src={bounce}
@@ -48,58 +48,46 @@
 	{/snippet}
 
 	<p>
-		Bounce multi-track audio stems of a Scene or your whole Song straight off the hardware. Every
-		one of the 48 pads comes out isolated, built from the real samples and the real pad data — no AI
-		separation involved, nothing guessed at.
+		Bounce multi-track audio stems of a Scene or your whole Song extracted from the hardware. All 48
+		pads are isolated, rendered in Best Friend from the real samples and the real pad data — no AI
+		separation involved.
 	</p>
 	<p>
-		Take all 48 individually, group mixdowns, or a stereo mixdown, with the fader automation baked
-		in. Export the MIDI while you're there, then open the whole thing in your DAW.
-	</p>
-	<p>
-		Or capture in real time to keep what an offline render can't: your live performance, Supertone,
-		punch-ins, and effects. Every take is MIDI-synced, so it lines up the moment it lands in a DAW.
+		Or capture real time performances, Supertone tracks, or punch-in effects. Every take is
+		MIDI-synced, so it lines up the moment it lands in a DAW.
 	</p>
 </FeatureBand>
 
-<FeatureBand eyebrow="Scenes" title="See the whole arrangement.">
+<FeatureBand eyebrow="Scenes and Patterns" title="See it. Edit it.">
 	{#snippet visual()}
 		<PhoneShot
 			src={scenes}
-			alt="A Scene timeline showing sequenced notes across every bank, with the playhead partway through the bars"
+			alt="The Scenes editor with a note selected on group A, fader automation curves drawn under group C, and the Notes, Fader, Pitch, Step, and Song tabs below"
 		/>
 	{/snippet}
 
 	<p>
-		Every sequenced note across every bank in a Scene or Song, laid out on one timeline, with the
-		fader automation lanes underneath. The playhead follows along as it plays.
+		See every sequence across every bank in your Scene along with its fader automation. Add, move,
+		lengthen, and erase notes, nudge velocity and pitch, ratchet, and draw fader automation with the
+		note editor, fader editor, piano roll, and step sequencer. When you're ready, build your song
+		with the Song List editor.
 	</p>
-	<p>Finally see what you actually programmed, instead of inferring it from a 3-char display.</p>
 </FeatureBand>
 
-<FeatureBand eyebrow="MIDI Controller" title="Play chords the pads can't." mirrored tinted>
+<FeatureBand eyebrow="MIDI Controller" title="Rich chords at your fingertips." mirrored tinted>
 	{#snippet visual()}
 		<PhoneShot
 			src={midiController}
-			alt="The MIDI chord controller with a major 9th selected, the arpeggiator rate set, and a chord held on the keyboard"
+			alt="The MIDI chord controller with a minor 7th held on MIDI channel 10, and the arpeggiator set to 16ths, Up, one octave"
 		/>
 	{/snippet}
 
 	<p>
-		Play your EP from a velocity-sensitive keyboard. Build a major, minor, suspended, or diminished
-		triad with a button, then add a 6th, 7th, or 9th for flavour — or the lower octave for weight.
+		Play from a velocity-sensitive keyboard. Build a triad with a button, then add an extension,
+		with fully customizable slots.
 	</p>
 	<p>
-		Save your own chords onto any Chord or Extension button, split the keys into up to three zones
-		for alternate positions, and run the arpeggiator — 4 modes, 6 rates, 3 octaves — locked to the
-		hardware clock.
-	</p>
-	<p>
-		Import a MIDI file, map its tracks to pads, and play it at the EP in time with its clock — then
-		record it straight into a pattern.
-	</p>
-	<p>
-		Want it for any synth, not just your EP? It's also on its own as
+		Want it for any synth, not just your EP? Get
 		<a
 			class="font-medium text-blue-700 underline underline-offset-4 transition hover:text-orange-500 dark:text-blue-400 dark:hover:text-orange-400"
 			href={site.motherMidiUrl}
@@ -109,7 +97,7 @@
 	</p>
 </FeatureBand>
 
-<FeatureBand eyebrow="Pads" title="Every setting on one screen.">
+<FeatureBand eyebrow="Pad Settings" title="Every setting on one screen.">
 	{#snippet visual()}
 		<PhoneFan />
 	{/snippet}
@@ -118,33 +106,37 @@
 		Trim, envelope, volume, pitch, pan, play mode, time-stretch, MIDI channel — visible and editable
 		without diving through a menu. And of course, the waveform itself.
 	</p>
-	<p>Change several pads at once, and tune a pad by ear with the built-in tuner.</p>
+	<p>
+		Change several pads at once, map a group to an electronic drum kit, and tune a pad by ear with
+		the built-in tuner.
+	</p>
 	<p>Themes for the EP-133, EP-40, EP-1320, or the system in both light and dark mode.</p>
 </FeatureBand>
 
-<FeatureBand eyebrow="Performance Effects" title="See the whole bank at once." mirrored tinted>
+<FeatureBand
+	eyebrow="Group Editing and Performance Effects"
+	title="Play the whole bank at once."
+	mirrored
+	tinted
+>
 	{#snippet visual()}
 		<PhoneShot
 			src={bank}
-			alt="A pad group laid out as a grid of waveforms across banks A, B, C, and D"
+			alt="Group D of a 909 kit in performance mode, with the snare and closed hat pads muted"
 		/>
 	{/snippet}
 
 	<p>
-		Every pad in the group, waveform and name, laid out the way the hardware is. Move through A, B,
-		C, and D without losing your place, then drag and drop to reassign samples.
+		Change pads across any group at once. Move and copy pads, edit settings in bulk, and apply
+		customizable MIDI templates. Or chop samples across pads in lazy, equal, and transient modes.
 	</p>
 	<p>
-		Copy a pad and its settings to another, or chop one sample across pads — in equal slices, at its
-		transients, or by hand while it plays.
-	</p>
-	<p>
-		And apply momentary performance effects like individual pad mutes, pitch changes, or reverse
-		playback.
+		Apply momentary performance effects to individual pads while you play — mute, pitch up, pitch
+		down, reverse.
 	</p>
 </FeatureBand>
 
-<FeatureBand eyebrow="Edit" title="A real editor, before it hits a pad.">
+<FeatureBand eyebrow="Edit samples" title="A real editor, before it hits a pad.">
 	{#snippet visual()}
 		<PhoneShot
 			src={edit}
@@ -154,12 +146,8 @@
 
 	<p>
 		Reduce the file size with crop, repitch, stereo to mono flattening, and changing the sample
-		rate. While you're there, normalize to get more volume out of the sample, and let Best Friend
-		detect and set its key for you.
-	</p>
-	<p>
-		Then stack studio-grade effects on top: three-band EQ, 1176-style compression, distortion and
-		saturation, Octaver, Small Stone phaser, Juno chorus, tremolo, delay, and reverb.
+		rate. Then stack studio-grade effects on top: three-band EQ, 1176-style compression, distortion
+		and saturation, Octaver, Small Stone phaser, Juno chorus, tremolo, delay, and reverb.
 	</p>
 	<p>
 		On the EP-40 and EP-1320, layer several samples into one multi-sample — crop and loop each
@@ -190,9 +178,8 @@
 	{/snippet}
 
 	<p>
-		Bulk upload from Files or straight out of a video, or record audio right into the app. Then
-		select what you want and move, share, or delete it in one pass — or edit a sample and replace it
-		in place.
+		Bulk upload from Files or videos, record audio, or sample the system audio from other audio
+		apps. Then organize your sample slots, share, or delete them.
 	</p>
 </FeatureBand>
 
@@ -213,10 +200,6 @@
 		Open any backup and browse it, no EP needed: its projects, scenes, groups, patterns, and
 		samples. Hear a scene before you restore, then take back only what you want — one group, a few
 		samples, a pattern as MIDI — or pull a single Project out of a full System backup.
-	</p>
-	<p>
-		On Apple devices iCloud keeps all of it in sync across your iPhone, iPad, and Mac,
-		automatically, without you thinking about it.
 	</p>
 </FeatureBand>
 

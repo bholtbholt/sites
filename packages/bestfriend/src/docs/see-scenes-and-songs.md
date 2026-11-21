@@ -1,15 +1,16 @@
 ---
 title: See your Scenes and Songs on a full timeline
-summary: Every sequenced note across every group as a piano roll — one scene, the whole song, or a group's patterns — with fader automation and a playhead that follows along.
+summary: Every sequenced note across every group as a piano roll — one scene, the whole song, or a group's patterns — with fader automation, a playhead that follows along, and editing built in.
 section: Scenes & performance
 order: 1
 question: Can I see my EP-133 Scenes on a screen?
 devices: [ep-133, ep-40, ep-1320]
-updated: 2026-10-19
+updated: 2026-11-21
 ---
 
 The EP's display can hint at what you programmed. It cannot show it to you. Best Friend puts
-the whole arrangement on a timeline.
+the whole arrangement on a timeline — and lets you edit it there. See
+[edit notes in your Scenes](/docs/edit-notes-in-scenes).
 
 ## What you see
 
@@ -47,8 +48,16 @@ instead.
 
 ## The bottom panel
 
-The panel shows the active pad, the tempo, time signature, and length. Tap the collapse button to
-hide it, and the floating button to bring it back; your note selection is kept.
+The panel shows the active pad, the tempo, time signature, and length. Drag the tempo up or down
+to change it.
+
+The tabs at the top of the panel switch editing modes: **Notes**, **Fader**, **Pitch**, **Step**,
+and **Song** — see [edit notes in your Scenes](/docs/edit-notes-in-scenes),
+[the step sequencer](/docs/step-sequencer), [draw fader automation](/docs/draw-fader-automation),
+and [arrange the song](/docs/arrange-the-song).
+
+In landscape, tap the X beside the tabs to hide the panel, and the button in the corner to bring
+it back; your note selection is kept.
 
 - The **follow** button on the left keeps the playhead in view — see below.
 - The **automation** button shows the fader lanes — see
@@ -60,8 +69,9 @@ hide it, and the floating button to bring it back; your note selection is kept.
 
 ## Loading Scenes
 
-Best Friend reads the project **once** when the app starts up. After that it stays silent: changing scene, pinching, toggling filters, and switching tabs all issue no reads. Only two things re-read — pulling down on
-the piano roll to **refresh**, and changing the project on the hardware.
+Best Friend reads the project **once** when the app starts up. After that it stays silent: changing scene, pinching, toggling filters, and switching tabs all issue no reads. Only a few things re-read — pulling down on
+the piano roll to **refresh**, changing the project on the hardware, committing edits, and
+starting a bounce.
 
 Reading the project briefly holds pad input on the EP, so Best Friend reads once and then
 stays quiet. A project switch you make while you are on another tab is **held** until you return to the
@@ -78,7 +88,11 @@ tells you there are no recorded notes rather than silently opening somewhere els
   under your fingers.
 - Double-tap to return to 100%.
 - Tap a note to select it; the detail card below names its pad, sample, position, pitch, and
-  velocity — `B9 · Rimshot · 2.3 · D4 · vel 96`. Tap empty grid to clear it.
+  velocity — `A7 · clunky sn · 1.5 · C4 · v127`. Drag the pitch or velocity up or down to change
+  it.
+
+Turn on **Large Scenes Grid** in [app settings](/docs/app-settings) to make every row 50% taller,
+so notes are easier to tap.
 
 ## Follow the playhead
 
@@ -104,9 +118,10 @@ Turn it off and the pad collapses back to one row, where a chord shows only its 
 Single-pitch drum pads never split either way. Tapping a note rings **that** note's row, and the
 detail card names the pitch you tapped.
 
-## It is read-only
+## Edits are staged, then committed
 
-Nothing on this screen changes anything on your EP.
+Looking never changes anything on your EP. Editing stages changes in Best Friend until you tap
+**Commit** — see [edit notes in your Scenes](/docs/edit-notes-in-scenes).
 
 The EP does not send a live feed of its sequencer, so Best Friend combines the project it read with
 the notes it hears. **Dashed** notes are ones it heard that differ from what it read — see
@@ -119,10 +134,14 @@ The EP's display tells you which pattern you are on. It cannot show you that the
 lands a step early, or that a fader move from weeks ago is still pulling a bank down.
 
 Tap **Bounce** in the top right to [bounce multi-track stems](/docs/bounce-stems-to-your-daw) of the
-Scene or the whole Song, with the fader automation and the MIDI data alongside it.
+Scene or the whole Song, with the fader automation and the MIDI data alongside it. Best Friend
+re-syncs with the hardware first, so notes recorded since the last re-sync are included. While
+edits are pending, Bounce becomes **Play** — commit or cancel them first.
 
 ## Related
 
+- [Edit notes in your Scenes](/docs/edit-notes-in-scenes)
+- [Step sequence a pad](/docs/step-sequencer)
 - [See your whole Song end to end](/docs/song-mode)
 - [See the fader automation you recorded](/docs/fader-automation-lanes)
 - [Watch notes appear as you record them](/docs/watch-notes-as-you-record)

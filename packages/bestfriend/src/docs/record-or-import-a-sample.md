@@ -1,11 +1,11 @@
 ---
 title: Record or import a sample onto your EP
-summary: Bring audio in from Files, from a video, from a recording, or by dropping files on Best Friend, then edit and upload it.
+summary: Bring audio in from Files, from a video, from a recording, from another app's audio, or by dropping files on Best Friend, then edit and upload it.
 section: Samples
 order: 0
 question: How do I put my own samples on the EP-133?
 devices: [ep-133, ep-40, ep-1320]
-updated: 2026-10-19
+updated: 2026-11-21
 ---
 
 Every sample comes into Best Friend the same way: pick a source, edit it, upload it. Nothing reaches
@@ -14,7 +14,7 @@ the EP until you have had the chance to crop and process it.
 ## Import a file
 
 1. On **Pads** or **Samples**, tap **+** in the toolbar.
-2. Tap **Choose file…**, **Choose from Photos…**, or **Record audio…**.
+2. Tap **Choose file…**, **Choose from Photos…**, **Record audio…**, or **Record system audio…**.
 3. Edit the sample and upload it. See
    [crop, normalize, repitch, and add effects](/docs/sample-editor-and-effects).
 
@@ -31,6 +31,18 @@ On iPad and Mac, you can also **drop audio files** anywhere on Best Friend.
 4. Play the take back, and tap **Use take** to open it in the sample editor.
 
 The input you pick is remembered. To change the default, see [App Settings](/docs/app-settings).
+
+## Sample another app
+
+**Record system audio…** records whatever another app is playing — a song, a video, another
+instrument. It needs iOS 27 or macOS 27 or later.
+
+1. Tap **Record system audio…**, then **Record**.
+2. Choose to share your entire screen.
+3. Switch to the other app and play the sound.
+4. Come back to Best Friend and tap **Stop**.
+
+Only the sound is kept. Best Friend's own audio is left out of the take.
 
 ## Import several files at once
 

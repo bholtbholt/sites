@@ -1,11 +1,11 @@
 ---
 title: See every pad in a bank at once
-summary: A grid of waveforms, slot numbers, and names laid out like the hardware — and the place to swap, copy, chop, and bulk-edit pads.
+summary: A grid of waveforms, slot numbers, and names laid out like the hardware — and the place to swap, copy, chop, bulk-edit pads, and map MIDI notes for an electronic drum kit.
 section: Pads
 order: 1
 question: How do I see all the samples on my EP-133 pads?
 devices: [ep-133, ep-40, ep-1320]
-updated: 2026-10-19
+updated: 2026-11-21
 ---
 
 The EP shows you one pad's name at a time, three characters wide. Best Friend shows you the
@@ -46,14 +46,53 @@ gutter. Change pad on the device and the wash follows.
 The toolbar switches the grid into one mode at a time:
 
 - **Select Mode** applies [pad settings](/docs/edit-pad-settings) to several pads at once, or
-  unassigns them together. Select pads by tapping them in the app or on the hardware. Settings apply
-  as you change them, and selections stay within one group.
+  unassigns them together — see below.
 - **Copy Mode** copies one pad onto another. Tap the pad to copy, in the app or on the hardware,
   then tap the pad to copy it to. The target takes the copied pad's sample and every setting.
 - **Chop Mode** slices one sample across pads — see
   [chop a sample across pads](/docs/chop-a-sample-across-pads).
 - **Performance mode** latches mute, pitch, and reverse effects per pad — see
   [mute, pitch, and reverse per pad](/docs/performance-effects-and-mute).
+
+## Change several pads at once
+
+Tap the Select Mode icon, then select pads by tapping them in the app or on the hardware.
+Supertones can be selected too. Selections stay within one group.
+
+Change the settings you want, then tap **Apply**. Only the settings you changed are written, and
+only to pads that don't already have them. Swipe the sheet down to close it without applying.
+
+## Map MIDI notes to an electronic drum kit
+
+The **MIDI Note** card in Select Mode gives the selected pads the notes you play them with — the
+notes the hardware sends when you press a pad, or the notes an electronic drum kit sends. Recorded
+patterns then play back on the notes you pressed.
+
+1. Turn on **Assign MIDI notes**.
+2. Pick a template. It applies to the group your selection is in.
+   - **Teenage Engineering** matches the note each pad sends when pressed, so it follows the group.
+   - **Electric Drum Kit** follows the General MIDI drum map: kick and snare on the bottom row,
+     cymbals on 7 8 9.
+3. Tap **Apply**.
+
+**Only assign One Shots** leaves Key, Legato, and Loop pads and Supertones as they are. The pads
+it skips are listed under the card. **Keep recorded notes in sync** moves the notes already
+recorded on each pad by the same amount, so they keep their pitch.
+
+> A pad's MIDI note is also its root note. On a Key or Legato pad, changing it shifts what KEYS
+> plays, which is why those pads are skipped by default.
+
+### Make your own template
+
+1. Tap the template, then **New Template** for a blank one. To start from an existing template,
+   open it and tap **Duplicate**.
+2. Tap a pad to give it a note. The list opens on the kick; scroll up for lower notes, or search by
+   number, note, or name.
+3. Tap the title to rename it.
+
+A pad without a note keeps the note it already has. Pads sharing a note show a warning. Built-in
+templates can't be changed — duplicate one to edit it. A duplicate of Teenage Engineering takes the
+notes of the group you're editing. Templates sync with your [Library](/docs/icloud-sync).
 
 ## Related
 

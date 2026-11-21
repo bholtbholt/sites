@@ -1,11 +1,11 @@
 ---
-title: Fix common Best Friend problems
+title: Fix common problems
 summary: What to do when uploads fail, chords play the wrong pads, the playhead or arpeggiator will not run, or a backup will not restore.
 section: Getting started
 order: 6
 question: Why isn't Best Friend working with my EP-133?
 devices: [ep-133, ep-40, ep-1320]
-updated: 2026-10-19
+updated: 2026-11-21
 ---
 
 If the EP does not appear at all, start with
@@ -51,6 +51,13 @@ The EP does not send a live feed of its sequencer, so the roll can drift out of 
 the piano roll to refresh. Dashed notes are ones played since the last refresh — see
 [watch notes appear as you record](/docs/watch-notes-as-you-record).
 
+## Some Scenes edits didn't stick
+
+The hardware is the source of truth. If you recorded on the EP after opening the editor and an edit
+clashes with those notes, only the clashing edits are dropped when you commit. Tap **Undo** on the
+banner to take a commit back. See
+[edit notes in your Scenes](/docs/edit-notes-in-scenes).
+
 ## Chords aren't playing anything
 
 The pad has to be listening on the keyboard's MIDI channel. Select a pad on the hardware and press
@@ -68,8 +75,8 @@ chord pad's MIDI channel.
 
 ## Chords play one note at a time
 
-The pad must be in **Key** play mode to play chords. One shot and Legato pads play one note at a
-time. See [edit pad settings](/docs/edit-pad-settings).
+The pad must be in **Key** play mode to play chords, and can't be in a mute (choke) group. One
+shot and Legato pads play one note at a time. See [edit pad settings](/docs/edit-pad-settings).
 
 ## The arpeggiator doesn't play
 
@@ -84,8 +91,8 @@ to SAMPLE to hear them.
 
 ## A backup won't restore
 
-Backups restore only to the EP model that made them. A backup from another model still opens and
-browses, but cannot be restored. See [back up and restore](/docs/back-up-and-restore).
+A whole backup restores only to the EP model that made it. A backup from another model still
+opens and browses, and its samples, groups, and patterns can still be taken out one at a time. See [back up and restore](/docs/back-up-and-restore).
 
 ## A Library item won't open
 

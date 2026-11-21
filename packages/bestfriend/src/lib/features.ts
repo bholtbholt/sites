@@ -7,12 +7,18 @@ export type FeatureGroup = {
 export const featureGroups: readonly FeatureGroup[] = [
 	{
 		title: 'Scenes',
-		blurb: 'See the whole arrangement, not three characters.',
+		blurb: 'See the whole arrangement, then edit it.',
 		items: [
 			'See every sequenced note across every bank in a Scene or Song',
 			'See the fader automation lanes for each bank',
 			'Follow the playhead through the timeline automatically',
 			'Navigate a Scene or an entire Song',
+			'Add, move, lengthen, and erase notes on a piano roll',
+			'Step sequence a pad with accents, ratchets, and humanize',
+			'Draw fader automation',
+			'Reorder, duplicate, and swap scenes in the Song',
+			'Quantize with grid, swing, and nudge',
+			'Preview edits on your phone, then commit them to the EP',
 		],
 	},
 	{
@@ -26,6 +32,7 @@ export const featureGroups: readonly FeatureGroup[] = [
 			'Export the MIDI data from a Scene or Song',
 			'Bounce a Scene or the whole Song',
 			'Take your bounces into the DAW of your choice',
+			'Share as WAV, or M4A for smaller files',
 		],
 	},
 	{
@@ -38,7 +45,7 @@ export const featureGroups: readonly FeatureGroup[] = [
 			'Add the lower octave to any chord',
 			'Save your own chords to any Chord or Extension button',
 			'Split each key into 1-3 zones for alternate chord positions',
-			'Arpeggiator with 4 modes, 6 rates, and 3 octaves synced to the hardware clock',
+			'Arpeggiator with 5 modes, 6 rates, and 3 octaves synced to the hardware clock',
 			'Add pitch bend or modulation to any chord',
 			'Play chords from a Mac or iPad keyboard with Logic-style Musical Typing',
 		],
@@ -54,6 +61,7 @@ export const featureGroups: readonly FeatureGroup[] = [
 			'Build and edit multi-samples on the EP-1320 and EP-40',
 			'Convert any sample, recording, or video into a multi-sample, auto-split into notes',
 			'Record audio straight into the app as a new sample',
+			'Sample whatever another app is playing (iOS 27 and macOS 27)',
 			'Permanent crop, normalize, reverse, stereo to mono',
 			'Change sample rate',
 			'Automatically detect and set the key',
@@ -94,8 +102,9 @@ export const featureGroups: readonly FeatureGroup[] = [
 			'Drag and drop to reassign pads across your project',
 			'Change Pad Settings on several pads at once',
 			'Copy a pad and its settings to another',
-			'Chop a sample across pads in equal, transient, or lazy mode',
+			'Chop a sample across pads in even, peak, or lazy mode',
 			'Tune a pad with the built-in tuner',
+			'Map pads to an electronic drum kit, or your own MIDI note templates',
 		],
 	},
 ] as const;

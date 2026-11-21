@@ -2,10 +2,10 @@
 title: Watch notes appear on the timeline as you record them
 summary: Pads you play show up on the roll immediately as dashed notes, then go solid once the EP has actually recorded them.
 section: Scenes & performance
-order: 4
+order: 8
 question: Can I see what I'm recording on the EP-133 while I play?
 devices: [ep-133, ep-40, ep-1320]
-updated: 2026-10-19
+updated: 2026-11-21
 ---
 
 The [Scenes timeline](/docs/see-scenes-and-songs) is not a snapshot. Play a pad with the
@@ -65,10 +65,14 @@ All of this is inference from what the EP is sending. **Pull down on the piano r
 it re-reads the project and repaints from the device's own data — anything provisional clears, anything you erased by mistake
 comes back, and whatever was really recorded is drawn as a real note.
 
-## It never writes to the device
+## Watching never writes to the device
 
 Best Friend reads the note and clock streams. It does not record for you, and it does not erase
 for you — your hands on the hardware do both.
+
+Notes you recorded on the hardware are kept when you later
+[commit edits](/docs/edit-notes-in-scenes) from Best Friend. If an edit clashes
+with them, the hardware wins.
 
 ## Related
 

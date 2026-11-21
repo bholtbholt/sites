@@ -1,11 +1,11 @@
 ---
 title: Use the arpeggiator on your EP-133, EP-40, or EP-1320
-summary: Four modes, six rates, three octaves, locked to the EP's own clock so the phrase lands on the hardware's grid.
+summary: Five modes, six rates, three octaves, locked to the EP's own clock so the phrase lands on the hardware's grid.
 section: Playing
 order: 5
 question: Does the EP-133 have an arpeggiator?
 devices: [ep-133, ep-40, ep-1320]
-updated: 2026-10-19
+updated: 2026-11-21
 ---
 
 The EP has an arpeggiator, but it is limited to note repeat and as-played notes. Best Friend adds a more robust one, that syncs to the clock of the EP-133, EP-1320, or EP-40.
@@ -32,10 +32,12 @@ The arp toggle latches it on, but phrases will not begin until the root note is 
 | Control      | Options                                            | Default |
 | ------------ | -------------------------------------------------- | ------- |
 | Rate         | 4, 8, 8T, 16, 16T, 32 (1/4 to 1/32, with triplets) |         |
-| Mode         | Up, Down, Up-Down, Down-Up                         |         |
+| Mode         | Up, Down, Up-Down, Down-Up, Stack                  |         |
 | Oct          | One to three octaves                               |         |
 | Root +12     | Adds the root note one octave up                   | On      |
 | Double notes | Plays every note twice                             | Off     |
+
+**Stack** plays the whole chord on every step instead of walking it one note at a time.
 
 Rate, Mode, and Oct sit beside the Pitch wheel; tap one to cycle through its options. **Root +12**
 and **Double notes** are in the **Arpeggiator** tab of Settings.

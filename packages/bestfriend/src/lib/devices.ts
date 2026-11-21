@@ -51,8 +51,8 @@ export const devices: readonly Device[] = [
 				body: 'Export multi-track audio stems of a Scene or Song straight off the EP-133. All 48 pads come out isolated from the real samples and pad data — not AI separation — with fader automation included. Take them as individual stems, group mixdowns, or a stereo mixdown, along with the MIDI, and open the lot in your DAW.',
 			},
 			{
-				title: 'See a whole EP-133 Scene',
-				body: 'Every sequenced note across every bank in a Scene or Song on one timeline, with the fader automation lanes underneath and the playhead following as it plays. The 3-char display can only hint at what you programmed; this shows you.',
+				title: 'See and edit a whole EP-133 Scene',
+				body: 'Every sequenced note across every bank in a Scene or Song on one timeline, with the fader automation lanes underneath and the playhead following as it plays. Then edit it: move and lengthen notes, step sequence a pad, draw automation, and arrange the Song, before committing it to the EP-133.',
 			},
 			{
 				title: 'Play the EP-133 from a keyboard',
@@ -121,7 +121,7 @@ export const devices: readonly Device[] = [
 		highlights: [
 			{
 				title: 'Supertone settings, exposed',
-				body: 'The EP-40 Supertone settings are surfaced directly in Best Friend, alongside the rest of the pad parameters instead of buried behind hardware menus.',
+				body: 'Each EP-40 Supertone pad shows its two synth values alongside the rest of the pad parameters, following the hardware knobs as you turn them, instead of hiding behind hardware menus.',
 			},
 			{
 				title: 'Build and edit multi-samples',
@@ -132,8 +132,8 @@ export const devices: readonly Device[] = [
 				body: 'Export multi-track audio stems of a Scene or Song straight off the EP-40. All 48 pads come out isolated from the real samples and pad data — not AI separation — with fader automation included. Take individual stems, group mixdowns, a stereo mixdown, and the MIDI, then mix it in your DAW.',
 			},
 			{
-				title: 'See a whole EP-40 Scene',
-				body: 'Every sequenced note across every bank in a Scene or Song on one timeline, with the fader automation lanes for each bank underneath and the playhead following along as it plays.',
+				title: 'See and edit a whole EP-40 Scene',
+				body: 'Every sequenced note across every bank in a Scene or Song on one timeline, with the fader automation lanes for each bank underneath and the playhead following along as it plays. Edit notes, step sequence a pad, draw automation, and arrange the Song, then commit it to the EP-40.',
 			},
 			{
 				title: 'Play the EP-40 from a keyboard',
@@ -167,7 +167,7 @@ export const devices: readonly Device[] = [
 			},
 			{
 				q: 'Can I edit the EP-40 Supertone settings in Best Friend?',
-				a: 'Yes. Supertone settings are available on EP-40 pads alongside the other pad parameters.',
+				a: 'You can see them. Each Supertone pad shows its two synth values beside Amp and Pitch, following the hardware knobs as you turn them, but they can only be changed on the EP-40 itself. The rest of the pad settings are fully editable.',
 			},
 			{
 				q: 'What cable do I need to connect an EP-40 to an iPhone or Android phone?',
@@ -198,8 +198,8 @@ export const devices: readonly Device[] = [
 				body: 'Export multi-track audio stems of a Scene or Song straight off the EP-1320. All 48 pads come out isolated from the real samples and pad data — not AI separation — with fader automation included. Individual stems, group mixdowns, a stereo mixdown, and the MIDI, all ready for your DAW.',
 			},
 			{
-				title: 'See a whole EP-1320 Scene',
-				body: 'Every sequenced note across every bank in a Scene or Song on one timeline, with the fader automation lanes underneath and the playhead following as it plays.',
+				title: 'See and edit a whole EP-1320 Scene',
+				body: 'Every sequenced note across every bank in a Scene or Song on one timeline, with the fader automation lanes underneath and the playhead following as it plays. Edit notes, step sequence a pad, draw automation, and arrange the Song, then commit it to the EP-1320.',
 			},
 			{
 				title: 'Play the EP-1320 from a keyboard',
@@ -291,7 +291,7 @@ export const faq: readonly FaqItem[] = [
 	},
 	{
 		q: 'Does Best Friend work without the hardware connected?',
-		a: `Partly. Editing pads, playing the keyboard, and sending samples need a wired connection to the hardware. The Library works without it: browse, preview, share, and bounce from your backups, and build kits and Bank Snapshots to load later.`,
+		a: `Partly. Editing pads and Scenes, playing the keyboard, and sending samples need a wired connection to the hardware. The Library works without it: browse, preview, share, and bounce from your backups, and build kits and Bank Snapshots to load later.`,
 	},
 	{
 		q: 'Can I back up my EP-133, EP-40, or EP-1320?',
@@ -306,16 +306,20 @@ export const faq: readonly FaqItem[] = [
 		a: 'Not for bouncing. When you export stems from a Scene or Song, Best Friend reads the real samples and pad data off your EP, so every pad is genuinely isolated rather than guessed at by a separation model. Stem splitting is a separate feature: that one does use source separation, but only to pull drums, bass, vocals, guitar, and instruments out of a single sample you bring in.',
 	},
 	{
-		q: 'Can I see my Scenes and Songs in Best Friend?',
-		a: 'Yes. Best Friend shows every sequenced note across every bank in a Scene or Song on one timeline, along with the fader automation lanes for each bank. The playhead follows automatically as it plays.',
+		q: 'Can I see and edit my Scenes and Songs in Best Friend?',
+		a: 'Yes. Best Friend shows every sequenced note across every bank in a Scene or Song on one timeline, along with the fader automation lanes for each bank, and the playhead follows automatically as it plays. You can also edit it: add, move, lengthen, and erase notes, step sequence a pad with accents and ratchets, draw fader automation, and reorder the Song. Edits are staged and written to the EP when you tap Commit.',
+	},
+	{
+		q: 'Can I use an electronic drum kit with my EP?',
+		a: 'Yes. Select pads on the pad grid and apply the Electric Drum Kit template to map them to the General MIDI drum notes, so kick, snare, and cymbals land where an e-kit sends them. You can also build and sync your own MIDI note templates.',
 	},
 	{
 		q: 'Can I use Best Friend as a MIDI controller?',
-		a: 'Yes. Best Friend includes a velocity-sensitive keyboard that plays your EP. Build major, minor, suspended, or diminished triads with a button and add a 6th, 7th, 9th, or the lower octave, save your own chords to any Chord or Extension button, split the keys into up to three zones for alternate positions, and run an arpeggiator with 4 modes, 6 rates, and 3 octaves synced to the hardware clock.',
+		a: 'Yes. Best Friend includes a velocity-sensitive keyboard that plays your EP. Build major, minor, suspended, or diminished triads with a button and add a 6th, 7th, 9th, or the lower octave, save your own chords to any Chord or Extension button, split the keys into up to three zones for alternate positions, and run an arpeggiator with 5 modes, 6 rates, and 3 octaves synced to the hardware clock.',
 	},
 	{
 		q: 'Does Best Friend sync across my devices?',
-		a: 'On Apple devices, yes. iCloud automatically backs up and syncs your Bank Snapshots, project and system backups, bounces, and MIDI patterns across your iPhone, iPad, and Mac, so anything you save on one is there on the others.',
+		a: 'On Apple devices, yes. iCloud automatically backs up and syncs your Bank Snapshots, project and system backups, bounces, MIDI patterns, and MIDI note templates across your iPhone, iPad, and Mac, so anything you save on one is there on the others.',
 	},
 	{
 		q: 'Can Best Friend split a song into stems?',
@@ -327,7 +331,7 @@ export const faq: readonly FaqItem[] = [
 	},
 	{
 		q: 'Can I import samples from a video?',
-		a: 'Yes. Best Friend can pull audio straight out of a video, as well as bulk import from Files. Imported samples can be edited, renamed, reordered, and assigned to pads by drag and drop.',
+		a: 'Yes. Best Friend can pull audio straight out of a video, bulk import from Files, record from a microphone or your EP, and on iOS 27 and macOS 27 record whatever another app is playing. Imported samples can be edited, renamed, reordered, and assigned to pads by drag and drop.',
 	},
 	{
 		q: 'Does Best Friend collect any data?',
